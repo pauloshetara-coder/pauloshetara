@@ -16,6 +16,18 @@ manualmente com ffmpeg, MoviePy ou outra ferramenta, sem precisar perguntar.
   o HyperFrames faz a montagem, animações, legendas, transições e trilha.
 - Use ffmpeg só para tarefas simples de arquivo (converter formato, cortar, extrair áudio).
 
+### Convivência com a skill `montagem-video-canal-dark`
+
+As duas ficam ativas; nenhuma substitui a outra.
+
+- **Montagem do canal dark** (imagens/clipes + narração → MP4 final com zoom, transições,
+  trilha, tela final e legendas): use a skill `montagem-video-canal-dark`, como sempre.
+- **HyperFrames**: use para todos os outros vídeos e para o que a skill do canal dark não
+  cobre, como títulos animados, mapas, linhas do tempo, gráficos, legendas estilizadas e
+  vinhetas. Esses trechos podem ser renderizados no HyperFrames e entrar na montagem do
+  canal dark como clipes.
+- Se o usuário pedir explicitamente uma das duas, use a que ele pediu.
+
 Fonte: https://github.com/heygen-com/hyperframes (licença Apache 2.0, ver
 `.claude/skills/HYPERFRAMES-LICENSE`). Para atualizar as skills, copie novamente a pasta
 `skills/` desse repositório.
