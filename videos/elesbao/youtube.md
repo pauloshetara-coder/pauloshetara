@@ -1,18 +1,18 @@
 # Elesbão — pacote do YouTube
 
 ## Títulos (recomendado marcado com ★)
-1. ★ ELESBÃO: enforcado e esquartejado para servir de aviso
-2. O escravizado que Campinas enforcou para assustar os outros
-3. Elesbão: a execução que o Brasil tentou esquecer
-4. Cabeça num poste: a história de Elesbão (Campinas, 1835)
-5. Elesbão e a escravidão no Brasil | Consciência Negra
+1. ★ Dois negros chamados Elesbão: um rei e um escravizado
+2. ELESBÃO: do trono de Axum à forca de Campinas
+3. O rei africano santo e o escravizado enforcado em 1835
+4. Elesbão: a história que o Brasil tentou esquecer
+5. Dois Elesbão | Consciência Negra
 
 ## Descrição
 
-Em 1835, Campinas enforcou um africano escravizado que jurou ser inocente — e expôs sua cabeça e suas mãos em praça pública. Esta é a história de Elesbão.
+Dois homens negros chamados Elesbão: um foi rei de Axum, na Etiópia, e virou santo; o outro foi escravizado no Brasil e enforcado em Campinas em 1835, jurando inocência.
 📘 Quer ir mais fundo nas civilizações e na história? Meu ebook: [LINK DO EBOOK]
 
-Neste mês da Consciência Negra, contamos a história de Elesbão, africano “de nação cabinda” trazido à força para o Brasil, mantido cativo no engenho Romão, em Campinas (SP). Fugitivo e vivendo num quilombo, ele foi acusado, junto com Narciso, da morte do capitão Luiz José de Oliveira em 1831. Mesmo afirmando inocência, foi condenado à morte e enforcado em 9 de dezembro de 1835 no Largo de Santa Cruz. O juiz mandou cortar sua cabeça e suas mãos e expô-las em postes, como ameaça a quilombolas e a quem lutasse pela liberdade. Ligamos essa história ao tráfico atlântico, à lei “para inglês ver” de 1831, à Revolta dos Malês, à lei de 10 de junho de 1835 e à abolição tardia de 1888, e mostramos como Elesbão se tornou símbolo de resistência.
+Neste mês da Consciência Negra, contamos a história de dois Elesbão. O primeiro é Kaleb, rei cristão de Axum no século VI — chamado Elesbaan nos textos antigos —, que atravessou o Mar Vermelho por volta de 525, deixou o trono segundo a tradição e foi venerado como Santo Elesbão, protetor de irmandades negras no Brasil colonial, como a Irmandade de Santo Elesbão e Santa Efigênia, no Rio. O segundo é Elesbão, africano “de nação cabinda” trazido à força para o Brasil, mantido cativo no engenho Romão, em Campinas (SP). Fugitivo e vivendo num quilombo, ele foi acusado, junto com Narciso, da morte do capitão Luiz José de Oliveira em 1831. Mesmo afirmando inocência, foi condenado à morte e enforcado em 9 de dezembro de 1835 no Largo de Santa Cruz. O juiz mandou cortar sua cabeça e suas mãos e expô-las em postes, como ameaça a quilombolas e a quem lutasse pela liberdade. Ligamos essa história ao tráfico atlântico, à lei “para inglês ver” de 1831, à Revolta dos Malês, à lei de 10 de junho de 1835 e à abolição tardia de 1888, e mostramos como Elesbão se tornou símbolo de resistência.
 
 Capítulos
 00:00 Campinas, 9 de dezembro de 1835
@@ -40,6 +40,7 @@ Pesquisa e produção: Professor de História Paulo Shetara
 Narração sintética (voz gerada por computador).
 
 Fontes
+- Kaleb de Axum (Elesbaan): Procópio de Cesareia, História das Guerras; tradição da Igreja Etíope.
 - Verbete “Elesbão”, Wikipédia em português (com base em documentos do inquérito de 1831 e da sentença).
 - Slave Voyages — Trans-Atlantic Slave Trade Database (estimativa de desembarques no Brasil).
 - UNESCO — Sítio Arqueológico Cais do Valongo (Patrimônio Mundial, 2017).
@@ -65,7 +66,7 @@ Imagens: Wikimedia Commons (domínio público e CC0) — créditos abaixo.
 - Luiz Gama c 1880.png — autor desconhecido — Public domain — https://commons.wikimedia.org/wiki/File:Luiz_Gama_c_1880.png
 
 ## Tags (15)
-Elesbão, Elesbão Campinas, escravidão no Brasil, Consciência Negra, história do Brasil, Campinas 1835, quilombo, resistência negra, tráfico negreiro, Cais do Valongo, Revolta dos Malês, Lei Áurea, Luiz Gama, Zumbi dos Palmares, história da escravidão
+Elesbão, Santo Elesbão, Axum, Kaleb, Elesbão Campinas, escravidão no Brasil, Consciência Negra, história do Brasil, Campinas 1835, quilombo, resistência negra, tráfico negreiro, Cais do Valongo, Revolta dos Malês, Lei Áurea, Luiz Gama, Zumbi dos Palmares, história da escravidão
 
 ## Hashtags
 #ConsciênciaNegra #HistóriaDoBrasil #Elesbão
