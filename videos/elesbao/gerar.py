@@ -90,7 +90,14 @@ def asset(kind, name):
         p = f"assets/{d}/{name}{ext}"
         if os.path.exists(os.path.join(OUT, p)):
             return p
-    raise SystemExit(f"faltando: {kind} {name}")
+    imgs=sorted(f for f in os.listdir(os.path.join(OUT,"assets/img")) if f.endswith(".jpg"))
+    if not imgs: raise SystemExit(f"faltando: {kind} {name}")
+    FALTANDO.add(name)
+    return "assets/img/"+imgs[hash(name)%len(imgs)]
+
+FALTANDO=set()
+def kind_of(src):
+    return "vid" if src.endswith(".mp4") else "img"
 
 def esc(s):
     return html.escape(s, quote=True)
@@ -103,7 +110,7 @@ CSS_COMUM = """
 .vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 35%,rgba(0,0,0,.78) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
 .sombra{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.75) 40%,rgba(11,9,7,0) 62%)}
 .t{position:absolute;left:150px;right:150px;opacity:0}
-.kicker{top:150px;font-family:'Oswald',sans-serif;font-size:40px;letter-spacing:.32em;text-transform:uppercase;color:#d9a441}
+.kicker{top:150px;text-shadow:0 2px 12px #000,0 0 30px #000;font-family:'Oswald',sans-serif;font-size:40px;letter-spacing:.32em;text-transform:uppercase;color:#d9a441}
 .kicker:before{content:'';display:inline-block;width:70px;height:3px;background:#b8322a;vertical-align:middle;margin-right:24px}
 .titulo{top:300px;text-align:center;font-family:'Playfair Display',serif;font-weight:900;font-size:220px;letter-spacing:.06em;color:#f3eadb;text-shadow:0 8px 40px rgba(0,0,0,.8)}
 .titulo small{display:block;font-family:'Oswald',sans-serif;font-weight:400;font-size:42px;letter-spacing:.25em;color:#d9a441;margin-top:10px}
@@ -117,7 +124,7 @@ CSS_COMUM = """
 .bloco b{display:block;font-family:'Oswald',sans-serif;font-weight:700;font-size:74px;line-height:1.05;letter-spacing:.04em;color:#f3eadb}
 .bloco span{display:block;margin-top:22px;font-family:'Playfair Display',serif;font-style:italic;font-size:44px;line-height:1.3;color:#d9a441}
 .bloco:before{content:'';display:block;width:90px;height:5px;background:#b8322a;margin-bottom:30px}
-.cover-txt .bloco{right:700px}
+.bloco.largo{right:700px}
 .data{top:420px;text-align:center;font-family:'Oswald',sans-serif;font-weight:700;font-size:120px;letter-spacing:.1em;color:#f3eadb}
 .carimbo{top:640px;left:auto;right:180px;width:auto;font-family:'Oswald',sans-serif;font-weight:700;font-size:80px;color:#b8322a;border:8px solid #b8322a;padding:10px 40px;letter-spacing:.06em}
 .versus{top:300px;display:flex;gap:80px}
@@ -136,7 +143,7 @@ CSS_COMUM = """
 .creditos i{display:block;font-family:'Oswald',sans-serif;font-style:normal;font-size:40px;letter-spacing:.35em;text-transform:uppercase;color:#d9a441}
 .creditos span{display:block;margin-top:40px;font-family:'Playfair Display',serif;font-style:italic;font-size:60px}
 .creditos b{display:block;font-family:'Playfair Display',serif;font-weight:900;font-size:130px;letter-spacing:.03em}
-.creditos small{display:block;margin-top:70px;font-family:'Inter',sans-serif;font-size:24px;color:#a99a85}
+.creditos small{display:block;margin-top:70px;font-family:'Inter',sans-serif;font-size:28px;color:#a99a85}
 """
 
 def texto_html(sid, i, estilo, txt):
@@ -170,7 +177,7 @@ def cena_html(sid, D, spec):
     seg = D / n if n else D
     for k, (kind, name, modo) in enumerate(bg):
         lid = f"{sid}-bg{k}"
-        src = asset(kind, name)
+        src = asset(kind, name); kind = kind_of(src)
         start = k * seg
         d = seg + (0.8 if k < n - 1 else 0)
         d = min(d, D - start)
@@ -210,14 +217,16 @@ def cena_html(sid, D, spec):
                 js.append(f'tl.fromTo("#{tid}-l{k}",{{opacity:0,x:-30}},{{opacity:1,x:0,duration:0.45,ease:"power3.out"}},{t0 + k*passo:.2f});')
             js.append(f'tl.to("#{tid}",{{opacity:0,duration:0.4,ease:"power2.in"}},{t1-0.4:.2f});')
         elif estilo in ("titulo", "data", "carimbo"):
-            js.append(f'tl.fromTo("#{tid}",{{opacity:0,scale:1.12,letterSpacing:"0.2em"}},{{opacity:1,scale:1,letterSpacing:"0.06em",duration:1.2,ease:"power3.out"}},{t0:.2f});')
+            js.append(f'tl.fromTo("#{tid}",{{opacity:0,scale:1.12}},{{opacity:1,scale:1,duration:1.2,ease:"power3.out"}},{t0:.2f});')
             if b < 1.0 or sid != "s19":
                 js.append(f'tl.to("#{tid}",{{opacity:0,duration:0.4,ease:"power2.in"}},{t1-0.4:.2f});')
         else:
             js.append(f'tl.fromTo("#{tid}",{{opacity:0,y:30}},{{opacity:1,y:0,duration:0.8,ease:"power3.out"}},{t0:.2f});')
             if sid != "s20":
                 js.append(f'tl.to("#{tid}",{{opacity:0,duration:0.4,ease:"power2.in"}},{t1-0.4:.2f});')
-    cls = "" if portrait else " cover-txt"
+    cls = ""
+    if not portrait:
+        textos = [h.replace('class="t bloco"','class="t bloco largo"') for h in textos]
     return f"""<template>
 <style>{CSS_COMUM.replace('#root', f'#{sid}')}</style>
 <div id="{sid}" class="{cls.strip()}" data-composition-id="{sid}" data-width="1920" data-height="1080" data-layout-allow-overlap>
@@ -255,7 +264,9 @@ def frases(t):
 # --------------------------- montagem ---------------------------
 hosts, audios, caps, cap_js = [], [], [], []
 t = 0.0
+import sys
 ordem = sorted(CENAS)
+if len(sys.argv) > 1: ordem = [x for x in ordem if x in sys.argv[1].split(",")]
 for idx, sid in enumerate(ordem):
     spec = CENAS[sid]
     voz = f"assets/voz/{sid}.wav"
@@ -267,17 +278,18 @@ for idx, sid in enumerate(ordem):
     audios.append(f'<audio id="voz-{sid}" class="clip" src="{voz}" data-start="{t+lead:.2f}" data-duration="{vd:.2f}" data-track-index="3" data-volume="1"></audio>')
     # legendas proporcionais por caracteres
     if sid != "s20":
-        gs = frases(roteiro[sid])
-        tot = sum(len(g) + 6 for g in gs)
-        c = t + lead
-        for gi, g in enumerate(gs):
-            gd = vd * (len(g) + 6) / tot
+        marcas = json.load(open(os.path.join(OUT, f"assets/voz/{sid}.json")))
+        lista = []
+        for frase, a, b in marcas:
+            gs = frases(frase); tot = sum(len(g) + 4 for g in gs); c0 = a
+            for g in gs:
+                gd = (b - a) * (len(g) + 4) / tot; lista.append((g, t + lead + c0, gd + (0.25 if g is gs[-1] else 0))); c0 += gd
+        for gi, (g, c, gd) in enumerate(lista):
             cid = f"cap-{sid}-{gi}"
             caps.append(f'<div id="{cid}" class="cap"><span>{esc(g)}</span></div>')
             cap_js.append(f'tl.fromTo("#{cid}",{{opacity:0}},{{opacity:1,duration:0.12}},{c:.2f});')
             cap_js.append(f'tl.to("#{cid}",{{opacity:0,duration:0.1}},{c+gd-0.1:.2f});')
             cap_js.append(f'tl.set("#{cid}",{{visibility:"hidden"}},{c+gd:.2f});')
-            c += gd
     t += D
 TOTAL = round(t, 2)
 
@@ -326,4 +338,4 @@ window.__timelines["main"] = tl;
 </html>
 """
 open(os.path.join(OUT, "index.html"), "w").write(index)
-print("duração total:", TOTAL, "s")
+print("duração total:", TOTAL, "s"); print("imagens provisórias:", sorted(FALTANDO))
