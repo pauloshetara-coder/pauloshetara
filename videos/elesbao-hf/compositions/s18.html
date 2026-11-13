@@ -43,13 +43,14 @@
 .creditos small{display:block;margin-top:70px;font-family:'Inter',sans-serif;font-size:28px;color:#a99a85}
 </style>
 <div id="s18" class="" data-composition-id="s18" data-width="1920" data-height="1080" data-layout-allow-overlap>
-<div id="s18-bg0" class="bg cover" style="z-index:1"><img id="s18-bg0-m" src="assets/img/debret_escravidao.jpg" alt=""></div>
-<div id="s18-bg1" class="bg cover" style="z-index:2"><img id="s18-bg1-m" src="assets/img/valongo_hoje.jpg" alt=""></div>
+<div id="s18-bg0" class="bg cover" style="z-index:1"><img id="s18-bg0-m" src="assets/img/valongo_hoje.jpg" alt=""></div>
+<div id="s18-bg1" class="bg portrait" style="z-index:2"><img id="s18-bg1-m" src="assets/img/zumbi_parreiras.jpg" alt=""></div>
 <div id="s18-vin" class="vin" style="z-index:20"></div>
+<div id="s18-sombra" class="sombra" style="z-index:21"></div>
 <div id="s18-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s18-t0" class="t kicker">Memória e resistência</div>
-<div id="s18-t1" class="t bloco largo"><b>O AUTO DO ESCRAVIZADO ELESBÃO</b><span>o Extermínio da Juventude Negra · Campinas</span></div>
-<div id="s18-t2" class="t bloco largo"><b>ELESBÃO</b><span>livro de Valdir Oliveira · teatro: “Elesbão: um sonho de liberdade”, de Roberto Boni</span></div>
+<div id="s18-t1" class="t bloco"><b>O AUTO DO ESCRAVIZADO ELESBÃO</b><span>o Extermínio da Juventude Negra · Campinas</span></div>
+<div id="s18-t2" class="t bloco"><b>ELESBÃO</b><span>livro de Valdir Oliveira · teatro: “Elesbão: um sonho de liberdade”, de Roberto Boni</span></div>
 </div>
 </div>
 <script>
@@ -58,7 +59,7 @@ tl.set("#s18-bg0",{opacity:1},0);
 tl.set("#s18-bg0",{opacity:0},12.25);
 tl.fromTo("#s18-bg0-m",{scale:1.06,x:40},{scale:1.18,x:-40,duration:12.25,ease:"none"},0.00);
 tl.fromTo("#s18-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},11.45);
-tl.fromTo("#s18-bg1-m",{scale:1.06,x:-40},{scale:1.18,x:40,duration:11.45,ease:"none"},11.45);
+tl.fromTo("#s18-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:11.45,ease:"none"},11.45);
 tl.fromTo("#s18-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.69);
 tl.to("#s18-t0",{opacity:0,duration:0.4,ease:"power2.in"},7.61);
 tl.fromTo("#s18-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},6.87);

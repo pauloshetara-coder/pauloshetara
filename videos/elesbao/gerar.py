@@ -31,7 +31,7 @@ CENAS = {
  "s03": dict(bg=[("img","mapa_cabinda","cover"),("img","mapa_congo_angola","cover")], txt=[
      ("kicker","África Central · Costa de Loango",0.03,0.5),
      ("rotulo","CABINDA — porto de embarque, ao norte do rio Congo",0.5,1.0)]),
- "s04": dict(bg=[("vid","ondas","cover"),("img","navio_negreiro","cover")], txt=[
+ "s04": dict(bg=[("img","navio_negreiro","cover")], txt=[
      ("kicker","A travessia do Atlântico",0.03,0.45),
      ("numero","≈ 4,8 milhões|de africanos desembarcados no Brasil (estimativa)",0.62,1.0)]),
  "s05": dict(bg=[("img","mercado_escravos","cover"),("img","valongo_hoje","cover")], txt=[
@@ -71,14 +71,14 @@ CENAS = {
  "s16": dict(bg=[("img","luiz_gama","portrait"),("img","zumbi_parreiras","portrait")], txt=[
      ("frase","Mas o medo não venceu.",0.02,0.3),
      ("bloco","LUIZ GAMA (1830–1882)|abolicionista negro · libertou centenas de pessoas nos tribunais",0.45,1.0)]),
- "s17": dict(bg=[("img","lei_aurea","cover")], txt=[
+ "s17": dict(bg=[("img","ferrez_cafe","cover")], txt=[
      ("data","13 DE MAIO DE 1888",0.03,0.5),
      ("rotulo","Último país das Américas a abolir a escravidão · sem terra, sem reparação",0.5,1.0)]),
- "s18": dict(bg=[("vid","capoeira_onu","cover"),("vid","valongo_ashanti","cover")], txt=[
+ "s18": dict(bg=[("img","valongo_hoje","cover"),("img","zumbi_parreiras","portrait")], txt=[
      ("kicker","Memória e resistência",0.03,0.35),
      ("bloco","O AUTO DO ESCRAVIZADO ELESBÃO|o Extermínio da Juventude Negra · Campinas",0.3,0.66),
      ("bloco","ELESBÃO|livro de Valdir Oliveira · teatro: “Elesbão: um sonho de liberdade”, de Roberto Boni",0.68,1.0)]),
- "s19": dict(bg=[("img","ferrez_cafe","cover")], txt=[
+ "s19": dict(bg=[("img","punicao_santana","cover")], txt=[
      ("frase","O que mudou? E o que ainda não mudou?",0.25,0.62),
      ("titulo","ELESBÃO|† Campinas, 9 de dezembro de 1835",0.72,1.0)]),
  "s20": dict(bg=[], extra_tail=4.0, txt=[
@@ -166,7 +166,7 @@ def texto_html(sid, i, estilo, txt):
         inner = f"<p>{esc(parts[0])}</p><em>{esc(parts[1])}</em>"
     elif estilo == "creditos":
         inner = (f"<i>{esc(parts[0])}</i><span>{esc(parts[1])}</span><b>{esc(parts[2])}</b>"
-                 "<small>Imagens: Wikimedia Commons (domínio público e licenças Creative Commons — ver descrição) · Narração sintética</small>")
+                 "<small>Imagens: Wikimedia Commons (domínio público — ver descrição) · Narração sintética</small>")
     else:
         inner = esc(parts[0])
     return tid, f'<div id="{tid}" class="t {estilo}">{inner}</div>'
