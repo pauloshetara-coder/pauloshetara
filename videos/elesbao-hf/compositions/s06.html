@@ -46,6 +46,7 @@
 <div id="s06-bg0" class="bg cover" style="z-index:1"><img id="s06-bg0-m" src="assets/img/campinas_1880.jpg" alt=""></div>
 <div id="s06-bg1" class="bg cover" style="z-index:2"><img id="s06-bg1-m" src="assets/img/ferrez_cafe.jpg" alt=""></div>
 <div id="s06-vin" class="vin" style="z-index:20"></div>
+<div id="s06-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s06-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s06-t0" class="t kicker">Campinas · século XIX</div>
 <div id="s06-t1" class="t rotulo"><span>Escravizados numa fazenda de café — Marc Ferrez, c. 1885</span></div>
@@ -54,15 +55,19 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s06-bg0",{opacity:1},0);
-tl.set("#s06-bg0",{opacity:0},9.20);
-tl.fromTo("#s06-bg0-m",{scale:1.06,x:40},{scale:1.18,x:-40,duration:9.20,ease:"none"},0.00);
-tl.fromTo("#s06-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},8.39);
-tl.fromTo("#s06-bg1-m",{scale:1.06,x:-40},{scale:1.18,x:40,duration:8.39,ease:"none"},8.39);
-tl.fromTo("#s06-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.50);
-tl.to("#s06-t0",{opacity:0,duration:0.4,ease:"power2.in"},7.16);
-tl.fromTo("#s06-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},9.23);
-tl.to("#s06-t1",{opacity:0,duration:0.4,ease:"power2.in"},16.34);
-tl.set({}, {}, 16.79);
+tl.set("#s06-bg0",{opacity:0},9.41);
+tl.set("#s06-bg0-m",{transformOrigin:"35% 65%"},0);
+tl.fromTo("#s06-bg0-m",{scale:1.28,x:60},{scale:1.06,x:-60,duration:9.41,ease:"sine.inOut"},0.00);
+tl.fromTo("#s06-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},8.61);
+tl.set("#s06-bg1-m",{transformOrigin:"35% 65%"},0);
+tl.fromTo("#s06-bg1-m",{scale:1.28,x:-60},{scale:1.06,x:60,duration:8.61,ease:"sine.inOut"},8.61);
+tl.fromTo("#s06-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s06-preto",{opacity:1,duration:0.6,ease:"sine.in"},16.62);
+tl.fromTo("#s06-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.52);
+tl.to("#s06-t0",{opacity:0,duration:0.4,ease:"power2.in"},7.35);
+tl.fromTo("#s06-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},9.47);
+tl.to("#s06-t1",{opacity:0,duration:0.4,ease:"power2.in"},16.77);
+tl.set({}, {}, 17.22);
 window.__timelines["s06"] = tl;
 </script>
 </template>

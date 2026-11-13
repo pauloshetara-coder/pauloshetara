@@ -46,6 +46,7 @@
 <div id="s13-bg0" class="bg cover" style="z-index:1"><img id="s13-bg0-m" src="assets/img/campinas_1880.jpg" alt=""></div>
 <div id="s13-bg1" class="bg cover" style="z-index:2"><img id="s13-bg1-m" src="assets/img/punicao_santana.jpg" alt=""></div>
 <div id="s13-vin" class="vin" style="z-index:20"></div>
+<div id="s13-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s13-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s13-t0" class="t data">9 DE DEZEMBRO DE 1835</div>
 <div id="s13-t1" class="t lista"><p id="s13-t1-l0">As autoridades</p><p id="s13-t1-l1">O vigário</p><p id="s13-t1-l2">O sacristão</p><p id="s13-t1-l3">O carrasco</p><p id="s13-t1-l4">A Guarda Nacional</p><p id="s13-t1-l5">A cavalaria</p><p id="s13-t1-l6" class="forte">ELESBÃO</p></div>
@@ -55,24 +56,28 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s13-bg0",{opacity:1},0);
-tl.set("#s13-bg0",{opacity:0},20.34);
-tl.fromTo("#s13-bg0-m",{scale:1.06,x:40},{scale:1.18,x:-40,duration:20.34,ease:"none"},0.00);
-tl.fromTo("#s13-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},19.54);
-tl.fromTo("#s13-bg1-m",{scale:1.06,x:-40},{scale:1.18,x:40,duration:19.54,ease:"none"},19.54);
+tl.set("#s13-bg0",{opacity:0},19.68);
+tl.set("#s13-bg0-m",{transformOrigin:"70% 35%"},0);
+tl.fromTo("#s13-bg0-m",{scale:1.28,x:60},{scale:1.06,x:-60,duration:19.68,ease:"sine.inOut"},0.00);
+tl.fromTo("#s13-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},18.88);
+tl.set("#s13-bg1-m",{transformOrigin:"35% 65%"},0);
+tl.fromTo("#s13-bg1-m",{scale:1.04,x:-60},{scale:1.28,x:60,duration:18.88,ease:"sine.inOut"},18.88);
+tl.fromTo("#s13-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s13-preto",{opacity:1,duration:0.6,ease:"sine.in"},37.15);
 tl.fromTo("#s13-t0",{opacity:0,scale:1.12},{opacity:1,scale:1,duration:1.2,ease:"power3.out"},0.00);
-tl.to("#s13-t0",{opacity:0,duration:0.4,ease:"power2.in"},6.63);
-tl.set("#s13-t1",{opacity:1},7.82);
-tl.fromTo("#s13-t1-l0",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},7.82);
-tl.fromTo("#s13-t1-l1",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},10.63);
-tl.fromTo("#s13-t1-l2",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},13.45);
-tl.fromTo("#s13-t1-l3",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},16.27);
-tl.fromTo("#s13-t1-l4",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},19.09);
-tl.fromTo("#s13-t1-l5",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},21.90);
-tl.fromTo("#s13-t1-l6",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},24.72);
-tl.to("#s13-t1",{opacity:0,duration:0.4,ease:"power2.in"},27.74);
-tl.fromTo("#s13-t2",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},29.31);
-tl.to("#s13-t2",{opacity:0,duration:0.4,ease:"power2.in"},38.63);
-tl.set({}, {}, 39.08);
+tl.to("#s13-t0",{opacity:0,duration:0.4,ease:"power2.in"},6.39);
+tl.set("#s13-t1",{opacity:1},7.55);
+tl.fromTo("#s13-t1-l0",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},7.55);
+tl.fromTo("#s13-t1-l1",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},10.27);
+tl.fromTo("#s13-t1-l2",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},12.99);
+tl.fromTo("#s13-t1-l3",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},15.71);
+tl.fromTo("#s13-t1-l4",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},18.42);
+tl.fromTo("#s13-t1-l5",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},21.14);
+tl.fromTo("#s13-t1-l6",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},23.86);
+tl.to("#s13-t1",{opacity:0,duration:0.4,ease:"power2.in"},26.78);
+tl.fromTo("#s13-t2",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},28.31);
+tl.to("#s13-t2",{opacity:0,duration:0.4,ease:"power2.in"},37.30);
+tl.set({}, {}, 37.75);
 window.__timelines["s13"] = tl;
 </script>
 </template>

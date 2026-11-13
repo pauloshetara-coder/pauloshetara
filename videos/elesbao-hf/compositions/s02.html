@@ -45,6 +45,7 @@
 <div id="s02" class="" data-composition-id="s02" data-width="1920" data-height="1080" data-layout-allow-overlap>
 <div id="s02-bg0" class="bg cover" style="z-index:1"><img id="s02-bg0-m" src="assets/img/debret_escravidao.jpg" alt=""></div>
 <div id="s02-vin" class="vin" style="z-index:20"></div>
+<div id="s02-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s02-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s02-t0" class="t kicker">Novembro · Mês da Consciência Negra</div>
 <div id="s02-t1" class="t frase">Uma história que o Brasil tentou esquecer</div>
@@ -53,12 +54,15 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s02-bg0",{opacity:1},0);
-tl.fromTo("#s02-bg0-m",{scale:1.06,x:40},{scale:1.18,x:-40,duration:12.53,ease:"none"},0.00);
-tl.fromTo("#s02-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.50);
-tl.to("#s02-t0",{opacity:0,duration:0.4,ease:"power2.in"},6.49);
-tl.fromTo("#s02-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},6.26);
-tl.to("#s02-t1",{opacity:0,duration:0.4,ease:"power2.in"},12.08);
-tl.set({}, {}, 12.53);
+tl.set("#s02-bg0-m",{transformOrigin:"35% 65%"},0);
+tl.fromTo("#s02-bg0-m",{scale:1.04,x:60},{scale:1.28,x:-60,duration:13.13,ease:"sine.inOut"},0.00);
+tl.fromTo("#s02-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s02-preto",{opacity:1,duration:0.6,ease:"sine.in"},12.53);
+tl.fromTo("#s02-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.53);
+tl.to("#s02-t0",{opacity:0,duration:0.4,ease:"power2.in"},6.82);
+tl.fromTo("#s02-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},6.57);
+tl.to("#s02-t1",{opacity:0,duration:0.4,ease:"power2.in"},12.68);
+tl.set({}, {}, 13.13);
 window.__timelines["s02"] = tl;
 </script>
 </template>

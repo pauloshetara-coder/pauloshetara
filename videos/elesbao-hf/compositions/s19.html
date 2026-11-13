@@ -45,6 +45,7 @@
 <div id="s19" class="" data-composition-id="s19" data-width="1920" data-height="1080" data-layout-allow-overlap>
 <div id="s19-bg0" class="bg cover" style="z-index:1"><img id="s19-bg0-m" src="assets/img/punicao_santana.jpg" alt=""></div>
 <div id="s19-vin" class="vin" style="z-index:20"></div>
+<div id="s19-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s19-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s19-t0" class="t frase">O que mudou? E o que ainda não mudou?</div>
 <div id="s19-t1" class="t titulo">ELESBÃO<small>† Campinas, 9 de dezembro de 1835</small></div>
@@ -53,11 +54,14 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s19-bg0",{opacity:1},0);
-tl.fromTo("#s19-bg0-m",{scale:1.06,x:40},{scale:1.18,x:-40,duration:32.07,ease:"none"},0.00);
-tl.fromTo("#s19-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},8.02);
-tl.to("#s19-t0",{opacity:0,duration:0.4,ease:"power2.in"},19.48);
-tl.fromTo("#s19-t1",{opacity:0,scale:1.12},{opacity:1,scale:1,duration:1.2,ease:"power3.out"},23.09);
-tl.set({}, {}, 32.07);
+tl.set("#s19-bg0-m",{transformOrigin:"35% 65%"},0);
+tl.fromTo("#s19-bg0-m",{scale:1.28,x:60},{scale:1.06,x:-60,duration:31.15,ease:"sine.inOut"},0.00);
+tl.fromTo("#s19-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s19-preto",{opacity:1,duration:0.6,ease:"sine.in"},30.55);
+tl.fromTo("#s19-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},7.79);
+tl.to("#s19-t0",{opacity:0,duration:0.4,ease:"power2.in"},18.91);
+tl.fromTo("#s19-t1",{opacity:0,scale:1.12},{opacity:1,scale:1,duration:1.2,ease:"power3.out"},22.43);
+tl.set({}, {}, 31.15);
 window.__timelines["s19"] = tl;
 </script>
 </template>

@@ -46,6 +46,7 @@
 <div id="s08-bg0" class="bg portrait" style="z-index:1"><img id="s08-bg0-m" src="assets/img/negros_novos.jpg" alt=""></div>
 <div id="s08-bg1" class="bg portrait" style="z-index:2"><img id="s08-bg1-m" src="assets/img/zumbi_parreiras.jpg" alt=""></div>
 <div id="s08-vin" class="vin" style="z-index:20"></div>
+<div id="s08-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s08-sombra" class="sombra" style="z-index:21"></div>
 <div id="s08-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s08-t0" class="t bloco"><b>QUILOMBO</b><span>Inquérito de 11 de agosto de 1831</span></div>
@@ -55,15 +56,17 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s08-bg0",{opacity:1},0);
-tl.set("#s08-bg0",{opacity:0},13.53);
-tl.fromTo("#s08-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:13.53,ease:"none"},0.00);
-tl.fromTo("#s08-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},12.73);
-tl.fromTo("#s08-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:12.73,ease:"none"},12.73);
+tl.set("#s08-bg0",{opacity:0},13.50);
+tl.fromTo("#s08-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:13.50,ease:"none"},0.00);
+tl.fromTo("#s08-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},12.70);
+tl.fromTo("#s08-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:12.70,ease:"none"},12.70);
+tl.fromTo("#s08-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s08-preto",{opacity:1,duration:0.6,ease:"sine.in"},24.79);
 tl.fromTo("#s08-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},1.27);
-tl.to("#s08-t0",{opacity:0,duration:0.4,ease:"power2.in"},12.33);
-tl.fromTo("#s08-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},14.77);
-tl.to("#s08-t1",{opacity:0,duration:0.4,ease:"power2.in"},25.01);
-tl.set({}, {}, 25.46);
+tl.to("#s08-t0",{opacity:0,duration:0.4,ease:"power2.in"},12.29);
+tl.fromTo("#s08-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},14.73);
+tl.to("#s08-t1",{opacity:0,duration:0.4,ease:"power2.in"},24.94);
+tl.set({}, {}, 25.39);
 window.__timelines["s08"] = tl;
 </script>
 </template>

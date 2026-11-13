@@ -43,16 +43,23 @@
 .creditos small{display:block;margin-top:70px;font-family:'Inter',sans-serif;font-size:28px;color:#a99a85}
 </style>
 <div id="s14" class="" data-composition-id="s14" data-width="1920" data-height="1080" data-layout-allow-overlap>
+<div id="s14-bg0" class="bg cover" style="z-index:1"><img id="s14-bg0-m" src="assets/img/punicao_publica.jpg" alt=""></div>
 <div id="s14-vin" class="vin" style="z-index:20"></div>
+<div id="s14-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s14-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s14-t0" class="t sentenca"><p>“Adendo a sentença, declaro que depois do réu sofrer a pena de morte cortar-se-ão as mãos e a cabeça, esta será remetida para a Vila de Jundiaí, e ali colocada num poste em lugar público…”</p><em>— Trecho da sentença, 1835</em></div>
 </div>
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
-tl.fromTo("#s14-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},5.12);
-tl.to("#s14-t0",{opacity:0,duration:0.4,ease:"power2.in"},27.99);
-tl.set({}, {}, 28.44);
+tl.set("#s14-bg0",{opacity:1},0);
+tl.set("#s14-bg0-m",{transformOrigin:"65% 55%"},0);
+tl.fromTo("#s14-bg0-m",{scale:1.28,x:60},{scale:1.06,x:-60,duration:28.73,ease:"sine.inOut"},0.00);
+tl.fromTo("#s14-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s14-preto",{opacity:1,duration:0.6,ease:"sine.in"},28.13);
+tl.fromTo("#s14-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},5.17);
+tl.to("#s14-t0",{opacity:0,duration:0.4,ease:"power2.in"},28.28);
+tl.set({}, {}, 28.73);
 window.__timelines["s14"] = tl;
 </script>
 </template>

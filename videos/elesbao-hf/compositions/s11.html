@@ -45,6 +45,7 @@
 <div id="s11" class="" data-composition-id="s11" data-width="1920" data-height="1080" data-layout-allow-overlap>
 <div id="s11-bg0" class="bg portrait" style="z-index:1"><img id="s11-bg0-m" src="assets/img/punicao_fouet.jpg" alt=""></div>
 <div id="s11-vin" class="vin" style="z-index:20"></div>
+<div id="s11-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s11-sombra" class="sombra" style="z-index:21"></div>
 <div id="s11-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s11-t0" class="t bloco"><b>CONDENADOS À MORTE</b><span>a pedido da Câmara de Vereadores de Campinas</span></div>
@@ -55,14 +56,16 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s11-bg0",{opacity:1},0);
-tl.fromTo("#s11-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:19.43,ease:"none"},0.00);
-tl.fromTo("#s11-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.58);
-tl.to("#s11-t0",{opacity:0,duration:0.4,ease:"power2.in"},7.76);
-tl.fromTo("#s11-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},8.74);
-tl.to("#s11-t1",{opacity:0,duration:0.4,ease:"power2.in"},15.14);
-tl.fromTo("#s11-t2",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},15.54);
-tl.to("#s11-t2",{opacity:0,duration:0.4,ease:"power2.in"},18.98);
-tl.set({}, {}, 19.43);
+tl.fromTo("#s11-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:18.58,ease:"none"},0.00);
+tl.fromTo("#s11-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s11-preto",{opacity:1,duration:0.6,ease:"sine.in"},17.98);
+tl.fromTo("#s11-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.56);
+tl.to("#s11-t0",{opacity:0,duration:0.4,ease:"power2.in"},7.40);
+tl.fromTo("#s11-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},8.36);
+tl.to("#s11-t1",{opacity:0,duration:0.4,ease:"power2.in"},14.46);
+tl.fromTo("#s11-t2",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},14.86);
+tl.to("#s11-t2",{opacity:0,duration:0.4,ease:"power2.in"},18.13);
+tl.set({}, {}, 18.58);
 window.__timelines["s11"] = tl;
 </script>
 </template>

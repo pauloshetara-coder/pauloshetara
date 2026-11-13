@@ -46,6 +46,7 @@
 <div id="s07-bg0" class="bg portrait" style="z-index:1"><img id="s07-bg0-m" src="assets/img/feitores.jpg" alt=""></div>
 <div id="s07-bg1" class="bg portrait" style="z-index:2"><img id="s07-bg1-m" src="assets/img/colhendo_cafe.jpg" alt=""></div>
 <div id="s07-vin" class="vin" style="z-index:20"></div>
+<div id="s07-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s07-sombra" class="sombra" style="z-index:21"></div>
 <div id="s07-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s07-t0" class="t bloco"><b>ENGENHO ROMÃO</b><span>propriedade do capitão Luiz José de Oliveira</span></div>
@@ -55,15 +56,17 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s07-bg0",{opacity:1},0);
-tl.set("#s07-bg0",{opacity:0},11.51);
-tl.fromTo("#s07-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:11.51,ease:"none"},0.00);
-tl.fromTo("#s07-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},10.71);
-tl.fromTo("#s07-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:10.71,ease:"none"},10.71);
-tl.fromTo("#s07-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.64);
-tl.to("#s07-t0",{opacity:0,duration:0.4,ease:"power2.in"},12.45);
-tl.fromTo("#s07-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},16.70);
-tl.to("#s07-t1",{opacity:0,duration:0.4,ease:"power2.in"},20.96);
-tl.set({}, {}, 21.41);
+tl.set("#s07-bg0",{opacity:0},11.12);
+tl.fromTo("#s07-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:11.12,ease:"none"},0.00);
+tl.fromTo("#s07-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},10.31);
+tl.fromTo("#s07-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:10.31,ease:"none"},10.31);
+tl.fromTo("#s07-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s07-preto",{opacity:1,duration:0.6,ease:"sine.in"},20.03);
+tl.fromTo("#s07-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.62);
+tl.to("#s07-t0",{opacity:0,duration:0.4,ease:"power2.in"},11.98);
+tl.fromTo("#s07-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},16.09);
+tl.to("#s07-t1",{opacity:0,duration:0.4,ease:"power2.in"},20.18);
+tl.set({}, {}, 20.63);
 window.__timelines["s07"] = tl;
 </script>
 </template>

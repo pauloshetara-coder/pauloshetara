@@ -46,7 +46,7 @@ CENAS = {
  "s08": dict(bg=[("img","negros_novos","portrait"),("img","zumbi_parreiras","portrait")], txt=[
      ("bloco","QUILOMBO|Inquérito de 11 de agosto de 1831",0.05,0.5),
      ("bloco","PALMARES|Zumbi — Antônio Parreiras (pintura)",0.58,1.0)]),
- "s09": dict(bg=[], txt=[
+ "s09": dict(bg=[("img","debret_escravidao","cover")], txt=[
      ("data","20 DE MAIO DE 1831",0.03,0.4),
      ("versus","A versão das autoridades|Elesbão e Narciso mataram o capitão|Elesbão|afirmou ser inocente",0.42,1.0)]),
  "s10": dict(bg=[("img","navio_negreiro","cover")], txt=[
@@ -63,7 +63,7 @@ CENAS = {
      ("data","9 DE DEZEMBRO DE 1835",0.0,0.18),
      ("lista","As autoridades|O vigário|O sacristão|O carrasco|A Guarda Nacional|A cavalaria|ELESBÃO",0.2,0.72),
      ("frase","Vários senhores mandaram seus escravizados assistirem.",0.75,1.0)]),
- "s14": dict(bg=[], txt=[
+ "s14": dict(bg=[("img","punicao_publica","cover")], txt=[
      ("sentenca","“Adendo a sentença, declaro que depois do réu sofrer a pena de morte cortar-se-ão as mãos e a cabeça, esta será remetida para a Vila de Jundiaí, e ali colocada num poste em lugar público…”|— Trecho da sentença, 1835",0.18,1.0)]),
  "s15": dict(bg=[("img","tronco","cover"),("img","punicao_fouet","portrait")], txt=[
      ("frase","O objetivo era o medo.",0.03,0.4),
@@ -196,12 +196,20 @@ def cena_html(sid, D, spec):
             js.append(f'tl.set("#{lid}",{{opacity:0}},{start + d:.2f});')
         if kind == "img":
             if modo == "cover":
-                dirx = [-40, 40][k % 2]
-                js.append(f'tl.fromTo("#{lid}-m",{{scale:1.06,x:{-dirx}}},{{scale:1.18,x:{dirx},duration:{d:.2f},ease:"none"}},{start:.2f});')
+                h = sum(map(ord, sid + name))
+                ox, oy = [(30,40),(70,35),(50,60),(35,65),(65,55),(50,30)][h % 6]
+                zin = (h // 6) % 2 == 0
+                s0, s1 = (1.04, 1.28) if zin else (1.28, 1.06)
+                dx = [-60, 60][k % 2]
+                js.append(f'tl.set("#{lid}-m",{{transformOrigin:"{ox}% {oy}%"}},0);')
+                js.append(f'tl.fromTo("#{lid}-m",{{scale:{s0},x:{-dx}}},{{scale:{s1},x:{dx},duration:{d:.2f},ease:"sine.inOut"}},{start:.2f});')
             else:
                 js.append(f'tl.fromTo("#{lid}-m",{{scale:1.0,y:10}},{{scale:1.07,y:-10,duration:{d:.2f},ease:"none"}},{start:.2f});')
     portrait = any(m == "portrait" for _, _, m in bg)
     camadas.append(f'<div id="{sid}-vin" class="vin" style="z-index:20"></div>')
+    camadas.append(f'<div id="{sid}-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>')
+    js.append(f'tl.fromTo("#{sid}-preto",{{opacity:1}},{{opacity:0,duration:0.7,ease:"sine.out"}},0);')
+    js.append(f'tl.to("#{sid}-preto",{{opacity:1,duration:0.6,ease:"sine.in"}},{D-0.6:.2f});')
     if portrait:
         camadas.append(f'<div id="{sid}-sombra" class="sombra" style="z-index:21"></div>')
     textos = []
@@ -297,16 +305,26 @@ TOTAL = round(t, 2)
 captions = f"""<template>
 <style>
 #legendas{{position:absolute;inset:0}}
+#grao{{position:absolute;inset:-60px;opacity:.13;mix-blend-mode:overlay;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}}
+#flick{{position:absolute;inset:0;background:#000;opacity:0}}
 #legendas .cap{{position:absolute;left:0;right:0;bottom:96px;text-align:center;opacity:0;overflow:visible}}
 #legendas .cap span{{display:inline-block;max-width:1500px;padding:10px 26px;background:rgba(8,6,5,.62);border-radius:6px;font-family:'Inter',sans-serif;font-weight:700;font-size:44px;line-height:1.25;color:#fff}}
 </style>
-<div id="legendas" data-composition-id="legendas" data-width="1920" data-height="1080">
+<div id="legendas" data-composition-id="legendas" data-width="1920" data-height="1080" data-layout-allow-overflow>
+<div id="grao" data-layout-ignore></div><div id="flick" data-layout-ignore></div>
 {chr(10).join(caps)}
 </div>
 <script>
 const tl = gsap.timeline({{ paused: true }});
 {chr(10).join(cap_js)}
-tl.set({{}}, {{}}, {TOTAL:.2f});
+const grao = document.getElementById("grao"), flick = document.getElementById("flick");
+const hash = (n) => {{ let x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); }};
+const proxy = {{ p: 0 }};
+tl.to(proxy, {{ p: 1, duration: {TOTAL:.2f}, ease: "none", onUpdate: () => {{
+  const f = Math.floor(proxy.p * {TOTAL:.2f} * 12);
+  grao.style.transform = `translate(${{(hash(f) - 0.5) * 120}}px, ${{(hash(f + 999) - 0.5) * 120}}px)`;
+  flick.style.opacity = (hash(f * 7 + 3) * 0.07).toFixed(3);
+}} }}, 0);
 window.__timelines["legendas"] = tl;
 </script>
 </template>

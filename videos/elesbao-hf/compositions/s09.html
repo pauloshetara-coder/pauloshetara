@@ -43,7 +43,9 @@
 .creditos small{display:block;margin-top:70px;font-family:'Inter',sans-serif;font-size:28px;color:#a99a85}
 </style>
 <div id="s09" class="" data-composition-id="s09" data-width="1920" data-height="1080" data-layout-allow-overlap>
+<div id="s09-bg0" class="bg cover" style="z-index:1"><img id="s09-bg0-m" src="assets/img/debret_escravidao.jpg" alt=""></div>
 <div id="s09-vin" class="vin" style="z-index:20"></div>
+<div id="s09-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s09-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s09-t0" class="t data">20 DE MAIO DE 1831</div>
 <div id="s09-t1" class="t versus"><div><b>A versão das autoridades</b><span>Elesbão e Narciso mataram o capitão</span></div><div><b>Elesbão</b><span>afirmou ser inocente</span></div></div>
@@ -51,11 +53,16 @@
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
-tl.fromTo("#s09-t0",{opacity:0,scale:1.12},{opacity:1,scale:1,duration:1.2,ease:"power3.out"},0.88);
-tl.to("#s09-t0",{opacity:0,duration:0.4,ease:"power2.in"},11.34);
-tl.fromTo("#s09-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},12.33);
-tl.to("#s09-t1",{opacity:0,duration:0.4,ease:"power2.in"},28.90);
-tl.set({}, {}, 29.35);
+tl.set("#s09-bg0",{opacity:1},0);
+tl.set("#s09-bg0-m",{transformOrigin:"65% 55%"},0);
+tl.fromTo("#s09-bg0-m",{scale:1.28,x:60},{scale:1.06,x:-60,duration:29.58,ease:"sine.inOut"},0.00);
+tl.fromTo("#s09-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s09-preto",{opacity:1,duration:0.6,ease:"sine.in"},28.98);
+tl.fromTo("#s09-t0",{opacity:0,scale:1.12},{opacity:1,scale:1,duration:1.2,ease:"power3.out"},0.89);
+tl.to("#s09-t0",{opacity:0,duration:0.4,ease:"power2.in"},11.43);
+tl.fromTo("#s09-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},12.42);
+tl.to("#s09-t1",{opacity:0,duration:0.4,ease:"power2.in"},29.13);
+tl.set({}, {}, 29.58);
 window.__timelines["s09"] = tl;
 </script>
 </template>

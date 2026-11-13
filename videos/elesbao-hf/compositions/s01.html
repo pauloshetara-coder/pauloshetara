@@ -45,6 +45,7 @@
 <div id="s01" class="" data-composition-id="s01" data-width="1920" data-height="1080" data-layout-allow-overlap>
 <div id="s01-bg0" class="bg cover" style="z-index:1"><img id="s01-bg0-m" src="assets/img/punicao_santana.jpg" alt=""></div>
 <div id="s01-vin" class="vin" style="z-index:20"></div>
+<div id="s01-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s01-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s01-t0" class="t kicker">Campinas · 9 de dezembro de 1835</div>
 <div id="s01-t1" class="t rotulo"><span>Ilustração: punição pública no Rio de Janeiro — J. M. Rugendas, c. 1835</span></div>
@@ -54,14 +55,17 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s01-bg0",{opacity:1},0);
-tl.fromTo("#s01-bg0-m",{scale:1.06,x:40},{scale:1.18,x:-40,duration:34.30,ease:"none"},0.00);
-tl.fromTo("#s01-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.69);
-tl.to("#s01-t0",{opacity:0,duration:0.4,ease:"power2.in"},14.01);
-tl.fromTo("#s01-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},15.09);
-tl.to("#s01-t1",{opacity:0,duration:0.4,ease:"power2.in"},20.18);
-tl.fromTo("#s01-t2",{opacity:0,scale:1.12},{opacity:1,scale:1,duration:1.2,ease:"power3.out"},21.27);
-tl.to("#s01-t2",{opacity:0,duration:0.4,ease:"power2.in"},33.85);
-tl.set({}, {}, 34.30);
+tl.set("#s01-bg0-m",{transformOrigin:"30% 40%"},0);
+tl.fromTo("#s01-bg0-m",{scale:1.04,x:60},{scale:1.28,x:-60,duration:35.07,ease:"sine.inOut"},0.00);
+tl.fromTo("#s01-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s01-preto",{opacity:1,duration:0.6,ease:"sine.in"},34.47);
+tl.fromTo("#s01-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.70);
+tl.to("#s01-t0",{opacity:0,duration:0.4,ease:"power2.in"},14.33);
+tl.fromTo("#s01-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},15.43);
+tl.to("#s01-t1",{opacity:0,duration:0.4,ease:"power2.in"},20.64);
+tl.fromTo("#s01-t2",{opacity:0,scale:1.12},{opacity:1,scale:1,duration:1.2,ease:"power3.out"},21.74);
+tl.to("#s01-t2",{opacity:0,duration:0.4,ease:"power2.in"},34.62);
+tl.set({}, {}, 35.07);
 window.__timelines["s01"] = tl;
 </script>
 </template>

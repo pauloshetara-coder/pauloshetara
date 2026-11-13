@@ -46,6 +46,7 @@
 <div id="s03-bg0" class="bg cover" style="z-index:1"><img id="s03-bg0-m" src="assets/img/mapa_cabinda.jpg" alt=""></div>
 <div id="s03-bg1" class="bg cover" style="z-index:2"><img id="s03-bg1-m" src="assets/img/mapa_congo_angola.jpg" alt=""></div>
 <div id="s03-vin" class="vin" style="z-index:20"></div>
+<div id="s03-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s03-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s03-t0" class="t kicker">África Central · Costa de Loango</div>
 <div id="s03-t1" class="t rotulo"><span>CABINDA — porto de embarque, ao norte do rio Congo</span></div>
@@ -54,15 +55,19 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s03-bg0",{opacity:1},0);
-tl.set("#s03-bg0",{opacity:0},13.87);
-tl.fromTo("#s03-bg0-m",{scale:1.06,x:40},{scale:1.18,x:-40,duration:13.87,ease:"none"},0.00);
-tl.fromTo("#s03-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},13.06);
-tl.fromTo("#s03-bg1-m",{scale:1.06,x:-40},{scale:1.18,x:40,duration:13.06,ease:"none"},13.06);
-tl.fromTo("#s03-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.78);
-tl.to("#s03-t0",{opacity:0,duration:0.4,ease:"power2.in"},12.66);
-tl.fromTo("#s03-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},13.06);
-tl.to("#s03-t1",{opacity:0,duration:0.4,ease:"power2.in"},25.68);
-tl.set({}, {}, 26.13);
+tl.set("#s03-bg0",{opacity:0},13.40);
+tl.set("#s03-bg0-m",{transformOrigin:"50% 60%"},0);
+tl.fromTo("#s03-bg0-m",{scale:1.04,x:60},{scale:1.28,x:-60,duration:13.40,ease:"sine.inOut"},0.00);
+tl.fromTo("#s03-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},12.60);
+tl.set("#s03-bg1-m",{transformOrigin:"50% 30%"},0);
+tl.fromTo("#s03-bg1-m",{scale:1.28,x:-60},{scale:1.06,x:60,duration:12.60,ease:"sine.inOut"},12.60);
+tl.fromTo("#s03-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s03-preto",{opacity:1,duration:0.6,ease:"sine.in"},24.60);
+tl.fromTo("#s03-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.76);
+tl.to("#s03-t0",{opacity:0,duration:0.4,ease:"power2.in"},12.20);
+tl.fromTo("#s03-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},12.60);
+tl.to("#s03-t1",{opacity:0,duration:0.4,ease:"power2.in"},24.75);
+tl.set({}, {}, 25.20);
 window.__timelines["s03"] = tl;
 </script>
 </template>

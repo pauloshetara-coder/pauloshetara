@@ -45,6 +45,7 @@
 <div id="s04" class="" data-composition-id="s04" data-width="1920" data-height="1080" data-layout-allow-overlap>
 <div id="s04-bg0" class="bg cover" style="z-index:1"><img id="s04-bg0-m" src="assets/img/navio_negreiro.jpg" alt=""></div>
 <div id="s04-vin" class="vin" style="z-index:20"></div>
+<div id="s04-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s04-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s04-t0" class="t kicker">A travessia do Atlântico</div>
 <div id="s04-t1" class="t numero"><b>≈ 4,8 milhões</b><span>de africanos desembarcados no Brasil (estimativa)</span></div>
@@ -53,12 +54,15 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s04-bg0",{opacity:1},0);
-tl.fromTo("#s04-bg0-m",{scale:1.06,x:40},{scale:1.18,x:-40,duration:31.08,ease:"none"},0.00);
-tl.fromTo("#s04-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.93);
-tl.to("#s04-t0",{opacity:0,duration:0.4,ease:"power2.in"},13.59);
-tl.fromTo("#s04-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},19.27);
-tl.to("#s04-t1",{opacity:0,duration:0.4,ease:"power2.in"},30.63);
-tl.set({}, {}, 31.08);
+tl.set("#s04-bg0-m",{transformOrigin:"30% 40%"},0);
+tl.fromTo("#s04-bg0-m",{scale:1.28,x:60},{scale:1.06,x:-60,duration:31.59,ease:"sine.inOut"},0.00);
+tl.fromTo("#s04-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s04-preto",{opacity:1,duration:0.6,ease:"sine.in"},30.99);
+tl.fromTo("#s04-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.95);
+tl.to("#s04-t0",{opacity:0,duration:0.4,ease:"power2.in"},13.82);
+tl.fromTo("#s04-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},19.59);
+tl.to("#s04-t1",{opacity:0,duration:0.4,ease:"power2.in"},31.14);
+tl.set({}, {}, 31.59);
 window.__timelines["s04"] = tl;
 </script>
 </template>

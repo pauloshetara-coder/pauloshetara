@@ -46,6 +46,7 @@
 <div id="s16-bg0" class="bg portrait" style="z-index:1"><img id="s16-bg0-m" src="assets/img/luiz_gama.jpg" alt=""></div>
 <div id="s16-bg1" class="bg portrait" style="z-index:2"><img id="s16-bg1-m" src="assets/img/zumbi_parreiras.jpg" alt=""></div>
 <div id="s16-vin" class="vin" style="z-index:20"></div>
+<div id="s16-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s16-sombra" class="sombra" style="z-index:21"></div>
 <div id="s16-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s16-t0" class="t frase">Mas o medo não venceu.</div>
@@ -55,15 +56,17 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s16-bg0",{opacity:1},0);
-tl.set("#s16-bg0",{opacity:0},13.04);
-tl.fromTo("#s16-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:13.04,ease:"none"},0.00);
-tl.fromTo("#s16-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},12.24);
-tl.fromTo("#s16-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:12.24,ease:"none"},12.24);
-tl.fromTo("#s16-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.49);
-tl.to("#s16-t0",{opacity:0,duration:0.4,ease:"power2.in"},6.94);
-tl.fromTo("#s16-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},11.02);
-tl.to("#s16-t1",{opacity:0,duration:0.4,ease:"power2.in"},24.03);
-tl.set({}, {}, 24.48);
+tl.set("#s16-bg0",{opacity:0},13.73);
+tl.fromTo("#s16-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:13.73,ease:"none"},0.00);
+tl.fromTo("#s16-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},12.93);
+tl.fromTo("#s16-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:12.93,ease:"none"},12.93);
+tl.fromTo("#s16-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s16-preto",{opacity:1,duration:0.6,ease:"sine.in"},25.25);
+tl.fromTo("#s16-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.52);
+tl.to("#s16-t0",{opacity:0,duration:0.4,ease:"power2.in"},7.35);
+tl.fromTo("#s16-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},11.63);
+tl.to("#s16-t1",{opacity:0,duration:0.4,ease:"power2.in"},25.40);
+tl.set({}, {}, 25.85);
 window.__timelines["s16"] = tl;
 </script>
 </template>

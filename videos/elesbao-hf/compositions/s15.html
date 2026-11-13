@@ -46,6 +46,7 @@
 <div id="s15-bg0" class="bg cover" style="z-index:1"><img id="s15-bg0-m" src="assets/img/tronco.jpg" alt=""></div>
 <div id="s15-bg1" class="bg portrait" style="z-index:2"><img id="s15-bg1-m" src="assets/img/punicao_fouet.jpg" alt=""></div>
 <div id="s15-vin" class="vin" style="z-index:20"></div>
+<div id="s15-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s15-sombra" class="sombra" style="z-index:21"></div>
 <div id="s15-txt" style="position:absolute;inset:0;z-index:30">
 <div id="s15-t0" class="t frase">O objetivo era o medo.</div>
@@ -55,19 +56,22 @@
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#s15-bg0",{opacity:1},0);
-tl.set("#s15-bg0",{opacity:0},15.28);
-tl.fromTo("#s15-bg0-m",{scale:1.06,x:40},{scale:1.18,x:-40,duration:15.28,ease:"none"},0.00);
-tl.fromTo("#s15-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},14.47);
-tl.fromTo("#s15-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:14.47,ease:"none"},14.47);
-tl.fromTo("#s15-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.87);
-tl.to("#s15-t0",{opacity:0,duration:0.4,ease:"power2.in"},11.18);
-tl.set("#s15-t1",{opacity:1},17.95);
-tl.fromTo("#s15-t1-l0",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},17.95);
-tl.fromTo("#s15-t1-l1",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},20.54);
-tl.fromTo("#s15-t1-l2",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},23.12);
-tl.fromTo("#s15-t1-l3",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},25.71);
-tl.to("#s15-t1",{opacity:0,duration:0.4,ease:"power2.in"},28.50);
-tl.set({}, {}, 28.95);
+tl.set("#s15-bg0",{opacity:0},14.45);
+tl.set("#s15-bg0-m",{transformOrigin:"50% 60%"},0);
+tl.fromTo("#s15-bg0-m",{scale:1.04,x:60},{scale:1.28,x:-60,duration:14.45,ease:"sine.inOut"},0.00);
+tl.fromTo("#s15-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},13.64);
+tl.fromTo("#s15-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:13.64,ease:"none"},13.64);
+tl.fromTo("#s15-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
+tl.to("#s15-preto",{opacity:1,duration:0.6,ease:"sine.in"},26.69);
+tl.fromTo("#s15-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.82);
+tl.to("#s15-t0",{opacity:0,duration:0.4,ease:"power2.in"},10.52);
+tl.set("#s15-t1",{opacity:1},16.92);
+tl.fromTo("#s15-t1-l0",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},16.92);
+tl.fromTo("#s15-t1-l1",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},19.35);
+tl.fromTo("#s15-t1-l2",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},21.78);
+tl.fromTo("#s15-t1-l3",{opacity:0,x:-30},{opacity:1,x:0,duration:0.45,ease:"power3.out"},24.21);
+tl.to("#s15-t1",{opacity:0,duration:0.4,ease:"power2.in"},26.84);
+tl.set({}, {}, 27.29);
 window.__timelines["s15"] = tl;
 </script>
 </template>
