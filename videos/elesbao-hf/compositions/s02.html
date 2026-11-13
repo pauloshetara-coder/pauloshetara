@@ -47,7 +47,7 @@
 <div id="s02-vin" class="vin" style="z-index:20"></div>
 <div id="s02-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="s02-txt" style="position:absolute;inset:0;z-index:30">
-<div id="s02-t0" class="t kicker">Novembro · Mês da Consciência Negra</div>
+<div id="s02-t0" class="t bloco largo"><b>DOIS HOMENS NEGROS</b><span>chamados Elesbão · esta é a história do primeiro</span></div>
 <div id="s02-t1" class="t frase">Uma história que o Brasil tentou esquecer</div>
 </div>
 </div>
@@ -55,14 +55,14 @@
 const tl = gsap.timeline({ paused: true });
 tl.set("#s02-bg0",{opacity:1},0);
 tl.set("#s02-bg0-m",{transformOrigin:"35% 65%"},0);
-tl.fromTo("#s02-bg0-m",{scale:1.04,x:60},{scale:1.28,x:-60,duration:13.13,ease:"sine.inOut"},0.00);
+tl.fromTo("#s02-bg0-m",{scale:1.04,x:60},{scale:1.28,x:-60,duration:16.38,ease:"sine.inOut"},0.00);
 tl.fromTo("#s02-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
-tl.to("#s02-preto",{opacity:1,duration:0.6,ease:"sine.in"},12.53);
-tl.fromTo("#s02-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.53);
-tl.to("#s02-t0",{opacity:0,duration:0.4,ease:"power2.in"},6.82);
-tl.fromTo("#s02-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},6.57);
-tl.to("#s02-t1",{opacity:0,duration:0.4,ease:"power2.in"},12.68);
-tl.set({}, {}, 13.13);
+tl.to("#s02-preto",{opacity:1,duration:0.6,ease:"sine.in"},15.78);
+tl.fromTo("#s02-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},1.97);
+tl.to("#s02-t0",{opacity:0,duration:0.4,ease:"power2.in"},8.61);
+tl.fromTo("#s02-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},9.83);
+tl.to("#s02-t1",{opacity:0,duration:0.4,ease:"power2.in"},15.93);
+tl.set({}, {}, 16.38);
 window.__timelines["s02"] = tl;
 </script>
 </template>

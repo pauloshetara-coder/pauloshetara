@@ -21,31 +21,13 @@ TAIL = 0.9   # respiro depois da voz
 # txt: lista de (estilo, texto, t_ini_rel(0-1 da cena), t_fim_rel)
 # ---------------------------------------------------------------------------
 CENAS = {
- "a1": dict(bg=[("img","santo_elesbao","portrait"),("img","punicao_santana","cover")], extra_lead=0.8, txt=[
-     ("kicker","Novembro · Mês da Consciência Negra",0.03,0.42),
-     ("bloco","UM REI|Axum, século VI",0.25,0.5),
-     ("frase","Dois homens chamados Elesbão",0.55,1.0)]),
- "a2": dict(bg=[("img","aksum_estelas","cover"),("img","aksum_obelisco","cover")], txt=[
-     ("kicker","Reino de Axum · atual Etiópia",0.03,0.45),
-     ("rotulo","Estelas de Axum — de pé há mais de 1.500 anos",0.5,1.0)]),
- "a3": dict(bg=[("img","tumba_kaleb","cover"),("img","mapa_congo_angola","cover")], txt=[
-     ("bloco","KALEB, REI DE AXUM|“Elesbaan” nos textos antigos · Elesbão em português",0.05,0.55),
-     ("bloco","c. 525|expedição pelo Mar Vermelho até o sul da Arábia (atual Iêmen)",0.58,1.0)]),
- "a4": dict(bg=[("img","pentalewon","portrait"),("img","santo_elesbao2","portrait")], txt=[
-     ("bloco","O REI QUE VIROU MONGE|segundo a tradição, enviou a coroa a Jerusalém",0.05,0.5),
-     ("bloco","SANTO ELESBÃO|imagem na Igreja do Rosário dos Pretos, Salvador",0.55,1.0)]),
- "a5": dict(bg=[("img","igreja_rio","portrait"),("img","santo_elesbao","portrait")], txt=[
-     ("bloco","IRMANDADE DE SANTO ELESBÃO E SANTA EFIGÊNIA|Rio de Janeiro · século XVIII",0.08,0.62),
-     ("frase","Um rei negro nos altares",0.68,1.0)]),
- "a6": dict(bg=[("img","mercado_escravos","cover")], txt=[
-     ("kicker","Batismo e novos nomes",0.03,0.45),
-     ("frase","Um nome de rei.",0.62,1.0)]),
- "s01": dict(bg=[("img","punicao_santana","cover")], extra_lead=0.6, txt=[
+ "s01": dict(bg=[("img","punicao_santana","cover")], extra_lead=1.0, txt=[
      ("kicker","Campinas · 9 de dezembro de 1835",0.02,0.42),
      ("rotulo","Ilustração: punição pública no Rio de Janeiro — J. M. Rugendas, c. 1835",0.44,0.6),
      ("titulo","ELESBÃO",0.62,1.0)]),
  "s02": dict(bg=[("img","debret_escravidao","cover")], txt=[
-     ("frase","Uma história que o Brasil tentou esquecer",0.1,1.0)]),
+     ("bloco","DOIS HOMENS NEGROS|chamados Elesbão · esta é a história do primeiro",0.12,0.55),
+     ("frase","Uma história que o Brasil tentou esquecer",0.6,1.0)]),
  "s03": dict(bg=[("img","mapa_cabinda","cover"),("img","mapa_congo_angola","cover")], txt=[
      ("kicker","África Central · Costa de Loango",0.03,0.5),
      ("rotulo","CABINDA — porto de embarque, ao norte do rio Congo",0.5,1.0)]),
@@ -97,9 +79,11 @@ CENAS = {
      ("bloco","O AUTO DO ESCRAVIZADO ELESBÃO|o Extermínio da Juventude Negra · Campinas",0.3,0.66),
      ("bloco","ELESBÃO|livro de Valdir Oliveira · teatro: “Elesbão: um sonho de liberdade”, de Roberto Boni",0.68,1.0)]),
  "s19": dict(bg=[("img","punicao_santana","cover")], txt=[
-     ("frase","Um rei. E um homem que lutou pela liberdade.",0.03,0.3),
-     ("frase","O que mudou? E o que ainda não mudou?",0.36,0.64),
+     ("frase","O que mudou? E o que ainda não mudou?",0.25,0.62),
      ("titulo","ELESBÃO|† Campinas, 9 de dezembro de 1835",0.72,1.0)]),
+ "s19b": dict(bg=[("img","santo_elesbao","portrait")], txt=[
+     ("bloco","O OUTRO ELESBÃO|muitos séculos antes, do outro lado do oceano",0.25,0.75),
+     ("frase","No próximo vídeo do canal.",0.78,1.0)]),
  "s20": dict(bg=[], extra_tail=4.0, txt=[
      ("creditos","Pesquisa e produção|Professor de História|Paulo Shetara",0.0,1.0)]),
 }
