@@ -1,11 +1,11 @@
 # Instruções do projeto
 
-## Link do ebook (obrigatório em todo vídeo de história)
+## Link dos 37 mini e-books (obrigatório em todo vídeo de história)
 
 Sempre que gerar um vídeo de história (roteiro, descrição do YouTube, posts, pacote de publicação),
-inclua o link do ebook exatamente assim, sem pedir e sem usar marcador como `[LINK DO EBOOK]`:
+inclua o link dos e-books exatamente assim (sempre citando que são 37 mini e-books), sem pedir e sem usar marcador como `[LINK DO EBOOK]`:
 
-📚 Quer ir mais fundo? Meu ebook com essas histórias: https://pay.kiwify.com.br/o5YIhPY
+📚 Quer ir mais fundo? São 37 mini e-books com essas histórias: https://pay.kiwify.com.br/o5YIhPY
 
 - Na descrição do YouTube: nas 2 primeiras linhas (antes do "mostrar mais") e repetido no fim.
 - Em posts e legendas de redes sociais: no fim do texto.
