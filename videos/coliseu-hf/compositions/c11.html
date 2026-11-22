@@ -4,7 +4,7 @@
 .bg{position:absolute;inset:0;overflow:hidden}
 .bg img,.bg video{position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover}
 .bg.portrait img{left:auto;right:120px;top:60px;width:820px;height:960px;object-fit:contain;object-position:center}
-.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.30) 30%,rgba(0,0,0,.82) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
+.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.12) 35%,rgba(0,0,0,.75) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
 .sombra{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.75) 40%,rgba(11,9,7,0) 62%)}
 .t{position:absolute;left:150px;right:150px;opacity:0}
 .kicker{top:150px;text-shadow:0 2px 12px #000,0 0 30px #000;font-family:'Oswald',sans-serif;font-size:40px;letter-spacing:.32em;text-transform:uppercase;color:#d9a441}
@@ -43,10 +43,9 @@
 .creditos small{display:block;margin-top:70px;font-family:'Inter',sans-serif;font-size:28px;color:#a99a85}
 </style>
 <div id="c11" class="" data-composition-id="c11" data-width="1920" data-height="1080" data-layout-allow-overlap>
-<div id="c11-bg0" class="bg portrait" style="z-index:1"><img id="c11-bg0-m" src="assets/img/morelli_gladiador.jpg" alt=""></div>
+<div id="c11-bg0" class="bg cover" style="z-index:1"><video id="c11-bg0-m" src="assets/vid/qv_desfile.mp4" muted playsinline class="clip" data-start="0.00" data-duration="18.79" data-playback-rate="0.798" data-track-index="0"></video></div>
 <div id="c11-vin" class="vin" style="z-index:20"></div>
 <div id="c11-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
-<div id="c11-sombra" class="sombra" style="z-index:21"></div>
 <div id="c11-txt" style="position:absolute;inset:0;z-index:30">
 <div id="c11-t0" class="t kicker">Tarde · os gladiadores</div>
 <div id="c11-t1" class="t lista"><p id="c11-t1-l0">Escravizados</p><p id="c11-t1-l1">Prisioneiros de guerra</p><p id="c11-t1-l2">Condenados</p><p id="c11-t1-l3">Homens livres em busca de glória</p></div>
@@ -54,8 +53,8 @@
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
+tl.fromTo("#c11-bg0",{scale:1.0},{scale:1.08,duration:18.79,ease:"none"},0.00);
 tl.set("#c11-bg0",{opacity:1},0);
-tl.fromTo("#c11-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:18.79,ease:"none"},0.00);
 tl.fromTo("#c11-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
 tl.to("#c11-preto",{opacity:1,duration:0.6,ease:"sine.in"},18.19);
 tl.fromTo("#c11-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.56);

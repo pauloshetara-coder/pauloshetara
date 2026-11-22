@@ -4,7 +4,7 @@
 .bg{position:absolute;inset:0;overflow:hidden}
 .bg img,.bg video{position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover}
 .bg.portrait img{left:auto;right:120px;top:60px;width:820px;height:960px;object-fit:contain;object-position:center}
-.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.30) 30%,rgba(0,0,0,.82) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
+.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.12) 35%,rgba(0,0,0,.75) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
 .sombra{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.75) 40%,rgba(11,9,7,0) 62%)}
 .t{position:absolute;left:150px;right:150px;opacity:0}
 .kicker{top:150px;text-shadow:0 2px 12px #000,0 0 30px #000;font-family:'Oswald',sans-serif;font-size:40px;letter-spacing:.32em;text-transform:uppercase;color:#d9a441}
@@ -44,7 +44,7 @@
 </style>
 <div id="c04" class="" data-composition-id="c04" data-width="1920" data-height="1080" data-layout-allow-overlap>
 <div id="c04-bg0" class="bg cover" style="z-index:1"><img id="c04-bg0-m" src="assets/img/lorrain_forum.jpg" alt=""></div>
-<div id="c04-bg1" class="bg cover" style="z-index:2"><img id="c04-bg1-m" src="assets/img/fini_arco_tito.jpg" alt=""></div>
+<div id="c04-bg1" class="bg cover" style="z-index:2"><video id="c04-bg1-m" src="assets/vid/qv_multidao.mp4" muted playsinline class="clip" data-start="13.54" data-duration="13.54" data-playback-rate="1.0" data-track-index="1"></video></div>
 <div id="c04-vin" class="vin" style="z-index:20"></div>
 <div id="c04-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="c04-txt" style="position:absolute;inset:0;z-index:30">
@@ -58,9 +58,8 @@ tl.set("#c04-bg0",{opacity:1},0);
 tl.set("#c04-bg0",{opacity:0},14.35);
 tl.set("#c04-bg0-m",{transformOrigin:"65% 55%"},0);
 tl.fromTo("#c04-bg0-m",{scale:1.28,x:60},{scale:1.06,x:-60,duration:14.35,ease:"sine.inOut"},0.00);
+tl.fromTo("#c04-bg1",{scale:1.0},{scale:1.08,duration:13.54,ease:"none"},13.54);
 tl.fromTo("#c04-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},13.54);
-tl.set("#c04-bg1-m",{transformOrigin:"70% 35%"},0);
-tl.fromTo("#c04-bg1-m",{scale:1.04,x:-60},{scale:1.28,x:60,duration:13.54,ease:"sine.inOut"},13.54);
 tl.fromTo("#c04-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
 tl.to("#c04-preto",{opacity:1,duration:0.6,ease:"sine.in"},26.49);
 tl.fromTo("#c04-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.81);

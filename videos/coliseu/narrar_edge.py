@@ -7,7 +7,7 @@ BASE = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.join(BASE, ".."
 VOZ = "pt-BR-AntonioNeural"; SR = 24000
 TRISTE = {"c09","c10"}
 TENSO = {"c01","c15","c18"}
-EPICO = {"c04","c07","c08","c14","c19"}
+EPICO = {"c04","c07","c08","c14","c19","c21b"}
 SOLENE = {"c02","c17","c20","c21","c22"}
 def humor(sid):
     if sid in TRISTE: return "-14%", "-6Hz", 0.8

@@ -4,7 +4,7 @@
 .bg{position:absolute;inset:0;overflow:hidden}
 .bg img,.bg video{position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover}
 .bg.portrait img{left:auto;right:120px;top:60px;width:820px;height:960px;object-fit:contain;object-position:center}
-.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.30) 30%,rgba(0,0,0,.82) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
+.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.12) 35%,rgba(0,0,0,.75) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
 .sombra{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.75) 40%,rgba(11,9,7,0) 62%)}
 .t{position:absolute;left:150px;right:150px;opacity:0}
 .kicker{top:150px;text-shadow:0 2px 12px #000,0 0 30px #000;font-family:'Oswald',sans-serif;font-size:40px;letter-spacing:.32em;text-transform:uppercase;color:#d9a441}
@@ -43,27 +43,28 @@
 .creditos small{display:block;margin-top:70px;font-family:'Inter',sans-serif;font-size:28px;color:#a99a85}
 </style>
 <div id="c01" class="" data-composition-id="c01" data-width="1920" data-height="1080" data-layout-allow-overlap>
-<div id="c01-bg0" class="bg cover" style="z-index:1"><img id="c01-bg0-m" src="assets/img/relevo_guerreiro.jpg" alt=""></div>
-<div id="c01-bg1" class="bg portrait" style="z-index:2"><img id="c01-bg1-m" src="assets/img/morelli_gladiador.jpg" alt=""></div>
+<div id="c01-bg0" class="bg cover" style="z-index:1"><video id="c01-bg0-m" src="assets/vid/qv_combate2.mp4" muted playsinline class="clip" data-start="0.00" data-duration="14.72" data-playback-rate="1.0" data-track-index="0"></video></div>
+<div id="c01-bg1" class="bg cover" style="z-index:2"><video id="c01-bg1-m" src="assets/vid/qv_nero.mp4" muted playsinline class="clip" data-start="13.92" data-duration="13.92" data-playback-rate="1.0" data-track-index="1"></video></div>
 <div id="c01-vin" class="vin" style="z-index:20"></div>
 <div id="c01-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
-<div id="c01-sombra" class="sombra" style="z-index:21"></div>
 <div id="c01-txt" style="position:absolute;inset:0;z-index:30">
 <div id="c01-t0" class="t titulo">O POLEGAR DESCE</div>
+<div id="c01-t1" class="t rotulo"><span>Cenas do filme “Quo Vadis” (1913), de Enrico Guazzoni — domínio público</span></div>
 </div>
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
+tl.fromTo("#c01-bg0",{scale:1.0},{scale:1.08,duration:14.72,ease:"none"},0.00);
 tl.set("#c01-bg0",{opacity:1},0);
 tl.set("#c01-bg0",{opacity:0},14.72);
-tl.set("#c01-bg0-m",{transformOrigin:"35% 65%"},0);
-tl.fromTo("#c01-bg0-m",{scale:1.28,x:60},{scale:1.06,x:-60,duration:14.72,ease:"sine.inOut"},0.00);
+tl.fromTo("#c01-bg1",{scale:1.0},{scale:1.08,duration:13.92,ease:"none"},13.92);
 tl.fromTo("#c01-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},13.92);
-tl.fromTo("#c01-bg1-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:13.92,ease:"none"},13.92);
 tl.fromTo("#c01-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
 tl.to("#c01-preto",{opacity:1,duration:0.6,ease:"sine.in"},27.24);
 tl.fromTo("#c01-t0",{opacity:0,scale:1.12},{opacity:1,scale:1,duration:1.2,ease:"power3.out"},22.27);
 tl.to("#c01-t0",{opacity:0,duration:0.4,ease:"power2.in"},27.39);
+tl.fromTo("#c01-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.56);
+tl.to("#c01-t1",{opacity:0,duration:0.4,ease:"power2.in"},6.56);
 tl.set({}, {}, 27.84);
 window.__timelines["c01"] = tl;
 </script>

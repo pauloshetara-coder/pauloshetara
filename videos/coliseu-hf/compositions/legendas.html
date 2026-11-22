@@ -180,6 +180,17 @@
 <div id="cap-c21-7" class="cap"><span>de cinquenta mil vozes.</span></div>
 <div id="cap-c21-8" class="cap"><span>E o silêncio de quem nunca voltou</span></div>
 <div id="cap-c21-9" class="cap"><span>da arena.</span></div>
+<div id="cap-c21b-0" class="cap"><span>Se você chegou até aqui, já sabe:</span></div>
+<div id="cap-c21b-1" class="cap"><span>esta história merece ser contada.</span></div>
+<div id="cap-c21b-2" class="cap"><span>Inscreva-se no canal, ative o sininho e</span></div>
+<div id="cap-c21b-3" class="cap"><span>deixe o seu like.</span></div>
+<div id="cap-c21b-4" class="cap"><span>E me conte nos comentários:</span></div>
+<div id="cap-c21b-5" class="cap"><span>se você vivesse em Roma, seria gladiador,</span></div>
+<div id="cap-c21b-6" class="cap"><span>caçador de feras ou ficaria na arquibancada?</span></div>
+<div id="cap-c21b-7" class="cap"><span>E se quiser ir ainda mais fundo,</span></div>
+<div id="cap-c21b-8" class="cap"><span>os trinta e sete mini e-books estão</span></div>
+<div id="cap-c21b-9" class="cap"><span>no link da descrição.</span></div>
+<div id="cap-c21b-10" class="cap"><span>Nos vemos no próximo vídeo!</span></div>
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
@@ -699,11 +710,44 @@ tl.set("#cap-c21-8",{visibility:"hidden"},420.44);
 tl.fromTo("#cap-c21-9",{opacity:0},{opacity:1,duration:0.12},420.44);
 tl.to("#cap-c21-9",{opacity:0,duration:0.1},421.25);
 tl.set("#cap-c21-9",{visibility:"hidden"},421.35);
+tl.fromTo("#cap-c21b-0",{opacity:0},{opacity:1,duration:0.12},422.50);
+tl.to("#cap-c21b-0",{opacity:0,duration:0.1},424.82);
+tl.set("#cap-c21b-0",{visibility:"hidden"},424.92);
+tl.fromTo("#cap-c21b-1",{opacity:0},{opacity:1,duration:0.12},424.97);
+tl.to("#cap-c21b-1",{opacity:0,duration:0.1},426.87);
+tl.set("#cap-c21b-1",{visibility:"hidden"},426.97);
+tl.fromTo("#cap-c21b-2",{opacity:0},{opacity:1,duration:0.12},427.02);
+tl.to("#cap-c21b-2",{opacity:0,duration:0.1},429.10);
+tl.set("#cap-c21b-2",{visibility:"hidden"},429.20);
+tl.fromTo("#cap-c21b-3",{opacity:0},{opacity:1,duration:0.12},429.20);
+tl.to("#cap-c21b-3",{opacity:0,duration:0.1},430.42);
+tl.set("#cap-c21b-3",{visibility:"hidden"},430.52);
+tl.fromTo("#cap-c21b-4",{opacity:0},{opacity:1,duration:0.12},430.57);
+tl.to("#cap-c21b-4",{opacity:0,duration:0.1},432.33);
+tl.set("#cap-c21b-4",{visibility:"hidden"},432.43);
+tl.fromTo("#cap-c21b-5",{opacity:0},{opacity:1,duration:0.12},432.48);
+tl.to("#cap-c21b-5",{opacity:0,duration:0.1},434.90);
+tl.set("#cap-c21b-5",{visibility:"hidden"},435.00);
+tl.fromTo("#cap-c21b-6",{opacity:0},{opacity:1,duration:0.12},435.00);
+tl.to("#cap-c21b-6",{opacity:0,duration:0.1},437.83);
+tl.set("#cap-c21b-6",{visibility:"hidden"},437.93);
+tl.fromTo("#cap-c21b-7",{opacity:0},{opacity:1,duration:0.12},438.28);
+tl.to("#cap-c21b-7",{opacity:0,duration:0.1},439.81);
+tl.set("#cap-c21b-7",{visibility:"hidden"},439.91);
+tl.fromTo("#cap-c21b-8",{opacity:0},{opacity:1,duration:0.12},439.91);
+tl.to("#cap-c21b-8",{opacity:0,duration:0.1},441.58);
+tl.set("#cap-c21b-8",{visibility:"hidden"},441.68);
+tl.fromTo("#cap-c21b-9",{opacity:0},{opacity:1,duration:0.12},441.68);
+tl.to("#cap-c21b-9",{opacity:0,duration:0.1},442.96);
+tl.set("#cap-c21b-9",{visibility:"hidden"},443.06);
+tl.fromTo("#cap-c21b-10",{opacity:0},{opacity:1,duration:0.12},443.11);
+tl.to("#cap-c21b-10",{opacity:0,duration:0.1},444.94);
+tl.set("#cap-c21b-10",{visibility:"hidden"},445.04);
 const grao = document.getElementById("grao"), flick = document.getElementById("flick");
 const hash = (n) => { let x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
 const proxy = { p: 0 };
-tl.to(proxy, { p: 1, duration: 431.69, ease: "none", onUpdate: () => {
-  const f = Math.floor(proxy.p * 431.69 * 12);
+tl.to(proxy, { p: 1, duration: 455.38, ease: "none", onUpdate: () => {
+  const f = Math.floor(proxy.p * 455.38 * 12);
   grao.style.transform = `translate(${(hash(f) - 0.5) * 120}px, ${(hash(f + 999) - 0.5) * 120}px)`;
   flick.style.opacity = (hash(f * 7 + 3) * 0.07).toFixed(3);
 } }, 0);

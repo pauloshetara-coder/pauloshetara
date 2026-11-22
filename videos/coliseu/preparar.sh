@@ -14,7 +14,7 @@ s=min(1.0, 2200/max(w,h)) if max(w,h)>2200 else 1.0
 if s<1: im=im.resize((int(w*s),int(h*s)), Image.LANCZOS)
 im.save(sys.argv[2], quality=90)" "$f" "$HF/img/$n.jpg"
 done
-for f in assets/vid/*; do
+for f in assets/vid/*.webm assets/vid/*.ogv; do
   [ -s "$f" ] || continue
   case "$f" in *.txt) continue;; esac
   n=$(basename "${f%.*}")

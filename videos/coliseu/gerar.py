@@ -21,31 +21,32 @@ TAIL = 0.9   # respiro depois da voz
 # txt: lista de (estilo, texto, t_ini_rel(0-1 da cena), t_fim_rel)
 # ---------------------------------------------------------------------------
 CENAS = {
- "c01": dict(bg=[("img","d27|relevo_guerreiro","cover"),("img","d28|morelli_gladiador","portrait")], extra_lead=0.8, txt=[
-     ("titulo","O POLEGAR DESCE",0.8,1.0)]),
+ "c01": dict(bg=[("img","d27|qv_combate2","cover"),("img","d28|qv_nero","cover")], extra_lead=0.8, txt=[
+     ("titulo","O POLEGAR DESCE",0.8,1.0),
+     ("rotulo","Cenas do filme “Quo Vadis” (1913), de Enrico Guazzoni — domínio público",0.02,0.25)]),
  "c02": dict(bg=[("img","d01|piranesi_vista","cover")], txt=[
      ("titulo","UM DIA NO COLISEU|Roma · ano 80 d.C.",0.3,1.0)]),
  "c03": dict(bg=[("img","d03|denario_tito_cab","portrait"),("img","d01|piranesi_arco","cover")], txt=[
      ("bloco","ANFITEATRO FLÁVIO|iniciado por Vespasiano (c. 70) · inaugurado por Tito (80)",0.05,0.6),
      ("numero","100 dias|de jogos na inauguração",0.64,1.0)]),
- "c04": dict(bg=[("img","d04|lorrain_forum","cover"),("img","d05|fini_arco_tito","cover")], txt=[
+ "c04": dict(bg=[("img","d04|lorrain_forum","cover"),("img","d05|qv_multidao","cover")], txt=[
      ("kicker","Amanhecer · os romanos chegam",0.03,0.4),
      ("numero","≈ 50.000|espectadores · 80 entradas",0.7,1.0)]),
- "c05": dict(bg=[("img","d06|piranesi_interior","cover")], txt=[
+ "c05": dict(bg=[("img","d06|qv_publico","cover"),("img","piranesi_interior","cover")], txt=[
      ("lista","Senadores — junto à arena|Cavaleiros|Cidadãos|No alto: pobres, escravizados e mulheres",0.12,1.0)]),
  "c06": dict(bg=[("img","d07|catel_interior_c","cover")], txt=[
      ("bloco","VELÁRIO|toldo manobrado por marinheiros da frota imperial",0.1,1.0)]),
- "c07": dict(bg=[("img","d08|delacroix_leao","cover"),("img","d26|delacroix_cavaleiro","cover"),("img","d09|delacroix_leao","cover")], txt=[
+ "c07": dict(bg=[("img","d08|qv_leoes","cover"),("img","d26|delacroix_leao","cover")], txt=[
      ("kicker","Manhã · as feras",0.03,0.35)]),
  "c08": dict(bg=[("img","d10|piranesi_jaulas","cover"),("img","d11|piranesi_interior","cover")], txt=[
      ("bloco","HIPOGEU|túneis, jaulas e elevadores sob a arena",0.08,1.0)]),
- "c09": dict(bg=[("img","d12|robert_ruinas","cover")], txt=[
+ "c09": dict(bg=[("img","d12|qv_cristaos_entram","cover")], txt=[
      ("kicker","Meio-dia · as execuções",0.03,0.4),
      ("frase","“Não há mais luta. Há apenas matança.” — Sêneca",0.5,1.0)]),
- "c10": dict(bg=[("img","d29|courtois_martires","cover")], txt=[
+ "c10": dict(bg=[("img","d29|qv_cristaos_arena","cover"),("img","courtois_martires","cover")], txt=[
      ("bloco","OS MÁRTIRES CRISTÃOS|perseguidos e executados em espetáculos públicos",0.08,0.6),
      ("rotulo","Santos Abdão e Seném sepultam mártires cristãos — G. Courtois, c. 1656",0.62,1.0)]),
- "c11": dict(bg=[("img","d16|morelli_gladiador","portrait")], txt=[
+ "c11": dict(bg=[("img","d16|qv_desfile","cover")], txt=[
      ("kicker","Tarde · os gladiadores",0.03,0.35),
      ("lista","Escravizados|Prisioneiros de guerra|Condenados|Homens livres em busca de glória",0.38,1.0)]),
  "c12": dict(bg=[("img","d13|fini_arco_tito","cover"),("img","d15|relevo_guerreiro","cover")], txt=[
@@ -53,16 +54,16 @@ CENAS = {
      ("lista","Mirmilão × Trácio|Reciário × Secutor",0.6,1.0)]),
  "c13": dict(bg=[("img","d20|piranesi_vista","cover")], txt=[
      ("bloco","37 MINI E-BOOKS|grandes civilizações e seus mistérios · link na descrição",0.1,1.0)]),
- "c14": dict(bg=[("img","d17|delacroix_cavaleiro","cover"),("img","d19|relevo_guerreiro","cover")], txt=[]),
- "c15": dict(bg=[("img","d18|morelli_gladiador","portrait"),("img","d27|denario_tito_cab","portrait")], txt=[
+ "c14": dict(bg=[("img","d17|qv_combate1","cover")], txt=[]),
+ "c15": dict(bg=[("img","d18|qv_camarote","cover"),("img","d27|qv_aplausos2","cover")], txt=[
      ("frase","A vida dele está nas mãos do povo",0.35,0.7)]),
  "c16": dict(bg=[("img","pollice|relevo_guerreiro","cover")], txt=[
      ("frase","Nem todo combate terminava em morte",0.6,1.0)]),
- "c17": dict(bg=[("img","d02|piranesi_interior","cover"),("img","d16|catel_interior_c","cover")], txt=[
+ "c17": dict(bg=[("img","d02|qv_saudacao","cover"),("img","d16|qv_combate2","cover")], txt=[
      ("bloco","PRISCO × VERO|jogos de inauguração · relato do poeta Marcial",0.05,0.7)]),
  "c18": dict(bg=[("img","d21|relevo_guerreiro","cover")], txt=[
      ("frase","No mesmo instante, os dois erguem o dedo.",0.6,1.0)]),
- "c19": dict(bg=[("img","d22|denario_tito_cab","portrait"),("img","d23|piranesi_vista","cover")], txt=[
+ "c19": dict(bg=[("img","d22|denario_tito_cab","portrait"),("img","d23|qv_aplausos1","cover")], txt=[
      ("titulo","LIVRES",0.6,1.0)]),
  "c20": dict(bg=[("img","d24|robert_ruinas","cover"),("img","d30|foto_1846_c","cover")], txt=[
      ("bloco","1749|o papa Bento XIV consagra o Coliseu aos mártires cristãos",0.35,0.75),
@@ -70,6 +71,10 @@ CENAS = {
  "c21": dict(bg=[("img","d25|piranesi_arco","cover"),("img","d31|foto_1846_c","cover")], txt=[
      ("bloco","PATRIMÔNIO DA HUMANIDADE|uma das Sete Maravilhas do Mundo Moderno · milhões de visitantes por ano",0.08,0.55),
      ("frase","Cada pedra ouviu cinquenta mil vozes",0.66,1.0)]),
+ "c21b": dict(bg=[("img","d02|qv_publico","cover"),("img","piranesi_vista","cover")], txt=[
+     ("bloco","INSCREVA-SE|ative o sininho · deixe o seu like",0.03,0.35),
+     ("frase","Gladiador, caçador ou arquibancada? Comente!",0.38,0.72),
+     ("bloco","37 MINI E-BOOKS|link na descrição",0.74,1.0)]),
  "c22": dict(bg=[], extra_tail=4.0, txt=[
      ("creditos","Pesquisa e produção|Professor de História|Paulo Shetara",0.0,1.0)]),
 }
@@ -82,6 +87,9 @@ def asset(kind, name):
                     if os.path.exists(os.path.join(OUT, f"assets/{d0}/{alt}{ext}")):
                         return f"assets/{d0}/{alt}{ext}"
         name = name.split("|")[-1]
+    for d0, ext in (("img", ".jpg"), ("vid", ".mp4")):
+        if os.path.exists(os.path.join(OUT, f"assets/{d0}/{name}{ext}")):
+            return f"assets/{d0}/{name}{ext}"
     d = "img" if kind == "img" else "vid"
     for ext in (".jpg", ".mp4"):
         p = f"assets/{d}/{name}{ext}"
@@ -104,7 +112,7 @@ CSS_COMUM = """
 .bg{position:absolute;inset:0;overflow:hidden}
 .bg img,.bg video{position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover}
 .bg.portrait img{left:auto;right:120px;top:60px;width:820px;height:960px;object-fit:contain;object-position:center}
-.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.30) 30%,rgba(0,0,0,.82) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
+.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.12) 35%,rgba(0,0,0,.75) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
 .sombra{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.75) 40%,rgba(11,9,7,0) 62%)}
 .t{position:absolute;left:150px;right:150px;opacity:0}
 .kicker{top:150px;text-shadow:0 2px 12px #000,0 0 30px #000;font-family:'Oswald',sans-serif;font-size:40px;letter-spacing:.32em;text-transform:uppercase;color:#d9a441}
@@ -162,7 +170,7 @@ def texto_html(sid, i, estilo, txt):
         inner = f"<p>{esc(parts[0])}</p><em>{esc(parts[1])}</em>"
     elif estilo == "creditos":
         inner = (f"<i>{esc(parts[0])}</i><span>{esc(parts[1])}</span><b>{esc(parts[2])}</b>"
-                 "<small>Obras de domínio público — Art Institute of Chicago (ver descrição) · Narração sintética</small>")
+                 "<small>Cenas do filme Quo Vadis (1913) e obras do Art Institute of Chicago — domínio público · Narração sintética</small>")
     else:
         inner = esc(parts[0])
     return tid, f'<div id="{tid}" class="t {estilo}">{inner}</div>'
@@ -181,7 +189,10 @@ def cena_html(sid, D, spec):
         if kind == "img":
             media = f'<img id="{lid}-m" src="{src}" alt="">'
         else:
-            media = f'<video id="{lid}-m" src="{src}" muted playsinline class="clip" data-start="{start:.2f}" data-duration="{d:.2f}" data-track-index="{k}"></video>'
+            cd = dur(os.path.join(OUT, src))
+            rate = 1.0 if cd >= d else max(0.4, round(cd / d, 3))
+            media = f'<video id="{lid}-m" src="{src}" muted playsinline class="clip" data-start="{start:.2f}" data-duration="{d:.2f}" data-playback-rate="{rate}" data-track-index="{k}"></video>'
+            js.append(f'tl.fromTo("#{lid}",{{scale:1.0}},{{scale:1.08,duration:{d:.2f},ease:"none"}},{start:.2f});')
         camadas.append(f'<div id="{lid}" class="bg {modo}" style="z-index:{k+1}">{media}</div>')
         # fade in (exceto primeira) + Ken Burns
         if k > 0:

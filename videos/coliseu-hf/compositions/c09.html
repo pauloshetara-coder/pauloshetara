@@ -4,7 +4,7 @@
 .bg{position:absolute;inset:0;overflow:hidden}
 .bg img,.bg video{position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover}
 .bg.portrait img{left:auto;right:120px;top:60px;width:820px;height:960px;object-fit:contain;object-position:center}
-.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.30) 30%,rgba(0,0,0,.82) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
+.vin{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.12) 35%,rgba(0,0,0,.75) 100%),linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.65) 100%)}
 .sombra{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.75) 40%,rgba(11,9,7,0) 62%)}
 .t{position:absolute;left:150px;right:150px;opacity:0}
 .kicker{top:150px;text-shadow:0 2px 12px #000,0 0 30px #000;font-family:'Oswald',sans-serif;font-size:40px;letter-spacing:.32em;text-transform:uppercase;color:#d9a441}
@@ -43,7 +43,7 @@
 .creditos small{display:block;margin-top:70px;font-family:'Inter',sans-serif;font-size:28px;color:#a99a85}
 </style>
 <div id="c09" class="" data-composition-id="c09" data-width="1920" data-height="1080" data-layout-allow-overlap>
-<div id="c09-bg0" class="bg cover" style="z-index:1"><img id="c09-bg0-m" src="assets/img/robert_ruinas.jpg" alt=""></div>
+<div id="c09-bg0" class="bg cover" style="z-index:1"><video id="c09-bg0-m" src="assets/vid/qv_cristaos_entram.mp4" muted playsinline class="clip" data-start="0.00" data-duration="21.04" data-playback-rate="0.951" data-track-index="0"></video></div>
 <div id="c09-vin" class="vin" style="z-index:20"></div>
 <div id="c09-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
 <div id="c09-txt" style="position:absolute;inset:0;z-index:30">
@@ -53,9 +53,8 @@
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
+tl.fromTo("#c09-bg0",{scale:1.0},{scale:1.08,duration:21.04,ease:"none"},0.00);
 tl.set("#c09-bg0",{opacity:1},0);
-tl.set("#c09-bg0-m",{transformOrigin:"50% 60%"},0);
-tl.fromTo("#c09-bg0-m",{scale:1.04,x:60},{scale:1.28,x:-60,duration:21.04,ease:"sine.inOut"},0.00);
 tl.fromTo("#c09-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
 tl.to("#c09-preto",{opacity:1,duration:0.6,ease:"sine.in"},20.44);
 tl.fromTo("#c09-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.63);
