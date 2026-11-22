@@ -46,6 +46,12 @@ Gere estas 3 primeiro. Depois, em cada cena com o personagem, **anexe a ficha de
 | ★ d23 | Liberdade | [PRISCO] and [VERO] each holding a palm branch and a wooden sword (rudis), helmets off, faces exhausted but proud, crowd cheering, golden light |
 | d24 | Fim | The Colosseum at dusk as the crowd leaves, the empty arena with footprints in the sand |
 | ★ d25 | Hoje | The Colosseum today at sunset, tourists in the distance, ruined arches glowing orange, slow and melancholic mood |
+| ★ d26 | Gladiador × fera | A bestiarius gladiator with a spear and small shield fighting a huge lion on the arena sand, lion mid-leap, crowd on its feet screaming in ecstasy |
+| ★ d27 | O polegar | [VERO] wounded on the sand, helmet fallen, one hand raised asking for mercy, looking up toward the imperial box; [PRISCO] standing over him with sword lowered |
+| ★ d28 | O polegar | Close-up of [TITO] in the imperial box extending his arm with his thumb turned, intense face, crowd blurred behind him |
+| ★ d29 | Cristãos | A small group of early Christians — men, women and an old man — kneeling in prayer together in the middle of the arena, guards at the gates, crowd in the stands, solemn light (no gore, no blood) |
+| d30 | Via-Sacra | The illuminated Colosseum at night during the Good Friday Way of the Cross, a large cross and candles, crowd of faithful praying |
+| ★ d31 | Hoje | Tourists visiting the Colosseum in Rome on a sunny day today, people taking photos, the Italian flag, modern Rome around it |
 
-**Total:** 3 fichas + 25 cenas (14 ★).
+**Total:** 3 fichas + 31 cenas (19 ★).
 Se o Dola recusar alguma imagem, me diga qual que eu reescrevo.

@@ -5,12 +5,16 @@ import numpy as np, soundfile as sf, edge_tts, edge_tts.communicate as c
 c._SSL_CTX = ssl.create_default_context(cafile=os.environ.get("SSL_CERT_FILE", "/root/.ccr/ca-bundle.crt"))
 BASE = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.join(BASE, "..", "coliseu-hf", "assets", "voz")
 VOZ = "pt-BR-AntonioNeural"; SR = 24000
-TRISTE = {"c09","c20"}
-SOLENE = {"c01","c17","c18","c19","c21"}
+TRISTE = {"c09","c10"}
+TENSO = {"c01","c15","c18"}
+EPICO = {"c04","c07","c08","c14","c19"}
+SOLENE = {"c02","c17","c20","c21","c22"}
 def humor(sid):
     if sid in TRISTE: return "-14%", "-6Hz", 0.8
-    if sid in SOLENE: return "-9%", "-3Hz", 0.55
-    return "-5%", "-2Hz", 0.4
+    if sid in TENSO: return "-10%", "-3Hz", 0.7
+    if sid in EPICO: return "+6%", "+3Hz", 0.3
+    if sid in SOLENE: return "-8%", "-3Hz", 0.55
+    return "-3%", "-1Hz", 0.4
 async def tts(texto, rate, pitch, tries=4):
     for i in range(tries):
         try:
@@ -40,7 +44,7 @@ async def main():
                 print("curta, refazendo:", f[:40], round(len(a)/SR,2), flush=True)
             parts.append(a); marcas.append([f, round(t,3), round(t+len(a)/SR,3)]); t += len(a)/SR
             p = pausa
-            if len(f.split()) <= 4: p += 0.35 if sid in TRISTE else 0.15
+            if len(f.split()) <= 4: p += 0.45 if sid in (TRISTE | TENSO) else 0.12
             if f.endswith("?"): p += 0.3
             parts.append(np.zeros(int(SR*p), dtype=np.float32)); t += int(SR*p)/SR
         audio = np.concatenate(parts[:-1])

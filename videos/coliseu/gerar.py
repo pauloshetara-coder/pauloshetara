@@ -21,59 +21,57 @@ TAIL = 0.9   # respiro depois da voz
 # txt: lista de (estilo, texto, t_ini_rel(0-1 da cena), t_fim_rel)
 # ---------------------------------------------------------------------------
 CENAS = {
- "c01": dict(bg=[("img","d02|pollice","cover"),("img","d01|interior","cover")], extra_lead=0.8, txt=[
-     ("kicker","Roma · ano 80 d.C.",0.03,0.4),
-     ("titulo","UM DIA NO COLISEU|batalha, fato e mito",0.66,1.0)]),
- "c02": dict(bg=[("img","d17|ave","cover")], txt=[
-     ("frase","Do amanhecer ao último combate",0.15,1.0)]),
+ "c01": dict(bg=[("img","d27|pollice","cover"),("img","d28|pollice","cover")], extra_lead=0.8, txt=[
+     ("titulo","O POLEGAR DESCE",0.8,1.0)]),
+ "c02": dict(bg=[("img","d01|interior","cover")], txt=[
+     ("titulo","UM DIA NO COLISEU|Roma · ano 80 d.C.",0.3,1.0)]),
  "c03": dict(bg=[("img","d03|tito","portrait"),("img","d01|interior","cover")], txt=[
      ("bloco","ANFITEATRO FLÁVIO|iniciado por Vespasiano (c. 70) · inaugurado por Tito (80)",0.05,0.6),
      ("numero","100 dias|de jogos na inauguração",0.64,1.0)]),
  "c04": dict(bg=[("img","d04|interior","cover"),("img","d05|interior","cover")], txt=[
-     ("numero","≈ 50.000|espectadores · ~48 m de altura · 80 entradas",0.08,0.62),
-     ("rotulo","Fichas com portão, setor e fileira",0.66,1.0)]),
+     ("kicker","Amanhecer · os romanos chegam",0.03,0.4),
+     ("numero","≈ 50.000|espectadores · 80 entradas",0.7,1.0)]),
  "c05": dict(bg=[("img","d06|pollice","cover")], txt=[
      ("lista","Senadores — junto à arena|Cavaleiros|Cidadãos|No alto: pobres, escravizados e mulheres",0.12,1.0)]),
  "c06": dict(bg=[("img","d07|interior","cover")], txt=[
      ("bloco","VELÁRIO|toldo manobrado por marinheiros da frota imperial",0.1,1.0)]),
- "c07": dict(bg=[("img","d08|zliten_feras","cover"),("img","d09|zliten_feras","cover")], txt=[
-     ("kicker","Manhã · as caçadas (venationes)",0.03,0.45),
-     ("rotulo","Mosaico de Zliten (Líbia), séc. II — caçadas e gladiadores",0.5,1.0)]),
+ "c07": dict(bg=[("img","d08|zliten_feras","cover"),("img","d26|zliten_feras","cover"),("img","d09|zliten_feras","cover")], txt=[
+     ("kicker","Manhã · as feras",0.03,0.35)]),
  "c08": dict(bg=[("img","d10|hipogeu","cover"),("img","d11|hipogeu","cover")], txt=[
-     ("bloco","HIPOGEU|túneis, jaulas e elevadores · construído sob Domiciano",0.08,1.0)]),
+     ("bloco","HIPOGEU|túneis, jaulas e elevadores sob a arena",0.08,1.0)]),
  "c09": dict(bg=[("img","d12|martires","cover")], txt=[
      ("kicker","Meio-dia · as execuções",0.03,0.4),
-     ("frase","“Não há mais luta. Há apenas matança.” — Sêneca",0.45,1.0)]),
- "c10": dict(bg=[("img","d16|ave","cover")], txt=[
-     ("kicker","Tarde · os gladiadores (munus)",0.03,0.35),
-     ("lista","Escravizados|Prisioneiros de guerra|Condenados|Voluntários livres (auctorati)",0.38,1.0)]),
- "c11": dict(bg=[("img","d13|ludus","cover")], txt=[
-     ("bloco","LUDUS MAGNUS|a maior escola de gladiadores de Roma, ao lado do Coliseu",0.08,1.0)]),
- "c12": dict(bg=[("img","d14|zliten","cover")], txt=[
-     ("bloco","CEVADA E FEIJÃO|ossos de gladiadores de Éfeso revelam a dieta",0.08,0.65),
-     ("frase","Nada de corpos “secos” de cinema",0.68,1.0)]),
- "c13": dict(bg=[("img","d15|zliten","cover")], txt=[
-     ("lista","Mirmilão — escudo grande|Trácio — espada curva|Reciário — rede e tridente|Secutor — capacete liso",0.12,1.0)]),
- "c14": dict(bg=[("img","d20|pollice","cover")], txt=[
+     ("frase","“Não há mais luta. Há apenas matança.” — Sêneca",0.5,1.0)]),
+ "c10": dict(bg=[("img","d29|martires","cover"),("img","martires","cover")], txt=[
+     ("bloco","OS MÁRTIRES CRISTÃOS|perseguidos e executados em espetáculos públicos",0.08,0.6),
+     ("rotulo","“A última prece dos mártires cristãos” — J.-L. Gérôme, 1883",0.62,1.0)]),
+ "c11": dict(bg=[("img","d16|ave","cover")], txt=[
+     ("kicker","Tarde · os gladiadores",0.03,0.35),
+     ("lista","Escravizados|Prisioneiros de guerra|Condenados|Homens livres em busca de glória",0.38,1.0)]),
+ "c12": dict(bg=[("img","d13|ludus","cover"),("img","d15|zliten","cover")], txt=[
+     ("bloco","LUDUS MAGNUS|a maior escola de gladiadores de Roma",0.05,0.45),
+     ("lista","Mirmilão × Trácio|Reciário × Secutor",0.6,1.0)]),
+ "c13": dict(bg=[("img","d20|pollice","cover")], txt=[
      ("bloco","37 MINI E-BOOKS|grandes civilizações e seus mistérios · link na descrição",0.1,1.0)]),
- "c15": dict(bg=[("img","ave","cover")], txt=[
-     ("kicker","Mito nº 1",0.03,0.4),
-     ("frase","“Ave, César, os que vão morrer te saúdam”",0.25,0.7),
-     ("rotulo","Um único relato: prisioneiros numa batalha naval, sob Cláudio (Suetônio)",0.72,1.0)]),
+ "c14": dict(bg=[("img","d17|ave","cover"),("img","d19|pollice","cover")], txt=[]),
+ "c15": dict(bg=[("img","d18|pollice","cover"),("img","d27|pollice","cover")], txt=[
+     ("frase","A vida dele está nas mãos do povo",0.35,0.7)]),
  "c16": dict(bg=[("img","pollice","cover")], txt=[
-     ("kicker","Mito nº 2",0.03,0.35),
-     ("rotulo","“Pollice Verso” — Jean-Léon Gérôme, 1872",0.38,0.65),
-     ("frase","Nem todo combate terminava em morte",0.68,1.0)]),
- "c17": dict(bg=[("img","d16|ave","cover"),("img","d17|pollice","cover")], txt=[
-     ("bloco","PRISCO × VERO|jogos de inauguração · ano 80 · relato do poeta Marcial",0.05,0.6)]),
- "c18": dict(bg=[("img","d18|pollice","cover"),("img","d19|ave","cover")], txt=[
+     ("rotulo","“Pollice Verso” — Jean-Léon Gérôme, 1872",0.05,0.5),
+     ("frase","Nem todo combate terminava em morte",0.6,1.0)]),
+ "c17": dict(bg=[("img","d02|ave","cover"),("img","d16|ave","cover")], txt=[
+     ("bloco","PRISCO × VERO|jogos de inauguração · relato do poeta Marcial",0.05,0.7)]),
+ "c18": dict(bg=[("img","d21|pollice","cover")], txt=[
      ("frase","No mesmo instante, os dois erguem o dedo.",0.6,1.0)]),
  "c19": dict(bg=[("img","d22|tito","portrait"),("img","d23|interior","cover")], txt=[
-     ("bloco","A PALMA E A ESPADA DE MADEIRA|os dois vencem · os dois saem livres",0.1,0.7),
-     ("titulo","LIVRES",0.72,1.0)]),
- "c20": dict(bg=[("img","d24|interior","cover"),("img","d25|hipogeu","cover")], txt=[
-     ("frase","Cada pedra ouviu cinquenta mil vozes",0.55,1.0)]),
- "c21": dict(bg=[], extra_tail=4.0, txt=[
+     ("titulo","LIVRES",0.6,1.0)]),
+ "c20": dict(bg=[("img","d24|interior","cover"),("img","d30|interior","cover")], txt=[
+     ("bloco","1749|o papa Bento XIV consagra o Coliseu aos mártires cristãos",0.35,0.75),
+     ("rotulo","Via-Sacra da Sexta-Feira Santa",0.78,1.0)]),
+ "c21": dict(bg=[("img","d25|interior","cover"),("img","d31|interior","cover")], txt=[
+     ("bloco","PATRIMÔNIO DA HUMANIDADE|uma das Sete Maravilhas do Mundo Moderno · milhões de visitantes por ano",0.08,0.55),
+     ("frase","Cada pedra ouviu cinquenta mil vozes",0.66,1.0)]),
+ "c22": dict(bg=[], extra_tail=4.0, txt=[
      ("creditos","Pesquisa e produção|Professor de História|Paulo Shetara",0.0,1.0)]),
 }
 
@@ -230,7 +228,7 @@ def cena_html(sid, D, spec):
                 js.append(f'tl.to("#{tid}",{{opacity:0,duration:0.4,ease:"power2.in"}},{t1-0.4:.2f});')
         else:
             js.append(f'tl.fromTo("#{tid}",{{opacity:0,y:30}},{{opacity:1,y:0,duration:0.8,ease:"power3.out"}},{t0:.2f});')
-            if sid != "c21":
+            if sid != "c22":
                 js.append(f'tl.to("#{tid}",{{opacity:0,duration:0.4,ease:"power2.in"}},{t1-0.4:.2f});')
     cls = ""
     if not portrait:
@@ -285,7 +283,7 @@ for idx, sid in enumerate(ordem):
     hosts.append(f'<div id="{sid}" data-composition-id="{sid}" data-composition-src="compositions/{sid}.html" data-start="{t:.2f}" data-duration="{D:.2f}" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>')
     audios.append(f'<audio id="voz-{sid}" class="clip" src="{voz}" data-start="{t+lead:.2f}" data-duration="{vd:.2f}" data-track-index="3" data-volume="1"></audio>')
     # legendas proporcionais por caracteres
-    if sid != "c21":
+    if sid != "c22":
         marcas = json.load(open(os.path.join(OUT, f"assets/voz/{sid}.json")))
         lista = []
         for frase, a, b in marcas:
