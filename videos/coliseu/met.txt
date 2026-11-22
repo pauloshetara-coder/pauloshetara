@@ -1,0 +1,17 @@
+coliseu_ducros|334465|https://images.metmuseum.org/CRDImages/dp/original/DT5700.jpg
+coliseu_wilson|361965|https://images.metmuseum.org/CRDImages/dp/original/DP805244.jpg
+coliseu_interior|336460|https://images.metmuseum.org/CRDImages/dp/original/DP809677.jpg
+coliseu_kaisermann|384518|https://images.metmuseum.org/CRDImages/dp/original/DP806202.jpg
+reconstrucao|336156|https://images.metmuseum.org/CRDImages/dp/original/DP800268.jpg
+reconstrucao_interior|403241|https://images.metmuseum.org/CRDImages/dp/original/DP870389.jpg
+coliseu_remond|438670|https://images.metmuseum.org/CRDImages/ep/original/DP150998.jpg
+coliseu_foto1856|287727|https://images.metmuseum.org/CRDImages/ph/original/DP143536.jpg
+taca_gladiadores|245397|https://images.metmuseum.org/CRDImages/gr/original/DP104755.jpg
+gema_leao|253833|https://images.metmuseum.org/CRDImages/gr/original/DP111339.jpg
+relevo_gladiadores|254934|https://images.metmuseum.org/CRDImages/gr/original/DT336181.jpg
+lampada_capacete|251783|https://images.metmuseum.org/CRDImages/gr/original/DP-14287-099.jpg
+estatueta_gladiador|248365|https://images.metmuseum.org/CRDImages/gr/original/DP105838.jpg
+gladiador_ferido|338358|https://images.metmuseum.org/CRDImages/dp/original/DP808053.jpg
+moeda_tito|246878|https://images.metmuseum.org/CRDImages/gr/original/SF9935165f.jpg
+tito_cavalo|400902|https://images.metmuseum.org/CRDImages/dp/original/DP857115.jpg
+martires|819341|https://images.metmuseum.org/CRDImages/dp/original/DP884286.jpg

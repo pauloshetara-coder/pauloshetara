@@ -21,54 +21,53 @@ TAIL = 0.9   # respiro depois da voz
 # txt: lista de (estilo, texto, t_ini_rel(0-1 da cena), t_fim_rel)
 # ---------------------------------------------------------------------------
 CENAS = {
- "c01": dict(bg=[("img","d27|pollice","cover"),("img","d28|pollice","cover")], extra_lead=0.8, txt=[
+ "c01": dict(bg=[("img","d27|relevo_guerreiro","cover"),("img","d28|morelli_gladiador","portrait")], extra_lead=0.8, txt=[
      ("titulo","O POLEGAR DESCE",0.8,1.0)]),
- "c02": dict(bg=[("img","d01|interior","cover")], txt=[
+ "c02": dict(bg=[("img","d01|piranesi_vista","cover")], txt=[
      ("titulo","UM DIA NO COLISEU|Roma · ano 80 d.C.",0.3,1.0)]),
- "c03": dict(bg=[("img","d03|tito","portrait"),("img","d01|interior","cover")], txt=[
+ "c03": dict(bg=[("img","d03|denario_tito_cab","portrait"),("img","d01|piranesi_arco","cover")], txt=[
      ("bloco","ANFITEATRO FLÁVIO|iniciado por Vespasiano (c. 70) · inaugurado por Tito (80)",0.05,0.6),
      ("numero","100 dias|de jogos na inauguração",0.64,1.0)]),
- "c04": dict(bg=[("img","d04|interior","cover"),("img","d05|interior","cover")], txt=[
+ "c04": dict(bg=[("img","d04|lorrain_forum","cover"),("img","d05|fini_arco_tito","cover")], txt=[
      ("kicker","Amanhecer · os romanos chegam",0.03,0.4),
      ("numero","≈ 50.000|espectadores · 80 entradas",0.7,1.0)]),
- "c05": dict(bg=[("img","d06|pollice","cover")], txt=[
+ "c05": dict(bg=[("img","d06|piranesi_interior","cover")], txt=[
      ("lista","Senadores — junto à arena|Cavaleiros|Cidadãos|No alto: pobres, escravizados e mulheres",0.12,1.0)]),
- "c06": dict(bg=[("img","d07|interior","cover")], txt=[
+ "c06": dict(bg=[("img","d07|catel_interior_c","cover")], txt=[
      ("bloco","VELÁRIO|toldo manobrado por marinheiros da frota imperial",0.1,1.0)]),
- "c07": dict(bg=[("img","d08|zliten_feras","cover"),("img","d26|zliten_feras","cover"),("img","d09|zliten_feras","cover")], txt=[
+ "c07": dict(bg=[("img","d08|delacroix_leao","cover"),("img","d26|delacroix_cavaleiro","cover"),("img","d09|delacroix_leao","cover")], txt=[
      ("kicker","Manhã · as feras",0.03,0.35)]),
- "c08": dict(bg=[("img","d10|hipogeu","cover"),("img","d11|hipogeu","cover")], txt=[
+ "c08": dict(bg=[("img","d10|piranesi_jaulas","cover"),("img","d11|piranesi_interior","cover")], txt=[
      ("bloco","HIPOGEU|túneis, jaulas e elevadores sob a arena",0.08,1.0)]),
- "c09": dict(bg=[("img","d12|martires","cover")], txt=[
+ "c09": dict(bg=[("img","d12|robert_ruinas","cover")], txt=[
      ("kicker","Meio-dia · as execuções",0.03,0.4),
      ("frase","“Não há mais luta. Há apenas matança.” — Sêneca",0.5,1.0)]),
- "c10": dict(bg=[("img","d29|martires","cover"),("img","martires","cover")], txt=[
+ "c10": dict(bg=[("img","d29|courtois_martires","cover")], txt=[
      ("bloco","OS MÁRTIRES CRISTÃOS|perseguidos e executados em espetáculos públicos",0.08,0.6),
-     ("rotulo","“A última prece dos mártires cristãos” — J.-L. Gérôme, 1883",0.62,1.0)]),
- "c11": dict(bg=[("img","d16|ave","cover")], txt=[
+     ("rotulo","Santos Abdão e Seném sepultam mártires cristãos — G. Courtois, c. 1656",0.62,1.0)]),
+ "c11": dict(bg=[("img","d16|morelli_gladiador","portrait")], txt=[
      ("kicker","Tarde · os gladiadores",0.03,0.35),
      ("lista","Escravizados|Prisioneiros de guerra|Condenados|Homens livres em busca de glória",0.38,1.0)]),
- "c12": dict(bg=[("img","d13|ludus","cover"),("img","d15|zliten","cover")], txt=[
+ "c12": dict(bg=[("img","d13|fini_arco_tito","cover"),("img","d15|relevo_guerreiro","cover")], txt=[
      ("bloco","LUDUS MAGNUS|a maior escola de gladiadores de Roma",0.05,0.45),
      ("lista","Mirmilão × Trácio|Reciário × Secutor",0.6,1.0)]),
- "c13": dict(bg=[("img","d20|pollice","cover")], txt=[
+ "c13": dict(bg=[("img","d20|piranesi_vista","cover")], txt=[
      ("bloco","37 MINI E-BOOKS|grandes civilizações e seus mistérios · link na descrição",0.1,1.0)]),
- "c14": dict(bg=[("img","d17|ave","cover"),("img","d19|pollice","cover")], txt=[]),
- "c15": dict(bg=[("img","d18|pollice","cover"),("img","d27|pollice","cover")], txt=[
+ "c14": dict(bg=[("img","d17|delacroix_cavaleiro","cover"),("img","d19|relevo_guerreiro","cover")], txt=[]),
+ "c15": dict(bg=[("img","d18|morelli_gladiador","portrait"),("img","d27|denario_tito_cab","portrait")], txt=[
      ("frase","A vida dele está nas mãos do povo",0.35,0.7)]),
- "c16": dict(bg=[("img","pollice","cover")], txt=[
-     ("rotulo","“Pollice Verso” — Jean-Léon Gérôme, 1872",0.05,0.5),
+ "c16": dict(bg=[("img","pollice|relevo_guerreiro","cover")], txt=[
      ("frase","Nem todo combate terminava em morte",0.6,1.0)]),
- "c17": dict(bg=[("img","d02|ave","cover"),("img","d16|ave","cover")], txt=[
+ "c17": dict(bg=[("img","d02|piranesi_interior","cover"),("img","d16|catel_interior_c","cover")], txt=[
      ("bloco","PRISCO × VERO|jogos de inauguração · relato do poeta Marcial",0.05,0.7)]),
- "c18": dict(bg=[("img","d21|pollice","cover")], txt=[
+ "c18": dict(bg=[("img","d21|relevo_guerreiro","cover")], txt=[
      ("frase","No mesmo instante, os dois erguem o dedo.",0.6,1.0)]),
- "c19": dict(bg=[("img","d22|tito","portrait"),("img","d23|interior","cover")], txt=[
+ "c19": dict(bg=[("img","d22|denario_tito_cab","portrait"),("img","d23|piranesi_vista","cover")], txt=[
      ("titulo","LIVRES",0.6,1.0)]),
- "c20": dict(bg=[("img","d24|interior","cover"),("img","d30|interior","cover")], txt=[
+ "c20": dict(bg=[("img","d24|robert_ruinas","cover"),("img","d30|foto_1846_c","cover")], txt=[
      ("bloco","1749|o papa Bento XIV consagra o Coliseu aos mártires cristãos",0.35,0.75),
      ("rotulo","Via-Sacra da Sexta-Feira Santa",0.78,1.0)]),
- "c21": dict(bg=[("img","d25|interior","cover"),("img","d31|interior","cover")], txt=[
+ "c21": dict(bg=[("img","d25|piranesi_arco","cover"),("img","d31|foto_1846_c","cover")], txt=[
      ("bloco","PATRIMÔNIO DA HUMANIDADE|uma das Sete Maravilhas do Mundo Moderno · milhões de visitantes por ano",0.08,0.55),
      ("frase","Cada pedra ouviu cinquenta mil vozes",0.66,1.0)]),
  "c22": dict(bg=[], extra_tail=4.0, txt=[
@@ -163,7 +162,7 @@ def texto_html(sid, i, estilo, txt):
         inner = f"<p>{esc(parts[0])}</p><em>{esc(parts[1])}</em>"
     elif estilo == "creditos":
         inner = (f"<i>{esc(parts[0])}</i><span>{esc(parts[1])}</span><b>{esc(parts[2])}</b>"
-                 "<small>Imagens: Wikimedia Commons Imagens históricas e geradas por IA — ver descrição · Narração sintética</small>")
+                 "<small>Obras de domínio público — Art Institute of Chicago (ver descrição) · Narração sintética</small>")
     else:
         inner = esc(parts[0])
     return tid, f'<div id="{tid}" class="t {estilo}">{inner}</div>'
