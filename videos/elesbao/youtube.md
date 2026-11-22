@@ -10,7 +10,7 @@
 ## Descrição
 
 Em 1835, Campinas enforcou um africano escravizado que jurou ser inocente — e expôs sua cabeça e suas mãos em praça pública. Esta é a história de Elesbão, a primeira de dois negros chamados Elesbão que contamos aqui no canal neste mês da Consciência Negra.
-📘 Quer ir mais fundo nas civilizações e na história? Meu ebook: [LINK DO EBOOK]
+📚 Quer ir mais fundo? Meu ebook com essas histórias: https://pay.kiwify.com.br/o5YIhPY
 
 Neste mês da Consciência Negra, contamos a história de Elesbão, africano “de nação cabinda” trazido à força para o Brasil, mantido cativo no engenho Romão, em Campinas (SP). Fugitivo e vivendo num quilombo, ele foi acusado, junto com Narciso, da morte do capitão Luiz José de Oliveira em 1831. Mesmo afirmando inocência, foi condenado à morte e enforcado em 9 de dezembro de 1835 no Largo de Santa Cruz. O juiz mandou cortar sua cabeça e suas mãos e expô-las em postes, como ameaça a quilombolas e a quem lutasse pela liberdade. Ligamos essa história ao tráfico atlântico, à lei “para inglês ver” de 1831, à Revolta dos Malês, à lei de 10 de junho de 1835 e à abolição tardia de 1888, e mostramos como Elesbão se tornou símbolo de resistência. No próximo vídeo: o outro Elesbão, que viveu muitos séculos antes, do outro lado do oceano.
 
@@ -36,7 +36,7 @@ Capítulos
 07:57 O outro Elesbão
 08:14 Créditos
 
-📘 Ebook: [LINK DO EBOOK]
+📚 Quer ir mais fundo? Meu ebook com essas histórias: https://pay.kiwify.com.br/o5YIhPY
 
 Pesquisa e produção: Professor de História Paulo Shetara
 Narração sintética (voz gerada por computador).
@@ -74,7 +74,6 @@ Elesbão, Elesbão Campinas, dois negros chamados Elesbão, escravidão no Brasi
 #ConsciênciaNegra #HistóriaDoBrasil #Elesbão
 
 ## Checklist de publicação
-- [ ] Conferir/colar o link do ebook.
 - [ ] Marcar no YouTube Studio se aplicável: a narração é sintética (voz gerada), as imagens são históricas reais.
 - [ ] Tela final + card para outro vídeo do canal.
 - [ ] Publicar até 20 de novembro (Dia Nacional de Zumbi e da Consciência Negra).

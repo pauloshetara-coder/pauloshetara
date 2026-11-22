@@ -1,5 +1,15 @@
 # Instruções do projeto
 
+## Link do ebook (obrigatório em todo vídeo de história)
+
+Sempre que gerar um vídeo de história (roteiro, descrição do YouTube, posts, pacote de publicação),
+inclua o link do ebook exatamente assim, sem pedir e sem usar marcador como `[LINK DO EBOOK]`:
+
+📚 Quer ir mais fundo? Meu ebook com essas histórias: https://pay.kiwify.com.br/o5YIhPY
+
+- Na descrição do YouTube: nas 2 primeiras linhas (antes do "mostrar mais") e repetido no fim.
+- Em posts e legendas de redes sociais: no fim do texto.
+
 ## Vídeos: usar HyperFrames automaticamente
 
 Sempre que for pedido para **montar, editar, animar ou renderizar um vídeo** (canal dark,
