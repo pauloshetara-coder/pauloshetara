@@ -1,6 +1,6 @@
 """Baixa imagens (Commons via lista.json, AIC via aic.txt) para assets/img, com pausas e novas tentativas."""
 import json, os, time, urllib.request, urllib.parse
-H={"User-Agent":"canal-historia-video-bot/1.0 (https://github.com/pauloshetara-coder/pauloshetara)"}
+H={"User-Agent":"canal-historia-video-bot/1.0"}
 OUT="assets/img"
 def get(u, tries=6):
     for i in range(tries):
@@ -20,7 +20,7 @@ for n,f in json.load(open("lista.json")).items():
         else: print("  nao existe:",f)
     if d: open(p,"wb").write(d); print("ok",n,len(d))
     else: print("FALHOU",n)
-    time.sleep(4)
+    time.sleep(20)
 for l in open("aic.txt"):
     n,i=l.strip().split("|"); p=f"{OUT}/{n}.orig"
     if os.path.exists(p): continue
