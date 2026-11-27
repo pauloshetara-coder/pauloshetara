@@ -43,24 +43,24 @@
 .creditos small{display:block;margin-top:70px;font-family:'Inter',sans-serif;font-size:28px;color:#a99a85}
 </style>
 <div id="a17" class="" data-composition-id="a17" data-width="1920" data-height="1080" data-layout-allow-overlap>
-<div id="a17-bg0" class="bg portrait" style="z-index:1"><img id="a17-bg0-m" src="assets/img/santo_elesbao2.jpg" alt=""></div>
+<div id="a17-bg0" class="bg cover" style="z-index:1"><img id="a17-bg0-m" src="assets/img/negros_novos.jpg" alt=""></div>
 <div id="a17-bg1" class="bg cover" style="z-index:2"><img id="a17-bg1-m" src="assets/img/triptico.jpg" alt=""></div>
 <div id="a17-vin" class="vin" style="z-index:20"></div>
 <div id="a17-preto" style="position:absolute;inset:0;background:#000;z-index:40"></div>
-<div id="a17-sombra" class="sombra" style="z-index:21"></div>
 <div id="a17-txt" style="position:absolute;inset:0;z-index:30">
-<div id="a17-t0" class="t bloco"><b>IRMANDADES NEGRAS</b><span>ajuda aos doentes · enterros dignos · compra de alforrias</span></div>
-<div id="a17-t1" class="t rotulo"><span>Igreja de Santo Elesbão e Santa Efigênia — Rio de Janeiro, 1754</span></div>
+<div id="a17-t0" class="t bloco largo"><b>IRMANDADES NEGRAS</b><span>ajuda aos doentes · enterros dignos · compra de alforrias</span></div>
+<div id="a17-t1" class="t numero"><b>1754</b><span>Igreja de Santo Elesbão e Santa Efigênia · Rio de Janeiro</span></div>
 </div>
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
 tl.set("#a17-bg0",{opacity:1},0);
 tl.set("#a17-bg0",{opacity:0},15.71);
-tl.fromTo("#a17-bg0-m",{scale:1.0,y:10},{scale:1.07,y:-10,duration:15.71,ease:"none"},0.00);
+tl.set("#a17-bg0-m",{transformOrigin:"35% 65%"},0);
+tl.fromTo("#a17-bg0-m",{scale:1.04,x:60},{scale:1.28,x:-60,duration:15.71,ease:"sine.inOut"},0.00);
 tl.fromTo("#a17-bg1",{opacity:0},{opacity:1,duration:0.8,ease:"sine.inOut"},14.90);
-tl.set("#a17-bg1-m",{transformOrigin:"70% 35%"},0);
-tl.fromTo("#a17-bg1-m",{scale:1.04,x:-60},{scale:1.28,x:60,duration:14.90,ease:"sine.inOut"},14.90);
+tl.set("#a17-bg1-m",{transformOrigin:"50% 30%"},0);
+tl.fromTo("#a17-bg1-m",{scale:1.28,x:-60},{scale:1.06,x:60,duration:14.90,ease:"sine.inOut"},14.90);
 tl.fromTo("#a17-preto",{opacity:1},{opacity:0,duration:0.7,ease:"sine.out"},0);
 tl.to("#a17-preto",{opacity:1,duration:0.6,ease:"sine.in"},29.21);
 tl.fromTo("#a17-t0",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power3.out"},3.58);

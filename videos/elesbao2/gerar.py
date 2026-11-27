@@ -61,9 +61,9 @@ CENAS = {
      ("numero","27 de outubro|dia de Santo Elesbão no calendário romano",0.6,1.0)]),
  "a16": dict(bg=[("img","candace","cover")], txt=[
      ("bloco","OS DOIS ATLANTES DA ETIÓPIA|frei José Pereira de Santana · Lisboa, 1735",0.5,1.0)]),
- "a17": dict(bg=[("img","igreja_rio|santo_elesbao2","portrait"),("img","igreja_rio_altar|triptico","cover")], txt=[
+ "a17": dict(bg=[("img","negros_novos","cover"),("img","triptico","cover")], txt=[
      ("bloco","IRMANDADES NEGRAS|ajuda aos doentes · enterros dignos · compra de alforrias",0.12,0.55),
-     ("rotulo","Igreja de Santo Elesbão e Santa Efigênia — Rio de Janeiro, 1754",0.62,1.0)]),
+     ("numero","1754|Igreja de Santo Elesbão e Santa Efigênia · Rio de Janeiro",0.62,1.0)]),
  "a18": dict(bg=[("img","santo_elesbao","portrait")], txt=[
      ("rotulo","Santo Elesbão — Igreja do Rosário dos Pretos, Salvador",0.03,0.4),
      ("frase","A África teve reis. E teve santos.",0.66,1.0)]),
