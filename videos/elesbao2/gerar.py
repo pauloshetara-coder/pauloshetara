@@ -120,7 +120,7 @@ CSS_COMUM = """
 .kicker:before{content:'';display:inline-block;width:70px;height:3px;background:#b8322a;vertical-align:middle;margin-right:24px}
 .titulo{top:300px;text-align:center;font-family:'Playfair Display',serif;font-weight:900;font-size:220px;letter-spacing:.06em;color:#f3eadb;text-shadow:0 4px 0 rgba(0,0,0,.6),0 8px 40px rgba(0,0,0,.95),0 0 80px rgba(0,0,0,.9)}
 .titulo small{display:block;font-family:'Oswald',sans-serif;font-weight:400;font-size:46px;text-shadow:0 2px 10px #000,0 0 30px #000;letter-spacing:.25em;color:#d9a441;margin-top:10px}
-.frase{top:380px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-size:84px;line-height:1.15;text-shadow:0 3px 0 rgba(0,0,0,.6),0 6px 30px #000,0 0 70px #000}
+.frase{top:380px;text-align:center;-webkit-text-stroke:1px rgba(0,0,0,.35);font-family:'Playfair Display',serif;font-style:italic;font-size:84px;line-height:1.15;text-shadow:0 3px 0 rgba(0,0,0,.6),0 6px 30px #000,0 0 70px #000}
 .rotulo{top:150px;font-family:'Oswald',sans-serif;font-size:36px;letter-spacing:.08em;color:#f3eadb;}
 .rotulo span{background:rgba(11,9,7,.72);padding:12px 22px;border-left:5px solid #b8322a}
 .numero{top:330px;text-align:center}
@@ -134,7 +134,7 @@ CSS_COMUM = """
 .data{top:420px;text-align:center;font-family:'Oswald',sans-serif;font-weight:700;font-size:120px;letter-spacing:.1em;color:#f3eadb;text-shadow:0 4px 0 rgba(0,0,0,.6),0 0 60px #000}
 .carimbo{top:640px;left:auto;right:180px;width:auto;font-family:'Oswald',sans-serif;font-weight:700;font-size:80px;color:#e0443a;background:rgba(11,9,7,.82);border:8px solid #b8322a;padding:10px 40px;letter-spacing:.06em}
 .versus{top:300px;display:flex;gap:80px}
-.versus div{flex:1;padding:40px 50px;background:rgba(243,234,219,.06);border-top:6px solid #d9a441}
+.versus div{flex:1;padding:40px 50px;background:rgba(11,9,7,.82);border-top:6px solid #d9a441}
 .versus div+div{border-top-color:#b8322a}
 .versus b{display:block;font-family:'Oswald',sans-serif;font-size:44px;letter-spacing:.2em;text-transform:uppercase;color:#d9a441;margin-bottom:24px}
 .versus div+div b{color:#b8322a}
