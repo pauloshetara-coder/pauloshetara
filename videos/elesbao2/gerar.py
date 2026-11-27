@@ -21,16 +21,16 @@ TAIL = 0.9   # respiro depois da voz
 # txt: lista de (estilo, texto, t_ini_rel(0-1 da cena), t_fim_rel)
 # ---------------------------------------------------------------------------
 CENAS = {
- "a01": dict(bg=[("img","punicao_publica","cover"),("img","aksum_estelas","cover")], extra_lead=0.6, txt=[
+ "a01": dict(bg=[("img","punicao_publica","cover"),("img","aksum_estelas|tumba_kaleb","cover")], extra_lead=0.6, txt=[
      ("rotulo","No vídeo anterior: Elesbão, Campinas, 1835",0.02,0.3)]),
  "a02": dict(bg=[("img","santo_elesbao","portrait")], txt=[
      ("bloco","SANTO ELESBÃO|o rei africano de Axum · Dois negros chamados Elesbão #2",0.1,1.0)]),
  "a03": dict(bg=[("img","aksum_estelas2","cover"),("img","mar_vermelho","cover")], txt=[
      ("kicker","Etiópia e Eritreia · séculos I a VII",0.03,0.45),
      ("bloco","REINO DE AXUM|porto de Adúlis, no Mar Vermelho",0.5,1.0)]),
- "a04": dict(bg=[("img","aksum_obelisco","cover")], txt=[
+ "a04": dict(bg=[("img","aksum_obelisco|aksum_estelas2","cover")], txt=[
      ("lista","Roma|Pérsia|China|AXUM",0.45,1.0)]),
- "a05": dict(bg=[("img","aksum_estelas","cover"),("img","aksum_estelas2","cover")], txt=[
+ "a05": dict(bg=[("img","aksum_estelas|tumba_kaleb","cover"),("img","aksum_estelas2","cover")], txt=[
      ("numero","33 metros|a maior estela de Axum",0.3,0.6),
      ("bloco","1937 → 2005|levada a Roma por Mussolini · devolvida à Etiópia",0.66,1.0)]),
  "a06": dict(bg=[("img","cruz_etiope","portrait"),("img","codice","cover")], txt=[
@@ -41,9 +41,9 @@ CENAS = {
  "a08": dict(bg=[("img","mar_vermelho","cover"),("img","triptico","cover")], txt=[
      ("kicker","Himiar · atual Iêmen",0.03,0.35),
      ("bloco","NAJRAN, c. 523|cristãos mortos por não abandonarem a fé",0.5,1.0)]),
- "a09": dict(bg=[("img","sao_jorge_etiope","cover")], txt=[
+ "a09": dict(bg=[("img","sao_jorge_etiope|codice","cover")], txt=[
      ("versus","Ficar|seguro no seu reino|Atravessar|o mar e ir à guerra",0.55,1.0)]),
- "a10": dict(bg=[("img","mar_vermelho","cover"),("img","sao_jorge_etiope","cover")], txt=[
+ "a10": dict(bg=[("img","mar_vermelho","cover"),("img","sao_jorge_etiope|codice","cover")], txt=[
      ("kicker","c. 525 · a travessia",0.03,0.35),
      ("frase","Axum vence",0.62,1.0)]),
  "a11": dict(bg=[("img","manuscrito","cover")], txt=[
@@ -61,7 +61,7 @@ CENAS = {
      ("numero","27 de outubro|dia de Santo Elesbão no calendário romano",0.6,1.0)]),
  "a16": dict(bg=[("img","candace","cover")], txt=[
      ("bloco","OS DOIS ATLANTES DA ETIÓPIA|frei José Pereira de Santana · Lisboa, 1735",0.5,1.0)]),
- "a17": dict(bg=[("img","igreja_rio","portrait"),("img","igreja_rio_altar","cover")], txt=[
+ "a17": dict(bg=[("img","igreja_rio|santo_elesbao2","portrait"),("img","igreja_rio_altar|triptico","cover")], txt=[
      ("bloco","IRMANDADES NEGRAS|ajuda aos doentes · enterros dignos · compra de alforrias",0.12,0.55),
      ("rotulo","Igreja de Santo Elesbão e Santa Efigênia — Rio de Janeiro, 1754",0.62,1.0)]),
  "a18": dict(bg=[("img","santo_elesbao","portrait")], txt=[
@@ -72,7 +72,7 @@ CENAS = {
  "a20": dict(bg=[("img","santo_elesbao2","portrait"),("img","punicao_publica","cover")], txt=[
      ("versus","Axum, século VI|entregou a coroa|Campinas, 1835|cabeça num poste",0.08,0.6),
      ("frase","A história do povo negro não começa nas correntes",0.7,1.0)]),
- "a21": dict(bg=[("img","aksum_estelas","cover"),("img","santo_elesbao","portrait")], txt=[
+ "a21": dict(bg=[("img","aksum_estelas|tumba_kaleb","cover"),("img","santo_elesbao","portrait")], txt=[
      ("bloco","INSCREVA-SE|ative o sininho · deixe o seu like",0.03,0.35),
      ("frase","Você já conhecia Santo Elesbão?",0.38,0.7),
      ("bloco","37 MINI E-BOOKS|link na descrição",0.72,1.0)]),

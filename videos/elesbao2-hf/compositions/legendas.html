@@ -1,0 +1,796 @@
+<template>
+<style>
+#legendas{position:absolute;inset:0}
+#grao{position:absolute;inset:-60px;opacity:.13;mix-blend-mode:overlay;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#flick{position:absolute;inset:0;background:#000;opacity:0}
+#legendas .cap{position:absolute;left:0;right:0;bottom:96px;text-align:center;opacity:0;overflow:visible}
+#legendas .cap span{display:inline-block;max-width:1500px;padding:10px 26px;background:rgba(8,6,5,.62);border-radius:6px;font-family:'Inter',sans-serif;font-weight:700;font-size:44px;line-height:1.25;color:#fff}
+</style>
+<div id="legendas" data-composition-id="legendas" data-width="1920" data-height="1080" data-layout-allow-overflow>
+<div id="grao" data-layout-ignore></div><div id="flick" data-layout-ignore></div>
+<div id="cap-a01-0" class="cap"><span>No vídeo anterior, você conheceu Elesbão,</span></div>
+<div id="cap-a01-1" class="cap"><span>o africano enforcado em Campinas,</span></div>
+<div id="cap-a01-2" class="cap"><span>em mil oitocentos e trinta e cinco.</span></div>
+<div id="cap-a01-3" class="cap"><span>Hoje, a viagem é outra.</span></div>
+<div id="cap-a01-4" class="cap"><span>Mais de mil e trezentos anos antes,</span></div>
+<div id="cap-a01-5" class="cap"><span>do outro lado do oceano,</span></div>
+<div id="cap-a01-6" class="cap"><span>outro homem negro chamado Elesbão usava uma</span></div>
+<div id="cap-a01-7" class="cap"><span>coroa de ouro.</span></div>
+<div id="cap-a01-8" class="cap"><span>Ele foi rei.</span></div>
+<div id="cap-a01-9" class="cap"><span>Comandou exércitos.</span></div>
+<div id="cap-a01-10" class="cap"><span>Atravessou o mar para salvar um povo.</span></div>
+<div id="cap-a01-11" class="cap"><span>E, no fim da vida,</span></div>
+<div id="cap-a01-12" class="cap"><span>fez o que quase nenhum rei faz.</span></div>
+<div id="cap-a01-13" class="cap"><span>Abriu mão de tudo.</span></div>
+<div id="cap-a02-0" class="cap"><span>Esta é a história de Santo Elesbão,</span></div>
+<div id="cap-a02-1" class="cap"><span>o rei africano de Axum.</span></div>
+<div id="cap-a02-2" class="cap"><span>A segunda história de dois negros chamados Elesbão.</span></div>
+<div id="cap-a03-0" class="cap"><span>Para entender quem ele foi,</span></div>
+<div id="cap-a03-1" class="cap"><span>precisamos ir até o norte da atual Etiópia,</span></div>
+<div id="cap-a03-2" class="cap"><span>onde hoje fica também a Eritreia.</span></div>
+<div id="cap-a03-3" class="cap"><span>Ali, nas terras altas,</span></div>
+<div id="cap-a03-4" class="cap"><span>existiu um dos reinos mais poderosos da Antiguidade:</span></div>
+<div id="cap-a03-5" class="cap"><span>o Reino de Axum.</span></div>
+<div id="cap-a03-6" class="cap"><span>Pelo seu porto, Adúlis, no Mar Vermelho,</span></div>
+<div id="cap-a03-7" class="cap"><span>passavam marfim, ouro, incenso e especiarias,</span></div>
+<div id="cap-a03-8" class="cap"><span>entre o Império Romano,</span></div>
+<div id="cap-a03-9" class="cap"><span>a Arábia e a Índia.</span></div>
+<div id="cap-a04-0" class="cap"><span>Axum era tão rico que cunhava as</span></div>
+<div id="cap-a04-1" class="cap"><span>próprias moedas, de ouro, prata e bronze.</span></div>
+<div id="cap-a04-2" class="cap"><span>Pouquíssimos reinos do mundo antigo faziam isso.</span></div>
+<div id="cap-a04-3" class="cap"><span>No século terceiro, o profeta persa Mani</span></div>
+<div id="cap-a04-4" class="cap"><span>escreveu que havia quatro grandes reinos na Terra:</span></div>
+<div id="cap-a04-5" class="cap"><span>Roma, a Pérsia, a China.</span></div>
+<div id="cap-a04-6" class="cap"><span>E Axum.</span></div>
+<div id="cap-a05-0" class="cap"><span>Os reis de Axum deixaram marcas que</span></div>
+<div id="cap-a05-1" class="cap"><span>ainda estão de pé.</span></div>
+<div id="cap-a05-2" class="cap"><span>São as estelas, enormes monumentos de pedra,</span></div>
+<div id="cap-a05-3" class="cap"><span>esculpidos num único bloco,</span></div>
+<div id="cap-a05-4" class="cap"><span>alguns com mais de vinte metros de altura.</span></div>
+<div id="cap-a05-5" class="cap"><span>A maior delas, com trinta e três metros,</span></div>
+<div id="cap-a05-6" class="cap"><span>caiu ainda na Antiguidade e continua lá,</span></div>
+<div id="cap-a05-7" class="cap"><span>quebrada no chão.</span></div>
+<div id="cap-a05-8" class="cap"><span>Uma outra foi levada para Roma pelas</span></div>
+<div id="cap-a05-9" class="cap"><span>tropas de Mussolini, em mil novecentos e</span></div>
+<div id="cap-a05-10" class="cap"><span>trinta e sete.</span></div>
+<div id="cap-a05-11" class="cap"><span>Só voltou para casa em dois mil</span></div>
+<div id="cap-a05-12" class="cap"><span>e cinco.</span></div>
+<div id="cap-a06-0" class="cap"><span>E tem mais.</span></div>
+<div id="cap-a06-1" class="cap"><span>Por volta do ano trezentos e trinta,</span></div>
+<div id="cap-a06-2" class="cap"><span>o rei Ezana se tornou cristão.</span></div>
+<div id="cap-a06-3" class="cap"><span>Axum foi um dos primeiros reinos do</span></div>
+<div id="cap-a06-4" class="cap"><span>mundo a adotar o cristianismo,</span></div>
+<div id="cap-a06-5" class="cap"><span>antes de grande parte da Europa.</span></div>
+<div id="cap-a06-6" class="cap"><span>Nas moedas, os antigos símbolos do sol</span></div>
+<div id="cap-a06-7" class="cap"><span>e da lua deram lugar à cruz.</span></div>
+<div id="cap-a06-8" class="cap"><span>A Igreja da Etiópia nasceu ali,</span></div>
+<div id="cap-a06-9" class="cap"><span>e existe até hoje,</span></div>
+<div id="cap-a06-10" class="cap"><span>com a sua própria língua sagrada, o gueez.</span></div>
+<div id="cap-a07-0" class="cap"><span>Quase duzentos anos depois,</span></div>
+<div id="cap-a07-1" class="cap"><span>por volta do ano quinhentos e vinte,</span></div>
+<div id="cap-a07-2" class="cap"><span>sobe ao trono um rei chamado Kaleb.</span></div>
+<div id="cap-a07-3" class="cap"><span>Como todo rei de Axum,</span></div>
+<div id="cap-a07-4" class="cap"><span>ele tinha também um nome de trono:</span></div>
+<div id="cap-a07-5" class="cap"><span>Ella Asbeha.</span></div>
+<div id="cap-a07-6" class="cap"><span>Os gregos escreveram Elesbaas.</span></div>
+<div id="cap-a07-7" class="cap"><span>Os latinos, Elesbaan.</span></div>
+<div id="cap-a07-8" class="cap"><span>E, séculos depois, em português,</span></div>
+<div id="cap-a07-9" class="cap"><span>esse nome virou Elesbão.</span></div>
+<div id="cap-a08-0" class="cap"><span>Do outro lado do Mar Vermelho,</span></div>
+<div id="cap-a08-1" class="cap"><span>no atual Iêmen, ficava o reino de Himiar.</span></div>
+<div id="cap-a08-2" class="cap"><span>Ali, um rei chamado Yusuf,</span></div>
+<div id="cap-a08-3" class="cap"><span>conhecido como Dhu Nuwas, perseguiu os cristãos.</span></div>
+<div id="cap-a08-4" class="cap"><span>Por volta do ano quinhentos e vinte</span></div>
+<div id="cap-a08-5" class="cap"><span>e três, na cidade de Najran,</span></div>
+<div id="cap-a08-6" class="cap"><span>centenas de cristãos foram mortos, homens,</span></div>
+<div id="cap-a08-7" class="cap"><span>mulheres e crianças, por se recusarem a</span></div>
+<div id="cap-a08-8" class="cap"><span>abandonar a sua fé.</span></div>
+<div id="cap-a08-9" class="cap"><span>As notícias atravessaram o mar.</span></div>
+<div id="cap-a08-10" class="cap"><span>E chegaram a Axum.</span></div>
+<div id="cap-a09-0" class="cap"><span>Do Egito e de Constantinopla vieram pedidos</span></div>
+<div id="cap-a09-1" class="cap"><span>de socorro.</span></div>
+<div id="cap-a09-2" class="cap"><span>O imperador romano do Oriente, Justino,</span></div>
+<div id="cap-a09-3" class="cap"><span>pediu ao rei de Axum que agisse.</span></div>
+<div id="cap-a09-4" class="cap"><span>Elesbão tinha uma escolha:</span></div>
+<div id="cap-a09-5" class="cap"><span>ficar seguro no seu reino ou atravessar</span></div>
+<div id="cap-a09-6" class="cap"><span>o mar, com todos os riscos de</span></div>
+<div id="cap-a09-7" class="cap"><span>uma guerra longe de casa.</span></div>
+<div id="cap-a10-0" class="cap"><span>Ele escolheu atravessar.</span></div>
+<div id="cap-a10-1" class="cap"><span>Por volta do ano quinhentos e vinte</span></div>
+<div id="cap-a10-2" class="cap"><span>e cinco, uma frota partiu de Adúlis,</span></div>
+<div id="cap-a10-3" class="cap"><span>levando milhares de soldados africanos para a Arábia.</span></div>
+<div id="cap-a10-4" class="cap"><span>Na batalha, o exército de Axum venceu.</span></div>
+<div id="cap-a10-5" class="cap"><span>Dhu Nuwas foi derrotado,</span></div>
+<div id="cap-a10-6" class="cap"><span>e a tradição conta que ele avançou</span></div>
+<div id="cap-a10-7" class="cap"><span>com o seu cavalo para dentro do</span></div>
+<div id="cap-a10-8" class="cap"><span>mar e desapareceu nas ondas.</span></div>
+<div id="cap-a10-9" class="cap"><span>Himiar passou para o controle de Axum.</span></div>
+<div id="cap-a11-0" class="cap"><span>E se você gosta de histórias como esta,</span></div>
+<div id="cap-a11-1" class="cap"><span>que quase ninguém conta,</span></div>
+<div id="cap-a11-2" class="cap"><span>os trinta e sete mini e-books do</span></div>
+<div id="cap-a11-3" class="cap"><span>canal estão no link da descrição.</span></div>
+<div id="cap-a11-4" class="cap"><span>Agora, voltemos a Elesbão.</span></div>
+<div id="cap-a12-0" class="cap"><span>Naquele momento, Elesbão era um dos homens</span></div>
+<div id="cap-a12-1" class="cap"><span>mais poderosos do mundo.</span></div>
+<div id="cap-a12-2" class="cap"><span>O historiador bizantino Procópio escreveu sobre ele,</span></div>
+<div id="cap-a12-3" class="cap"><span>chamando-o de Helestheaios, rei dos etíopes.</span></div>
+<div id="cap-a12-4" class="cap"><span>O imperador de Constantinopla o tratava como aliado.</span></div>
+<div id="cap-a12-5" class="cap"><span>O seu reino dominava as duas margens</span></div>
+<div id="cap-a12-6" class="cap"><span>do Mar Vermelho.</span></div>
+<div id="cap-a13-0" class="cap"><span>E foi justamente no auge que ele</span></div>
+<div id="cap-a13-1" class="cap"><span>fez o inesperado.</span></div>
+<div id="cap-a13-2" class="cap"><span>Segundo a tradição, Elesbão tirou a sua</span></div>
+<div id="cap-a13-3" class="cap"><span>coroa e a enviou para Jerusalém,</span></div>
+<div id="cap-a13-4" class="cap"><span>para ser pendurada na Igreja do Santo Sepulcro,</span></div>
+<div id="cap-a13-5" class="cap"><span>o lugar onde, para os cristãos,</span></div>
+<div id="cap-a13-6" class="cap"><span>Jesus foi sepultado.</span></div>
+<div id="cap-a13-7" class="cap"><span>Um rei vitorioso entregava a coroa.</span></div>
+<div id="cap-a13-8" class="cap"><span>Por vontade própria.</span></div>
+<div id="cap-a14-0" class="cap"><span>Depois, deixou o palácio.</span></div>
+<div id="cap-a14-1" class="cap"><span>Subiu uma colina perto de Axum,</span></div>
+<div id="cap-a14-2" class="cap"><span>até o mosteiro de Abba Pentalewon,</span></div>
+<div id="cap-a14-3" class="cap"><span>e ali passou a viver como monge,</span></div>
+<div id="cap-a14-4" class="cap"><span>numa cela pequena, em oração, comendo pouco,</span></div>
+<div id="cap-a14-5" class="cap"><span>sem servos e sem trono.</span></div>
+<div id="cap-a14-6" class="cap"><span>O homem que comandou exércitos terminou a</span></div>
+<div id="cap-a14-7" class="cap"><span>vida em silêncio.</span></div>
+<div id="cap-a15-0" class="cap"><span>Em Axum, ainda hoje,</span></div>
+<div id="cap-a15-1" class="cap"><span>mostram aos visitantes a tumba atribuída a</span></div>
+<div id="cap-a15-2" class="cap"><span>Kaleb e ao seu filho, Gebre Meskel.</span></div>
+<div id="cap-a15-3" class="cap"><span>A Igreja da Etiópia o venera como santo.</span></div>
+<div id="cap-a15-4" class="cap"><span>E a Igreja Católica também:</span></div>
+<div id="cap-a15-5" class="cap"><span>no calendário romano, Santo Elesbão é lembrado</span></div>
+<div id="cap-a15-6" class="cap"><span>no dia vinte e sete de outubro.</span></div>
+<div id="cap-a16-0" class="cap"><span>Mas como um rei etíope do século</span></div>
+<div id="cap-a16-1" class="cap"><span>sexto chegou ao Brasil?</span></div>
+<div id="cap-a16-2" class="cap"><span>A resposta passa por Portugal.</span></div>
+<div id="cap-a16-3" class="cap"><span>No século dezoito, os frades carmelitas espalharam</span></div>
+<div id="cap-a16-4" class="cap"><span>a devoção a dois santos negros:</span></div>
+<div id="cap-a16-5" class="cap"><span>Santo Elesbão e Santa Efigênia.</span></div>
+<div id="cap-a16-6" class="cap"><span>Em mil setecentos e trinta e cinco,</span></div>
+<div id="cap-a16-7" class="cap"><span>o frei José Pereira de Santana publicou</span></div>
+<div id="cap-a16-8" class="cap"><span>em Lisboa a obra Os Dois Atlantes</span></div>
+<div id="cap-a16-9" class="cap"><span>da Etiópia, contando a vida dos dois.</span></div>
+<div id="cap-a17-0" class="cap"><span>No Brasil, africanos e seus descendentes,</span></div>
+<div id="cap-a17-1" class="cap"><span>escravizados e libertos, abraçaram esses santos.</span></div>
+<div id="cap-a17-2" class="cap"><span>Eles tinham a sua cor.</span></div>
+<div id="cap-a17-3" class="cap"><span>Formaram irmandades, juntaram dinheiro, ajudaram doentes,</span></div>
+<div id="cap-a17-4" class="cap"><span>enterraram os seus mortos com dignidade e,</span></div>
+<div id="cap-a17-5" class="cap"><span>muitas vezes, compraram a liberdade de irmãos.</span></div>
+<div id="cap-a17-6" class="cap"><span>No Rio de Janeiro,</span></div>
+<div id="cap-a17-7" class="cap"><span>a Irmandade de Santo Elesbão e Santa</span></div>
+<div id="cap-a17-8" class="cap"><span>Efigênia ergueu a sua própria igreja,</span></div>
+<div id="cap-a17-9" class="cap"><span>inaugurada em mil setecentos e cinquenta e quatro.</span></div>
+<div id="cap-a17-10" class="cap"><span>Ela está de pé até hoje.</span></div>
+<div id="cap-a18-0" class="cap"><span>Nas imagens, Elesbão aparece como um rei negro,</span></div>
+<div id="cap-a18-1" class="cap"><span>de coroa e manto,</span></div>
+<div id="cap-a18-2" class="cap"><span>com o hábito dos carmelitas.</span></div>
+<div id="cap-a18-3" class="cap"><span>Em Salvador, na Igreja do Rosário dos Pretos,</span></div>
+<div id="cap-a18-4" class="cap"><span>a sua imagem continua no altar.</span></div>
+<div id="cap-a18-5" class="cap"><span>Para quem vivia na escravidão,</span></div>
+<div id="cap-a18-6" class="cap"><span>ver um rei africano no altar dizia</span></div>
+<div id="cap-a18-7" class="cap"><span>uma coisa poderosa:</span></div>
+<div id="cap-a18-8" class="cap"><span>a África teve reis.</span></div>
+<div id="cap-a18-9" class="cap"><span>E teve santos.</span></div>
+<div id="cap-a19-0" class="cap"><span>Os africanos escravizados recebiam, no batismo,</span></div>
+<div id="cap-a19-1" class="cap"><span>um nome cristão.</span></div>
+<div id="cap-a19-2" class="cap"><span>Muitos ganharam nomes de santos negros:</span></div>
+<div id="cap-a19-3" class="cap"><span>Benedito, Efigênia, Antônio.</span></div>
+<div id="cap-a19-4" class="cap"><span>E Elesbão.</span></div>
+<div id="cap-a19-5" class="cap"><span>Não sabemos quem deu o nome ao</span></div>
+<div id="cap-a19-6" class="cap"><span>Elesbão de Campinas, nem por quê.</span></div>
+<div id="cap-a19-7" class="cap"><span>Mas é muito provável que ele carregasse,</span></div>
+<div id="cap-a19-8" class="cap"><span>sem saber ou sabendo,</span></div>
+<div id="cap-a19-9" class="cap"><span>o nome de um rei africano.</span></div>
+<div id="cap-a20-0" class="cap"><span>Dois homens negros.</span></div>
+<div id="cap-a20-1" class="cap"><span>O mesmo nome.</span></div>
+<div id="cap-a20-2" class="cap"><span>Um usou uma coroa de ouro e</span></div>
+<div id="cap-a20-3" class="cap"><span>a entregou por vontade própria.</span></div>
+<div id="cap-a20-4" class="cap"><span>O outro teve a cabeça exposta num</span></div>
+<div id="cap-a20-5" class="cap"><span>poste, como aviso.</span></div>
+<div id="cap-a20-6" class="cap"><span>Entre eles, mais de mil e trezentos anos,</span></div>
+<div id="cap-a20-7" class="cap"><span>um oceano e a escravidão.</span></div>
+<div id="cap-a20-8" class="cap"><span>Lembrar os dois é lembrar que a</span></div>
+<div id="cap-a20-9" class="cap"><span>história do povo negro não começa nas correntes.</span></div>
+<div id="cap-a20-10" class="cap"><span>Ela começa em reinos como Axum.</span></div>
+<div id="cap-a21-0" class="cap"><span>Se essa história tocou você, inscreva-se no canal,</span></div>
+<div id="cap-a21-1" class="cap"><span>ative o sininho e deixe o seu like.</span></div>
+<div id="cap-a21-2" class="cap"><span>E me conte nos comentários:</span></div>
+<div id="cap-a21-3" class="cap"><span>você já conhecia Santo Elesbão?</span></div>
+<div id="cap-a21-4" class="cap"><span>E se quiser ir ainda mais fundo,</span></div>
+<div id="cap-a21-5" class="cap"><span>os trinta e sete mini e-books estão</span></div>
+<div id="cap-a21-6" class="cap"><span>no link da descrição.</span></div>
+<div id="cap-a21-7" class="cap"><span>Nos vemos no próximo vídeo.</span></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#cap-a01-0",{opacity:0},{opacity:1,duration:0.12},1.10);
+tl.to("#cap-a01-0",{opacity:0,duration:0.1},3.79);
+tl.set("#cap-a01-0",{visibility:"hidden"},3.89);
+tl.fromTo("#cap-a01-1",{opacity:0},{opacity:1,duration:0.12},3.89);
+tl.to("#cap-a01-1",{opacity:0,duration:0.1},6.08);
+tl.set("#cap-a01-1",{visibility:"hidden"},6.18);
+tl.fromTo("#cap-a01-2",{opacity:0},{opacity:1,duration:0.12},6.18);
+tl.to("#cap-a01-2",{opacity:0,duration:0.1},8.75);
+tl.set("#cap-a01-2",{visibility:"hidden"},8.85);
+tl.fromTo("#cap-a01-3",{opacity:0},{opacity:1,duration:0.12},9.29);
+tl.to("#cap-a01-3",{opacity:0,duration:0.1},11.46);
+tl.set("#cap-a01-3",{visibility:"hidden"},11.56);
+tl.fromTo("#cap-a01-4",{opacity:0},{opacity:1,duration:0.12},12.01);
+tl.to("#cap-a01-4",{opacity:0,duration:0.1},14.31);
+tl.set("#cap-a01-4",{visibility:"hidden"},14.41);
+tl.fromTo("#cap-a01-5",{opacity:0},{opacity:1,duration:0.12},14.41);
+tl.to("#cap-a01-5",{opacity:0,duration:0.1},16.03);
+tl.set("#cap-a01-5",{visibility:"hidden"},16.13);
+tl.fromTo("#cap-a01-6",{opacity:0},{opacity:1,duration:0.12},16.13);
+tl.to("#cap-a01-6",{opacity:0,duration:0.1},18.93);
+tl.set("#cap-a01-6",{visibility:"hidden"},19.03);
+tl.fromTo("#cap-a01-7",{opacity:0},{opacity:1,duration:0.12},19.03);
+tl.to("#cap-a01-7",{opacity:0,duration:0.1},20.29);
+tl.set("#cap-a01-7",{visibility:"hidden"},20.39);
+tl.fromTo("#cap-a01-8",{opacity:0},{opacity:1,duration:0.12},20.84);
+tl.to("#cap-a01-8",{opacity:0,duration:0.1},21.87);
+tl.set("#cap-a01-8",{visibility:"hidden"},21.97);
+tl.fromTo("#cap-a01-9",{opacity:0},{opacity:1,duration:0.12},22.87);
+tl.to("#cap-a01-9",{opacity:0,duration:0.1},24.61);
+tl.set("#cap-a01-9",{visibility:"hidden"},24.71);
+tl.fromTo("#cap-a01-10",{opacity:0},{opacity:1,duration:0.12},25.61);
+tl.to("#cap-a01-10",{opacity:0,duration:0.1},28.14);
+tl.set("#cap-a01-10",{visibility:"hidden"},28.24);
+tl.fromTo("#cap-a01-11",{opacity:0},{opacity:1,duration:0.12},28.69);
+tl.to("#cap-a01-11",{opacity:0,duration:0.1},30.10);
+tl.set("#cap-a01-11",{visibility:"hidden"},30.20);
+tl.fromTo("#cap-a01-12",{opacity:0},{opacity:1,duration:0.12},30.20);
+tl.to("#cap-a01-12",{opacity:0,duration:0.1},32.74);
+tl.set("#cap-a01-12",{visibility:"hidden"},32.84);
+tl.fromTo("#cap-a01-13",{opacity:0},{opacity:1,duration:0.12},33.29);
+tl.to("#cap-a01-13",{opacity:0,duration:0.1},34.80);
+tl.set("#cap-a01-13",{visibility:"hidden"},34.90);
+tl.fromTo("#cap-a02-0",{opacity:0},{opacity:1,duration:0.12},36.05);
+tl.to("#cap-a02-0",{opacity:0,duration:0.1},38.15);
+tl.set("#cap-a02-0",{visibility:"hidden"},38.25);
+tl.fromTo("#cap-a02-1",{opacity:0},{opacity:1,duration:0.12},38.25);
+tl.to("#cap-a02-1",{opacity:0,duration:0.1},39.92);
+tl.set("#cap-a02-1",{visibility:"hidden"},40.02);
+tl.fromTo("#cap-a02-2",{opacity:0},{opacity:1,duration:0.12},40.32);
+tl.to("#cap-a02-2",{opacity:0,duration:0.1},43.48);
+tl.set("#cap-a02-2",{visibility:"hidden"},43.58);
+tl.fromTo("#cap-a03-0",{opacity:0},{opacity:1,duration:0.12},44.73);
+tl.to("#cap-a03-0",{opacity:0,duration:0.1},46.39);
+tl.set("#cap-a03-0",{visibility:"hidden"},46.49);
+tl.fromTo("#cap-a03-1",{opacity:0},{opacity:1,duration:0.12},46.49);
+tl.to("#cap-a03-1",{opacity:0,duration:0.1},49.06);
+tl.set("#cap-a03-1",{visibility:"hidden"},49.16);
+tl.fromTo("#cap-a03-2",{opacity:0},{opacity:1,duration:0.12},49.16);
+tl.to("#cap-a03-2",{opacity:0,duration:0.1},51.41);
+tl.set("#cap-a03-2",{visibility:"hidden"},51.51);
+tl.fromTo("#cap-a03-3",{opacity:0},{opacity:1,duration:0.12},51.66);
+tl.to("#cap-a03-3",{opacity:0,duration:0.1},53.16);
+tl.set("#cap-a03-3",{visibility:"hidden"},53.26);
+tl.fromTo("#cap-a03-4",{opacity:0},{opacity:1,duration:0.12},53.26);
+tl.to("#cap-a03-4",{opacity:0,duration:0.1},56.84);
+tl.set("#cap-a03-4",{visibility:"hidden"},56.94);
+tl.fromTo("#cap-a03-5",{opacity:0},{opacity:1,duration:0.12},57.09);
+tl.to("#cap-a03-5",{opacity:0,duration:0.1},58.29);
+tl.set("#cap-a03-5",{visibility:"hidden"},58.39);
+tl.fromTo("#cap-a03-6",{opacity:0},{opacity:1,duration:0.12},58.66);
+tl.to("#cap-a03-6",{opacity:0,duration:0.1},61.39);
+tl.set("#cap-a03-6",{visibility:"hidden"},61.49);
+tl.fromTo("#cap-a03-7",{opacity:0},{opacity:1,duration:0.12},61.49);
+tl.to("#cap-a03-7",{opacity:0,duration:0.1},64.54);
+tl.set("#cap-a03-7",{visibility:"hidden"},64.64);
+tl.fromTo("#cap-a03-8",{opacity:0},{opacity:1,duration:0.12},64.64);
+tl.to("#cap-a03-8",{opacity:0,duration:0.1},66.28);
+tl.set("#cap-a03-8",{visibility:"hidden"},66.38);
+tl.fromTo("#cap-a03-9",{opacity:0},{opacity:1,duration:0.12},66.38);
+tl.to("#cap-a03-9",{opacity:0,duration:0.1},68.00);
+tl.set("#cap-a03-9",{visibility:"hidden"},68.10);
+tl.fromTo("#cap-a04-0",{opacity:0},{opacity:1,duration:0.12},69.26);
+tl.to("#cap-a04-0",{opacity:0,duration:0.1},71.06);
+tl.set("#cap-a04-0",{visibility:"hidden"},71.16);
+tl.fromTo("#cap-a04-1",{opacity:0},{opacity:1,duration:0.12},71.16);
+tl.to("#cap-a04-1",{opacity:0,duration:0.1},73.68);
+tl.set("#cap-a04-1",{visibility:"hidden"},73.78);
+tl.fromTo("#cap-a04-2",{opacity:0},{opacity:1,duration:0.12},73.83);
+tl.to("#cap-a04-2",{opacity:0,duration:0.1},76.56);
+tl.set("#cap-a04-2",{visibility:"hidden"},76.66);
+tl.fromTo("#cap-a04-3",{opacity:0},{opacity:1,duration:0.12},76.71);
+tl.to("#cap-a04-3",{opacity:0,duration:0.1},78.80);
+tl.set("#cap-a04-3",{visibility:"hidden"},78.90);
+tl.fromTo("#cap-a04-4",{opacity:0},{opacity:1,duration:0.12},78.90);
+tl.to("#cap-a04-4",{opacity:0,duration:0.1},81.74);
+tl.set("#cap-a04-4",{visibility:"hidden"},81.84);
+tl.fromTo("#cap-a04-5",{opacity:0},{opacity:1,duration:0.12},81.89);
+tl.to("#cap-a04-5",{opacity:0,duration:0.1},83.97);
+tl.set("#cap-a04-5",{visibility:"hidden"},84.07);
+tl.fromTo("#cap-a04-6",{opacity:0},{opacity:1,duration:0.12},84.12);
+tl.to("#cap-a04-6",{opacity:0,duration:0.1},84.86);
+tl.set("#cap-a04-6",{visibility:"hidden"},84.96);
+tl.fromTo("#cap-a05-0",{opacity:0},{opacity:1,duration:0.12},86.12);
+tl.to("#cap-a05-0",{opacity:0,duration:0.1},87.72);
+tl.set("#cap-a05-0",{visibility:"hidden"},87.82);
+tl.fromTo("#cap-a05-1",{opacity:0},{opacity:1,duration:0.12},87.82);
+tl.to("#cap-a05-1",{opacity:0,duration:0.1},88.92);
+tl.set("#cap-a05-1",{visibility:"hidden"},89.02);
+tl.fromTo("#cap-a05-2",{opacity:0},{opacity:1,duration:0.12},89.07);
+tl.to("#cap-a05-2",{opacity:0,duration:0.1},91.53);
+tl.set("#cap-a05-2",{visibility:"hidden"},91.63);
+tl.fromTo("#cap-a05-3",{opacity:0},{opacity:1,duration:0.12},91.63);
+tl.to("#cap-a05-3",{opacity:0,duration:0.1},93.18);
+tl.set("#cap-a05-3",{visibility:"hidden"},93.28);
+tl.fromTo("#cap-a05-4",{opacity:0},{opacity:1,duration:0.12},93.28);
+tl.to("#cap-a05-4",{opacity:0,duration:0.1},95.87);
+tl.set("#cap-a05-4",{visibility:"hidden"},95.97);
+tl.fromTo("#cap-a05-5",{opacity:0},{opacity:1,duration:0.12},96.02);
+tl.to("#cap-a05-5",{opacity:0,duration:0.1},98.29);
+tl.set("#cap-a05-5",{visibility:"hidden"},98.39);
+tl.fromTo("#cap-a05-6",{opacity:0},{opacity:1,duration:0.12},98.39);
+tl.to("#cap-a05-6",{opacity:0,duration:0.1},100.66);
+tl.set("#cap-a05-6",{visibility:"hidden"},100.76);
+tl.fromTo("#cap-a05-7",{opacity:0},{opacity:1,duration:0.12},100.76);
+tl.to("#cap-a05-7",{opacity:0,duration:0.1},102.05);
+tl.set("#cap-a05-7",{visibility:"hidden"},102.15);
+tl.fromTo("#cap-a05-8",{opacity:0},{opacity:1,duration:0.12},102.20);
+tl.to("#cap-a05-8",{opacity:0,duration:0.1},103.99);
+tl.set("#cap-a05-8",{visibility:"hidden"},104.09);
+tl.fromTo("#cap-a05-9",{opacity:0},{opacity:1,duration:0.12},104.09);
+tl.to("#cap-a05-9",{opacity:0,duration:0.1},106.08);
+tl.set("#cap-a05-9",{visibility:"hidden"},106.18);
+tl.fromTo("#cap-a05-10",{opacity:0},{opacity:1,duration:0.12},106.18);
+tl.to("#cap-a05-10",{opacity:0,duration:0.1},107.18);
+tl.set("#cap-a05-10",{visibility:"hidden"},107.28);
+tl.fromTo("#cap-a05-11",{opacity:0},{opacity:1,duration:0.12},107.33);
+tl.to("#cap-a05-11",{opacity:0,duration:0.1},108.81);
+tl.set("#cap-a05-11",{visibility:"hidden"},108.91);
+tl.fromTo("#cap-a05-12",{opacity:0},{opacity:1,duration:0.12},108.91);
+tl.to("#cap-a05-12",{opacity:0,duration:0.1},109.60);
+tl.set("#cap-a05-12",{visibility:"hidden"},109.70);
+tl.fromTo("#cap-a06-0",{opacity:0},{opacity:1,duration:0.12},110.85);
+tl.to("#cap-a06-0",{opacity:0,duration:0.1},111.95);
+tl.set("#cap-a06-0",{visibility:"hidden"},112.05);
+tl.fromTo("#cap-a06-1",{opacity:0},{opacity:1,duration:0.12},112.32);
+tl.to("#cap-a06-1",{opacity:0,duration:0.1},114.48);
+tl.set("#cap-a06-1",{visibility:"hidden"},114.58);
+tl.fromTo("#cap-a06-2",{opacity:0},{opacity:1,duration:0.12},114.58);
+tl.to("#cap-a06-2",{opacity:0,duration:0.1},116.64);
+tl.set("#cap-a06-2",{visibility:"hidden"},116.74);
+tl.fromTo("#cap-a06-3",{opacity:0},{opacity:1,duration:0.12},116.89);
+tl.to("#cap-a06-3",{opacity:0,duration:0.1},118.71);
+tl.set("#cap-a06-3",{visibility:"hidden"},118.81);
+tl.fromTo("#cap-a06-4",{opacity:0},{opacity:1,duration:0.12},118.81);
+tl.to("#cap-a06-4",{opacity:0,duration:0.1},120.38);
+tl.set("#cap-a06-4",{visibility:"hidden"},120.48);
+tl.fromTo("#cap-a06-5",{opacity:0},{opacity:1,duration:0.12},120.48);
+tl.to("#cap-a06-5",{opacity:0,duration:0.1},122.39);
+tl.set("#cap-a06-5",{visibility:"hidden"},122.49);
+tl.fromTo("#cap-a06-6",{opacity:0},{opacity:1,duration:0.12},122.64);
+tl.to("#cap-a06-6",{opacity:0,duration:0.1},124.93);
+tl.set("#cap-a06-6",{visibility:"hidden"},125.03);
+tl.fromTo("#cap-a06-7",{opacity:0},{opacity:1,duration:0.12},125.03);
+tl.to("#cap-a06-7",{opacity:0,duration:0.1},127.00);
+tl.set("#cap-a06-7",{visibility:"hidden"},127.10);
+tl.fromTo("#cap-a06-8",{opacity:0},{opacity:1,duration:0.12},127.25);
+tl.to("#cap-a06-8",{opacity:0,duration:0.1},129.35);
+tl.set("#cap-a06-8",{visibility:"hidden"},129.45);
+tl.fromTo("#cap-a06-9",{opacity:0},{opacity:1,duration:0.12},129.45);
+tl.to("#cap-a06-9",{opacity:0,duration:0.1},130.73);
+tl.set("#cap-a06-9",{visibility:"hidden"},130.83);
+tl.fromTo("#cap-a06-10",{opacity:0},{opacity:1,duration:0.12},130.83);
+tl.to("#cap-a06-10",{opacity:0,duration:0.1},133.86);
+tl.set("#cap-a06-10",{visibility:"hidden"},133.96);
+tl.fromTo("#cap-a07-0",{opacity:0},{opacity:1,duration:0.12},135.11);
+tl.to("#cap-a07-0",{opacity:0,duration:0.1},136.80);
+tl.set("#cap-a07-0",{visibility:"hidden"},136.90);
+tl.fromTo("#cap-a07-1",{opacity:0},{opacity:1,duration:0.12},136.90);
+tl.to("#cap-a07-1",{opacity:0,duration:0.1},139.10);
+tl.set("#cap-a07-1",{visibility:"hidden"},139.20);
+tl.fromTo("#cap-a07-2",{opacity:0},{opacity:1,duration:0.12},139.20);
+tl.to("#cap-a07-2",{opacity:0,duration:0.1},141.60);
+tl.set("#cap-a07-2",{visibility:"hidden"},141.70);
+tl.fromTo("#cap-a07-3",{opacity:0},{opacity:1,duration:0.12},141.85);
+tl.to("#cap-a07-3",{opacity:0,duration:0.1},143.19);
+tl.set("#cap-a07-3",{visibility:"hidden"},143.29);
+tl.fromTo("#cap-a07-4",{opacity:0},{opacity:1,duration:0.12},143.29);
+tl.to("#cap-a07-4",{opacity:0,duration:0.1},145.55);
+tl.set("#cap-a07-4",{visibility:"hidden"},145.65);
+tl.fromTo("#cap-a07-5",{opacity:0},{opacity:1,duration:0.12},145.80);
+tl.to("#cap-a07-5",{opacity:0,duration:0.1},146.80);
+tl.set("#cap-a07-5",{visibility:"hidden"},146.90);
+tl.fromTo("#cap-a07-6",{opacity:0},{opacity:1,duration:0.12},147.17);
+tl.to("#cap-a07-6",{opacity:0,duration:0.1},149.41);
+tl.set("#cap-a07-6",{visibility:"hidden"},149.51);
+tl.fromTo("#cap-a07-7",{opacity:0},{opacity:1,duration:0.12},149.78);
+tl.to("#cap-a07-7",{opacity:0,duration:0.1},151.69);
+tl.set("#cap-a07-7",{visibility:"hidden"},151.79);
+tl.fromTo("#cap-a07-8",{opacity:0},{opacity:1,duration:0.12},152.06);
+tl.to("#cap-a07-8",{opacity:0,duration:0.1},154.36);
+tl.set("#cap-a07-8",{visibility:"hidden"},154.46);
+tl.fromTo("#cap-a07-9",{opacity:0},{opacity:1,duration:0.12},154.46);
+tl.to("#cap-a07-9",{opacity:0,duration:0.1},156.48);
+tl.set("#cap-a07-9",{visibility:"hidden"},156.58);
+tl.fromTo("#cap-a08-0",{opacity:0},{opacity:1,duration:0.12},157.73);
+tl.to("#cap-a08-0",{opacity:0,duration:0.1},159.90);
+tl.set("#cap-a08-0",{visibility:"hidden"},160.00);
+tl.fromTo("#cap-a08-1",{opacity:0},{opacity:1,duration:0.12},160.00);
+tl.to("#cap-a08-1",{opacity:0,duration:0.1},163.16);
+tl.set("#cap-a08-1",{visibility:"hidden"},163.26);
+tl.fromTo("#cap-a08-2",{opacity:0},{opacity:1,duration:0.12},163.81);
+tl.to("#cap-a08-2",{opacity:0,duration:0.1},166.00);
+tl.set("#cap-a08-2",{visibility:"hidden"},166.10);
+tl.fromTo("#cap-a08-3",{opacity:0},{opacity:1,duration:0.12},166.10);
+tl.to("#cap-a08-3",{opacity:0,duration:0.1},170.22);
+tl.set("#cap-a08-3",{visibility:"hidden"},170.32);
+tl.fromTo("#cap-a08-4",{opacity:0},{opacity:1,duration:0.12},170.87);
+tl.to("#cap-a08-4",{opacity:0,duration:0.1},173.31);
+tl.set("#cap-a08-4",{visibility:"hidden"},173.41);
+tl.fromTo("#cap-a08-5",{opacity:0},{opacity:1,duration:0.12},173.41);
+tl.to("#cap-a08-5",{opacity:0,duration:0.1},175.39);
+tl.set("#cap-a08-5",{visibility:"hidden"},175.49);
+tl.fromTo("#cap-a08-6",{opacity:0},{opacity:1,duration:0.12},175.49);
+tl.to("#cap-a08-6",{opacity:0,duration:0.1},178.39);
+tl.set("#cap-a08-6",{visibility:"hidden"},178.49);
+tl.fromTo("#cap-a08-7",{opacity:0},{opacity:1,duration:0.12},178.49);
+tl.to("#cap-a08-7",{opacity:0,duration:0.1},181.19);
+tl.set("#cap-a08-7",{visibility:"hidden"},181.29);
+tl.fromTo("#cap-a08-8",{opacity:0},{opacity:1,duration:0.12},181.29);
+tl.to("#cap-a08-8",{opacity:0,duration:0.1},182.93);
+tl.set("#cap-a08-8",{visibility:"hidden"},183.03);
+tl.fromTo("#cap-a08-9",{opacity:0},{opacity:1,duration:0.12},183.58);
+tl.to("#cap-a08-9",{opacity:0,duration:0.1},185.87);
+tl.set("#cap-a08-9",{visibility:"hidden"},185.97);
+tl.fromTo("#cap-a08-10",{opacity:0},{opacity:1,duration:0.12},186.52);
+tl.to("#cap-a08-10",{opacity:0,duration:0.1},187.92);
+tl.set("#cap-a08-10",{visibility:"hidden"},188.02);
+tl.fromTo("#cap-a09-0",{opacity:0},{opacity:1,duration:0.12},189.17);
+tl.to("#cap-a09-0",{opacity:0,duration:0.1},191.62);
+tl.set("#cap-a09-0",{visibility:"hidden"},191.72);
+tl.fromTo("#cap-a09-1",{opacity:0},{opacity:1,duration:0.12},191.72);
+tl.to("#cap-a09-1",{opacity:0,duration:0.1},192.69);
+tl.set("#cap-a09-1",{visibility:"hidden"},192.79);
+tl.fromTo("#cap-a09-2",{opacity:0},{opacity:1,duration:0.12},193.24);
+tl.to("#cap-a09-2",{opacity:0,duration:0.1},195.92);
+tl.set("#cap-a09-2",{visibility:"hidden"},196.02);
+tl.fromTo("#cap-a09-3",{opacity:0},{opacity:1,duration:0.12},196.02);
+tl.to("#cap-a09-3",{opacity:0,duration:0.1},198.50);
+tl.set("#cap-a09-3",{visibility:"hidden"},198.60);
+tl.fromTo("#cap-a09-4",{opacity:0},{opacity:1,duration:0.12},199.05);
+tl.to("#cap-a09-4",{opacity:0,duration:0.1},200.88);
+tl.set("#cap-a09-4",{visibility:"hidden"},200.98);
+tl.fromTo("#cap-a09-5",{opacity:0},{opacity:1,duration:0.12},201.88);
+tl.to("#cap-a09-5",{opacity:0,duration:0.1},204.28);
+tl.set("#cap-a09-5",{visibility:"hidden"},204.38);
+tl.fromTo("#cap-a09-6",{opacity:0},{opacity:1,duration:0.12},204.38);
+tl.to("#cap-a09-6",{opacity:0,duration:0.1},206.19);
+tl.set("#cap-a09-6",{visibility:"hidden"},206.29);
+tl.fromTo("#cap-a09-7",{opacity:0},{opacity:1,duration:0.12},206.29);
+tl.to("#cap-a09-7",{opacity:0,duration:0.1},208.12);
+tl.set("#cap-a09-7",{visibility:"hidden"},208.22);
+tl.fromTo("#cap-a10-0",{opacity:0},{opacity:1,duration:0.12},209.37);
+tl.to("#cap-a10-0",{opacity:0,duration:0.1},210.79);
+tl.set("#cap-a10-0",{visibility:"hidden"},210.89);
+tl.fromTo("#cap-a10-1",{opacity:0},{opacity:1,duration:0.12},211.06);
+tl.to("#cap-a10-1",{opacity:0,duration:0.1},212.93);
+tl.set("#cap-a10-1",{visibility:"hidden"},213.03);
+tl.fromTo("#cap-a10-2",{opacity:0},{opacity:1,duration:0.12},213.03);
+tl.to("#cap-a10-2",{opacity:0,duration:0.1},214.95);
+tl.set("#cap-a10-2",{visibility:"hidden"},215.05);
+tl.fromTo("#cap-a10-3",{opacity:0},{opacity:1,duration:0.12},215.05);
+tl.to("#cap-a10-3",{opacity:0,duration:0.1},218.07);
+tl.set("#cap-a10-3",{visibility:"hidden"},218.17);
+tl.fromTo("#cap-a10-4",{opacity:0},{opacity:1,duration:0.12},218.22);
+tl.to("#cap-a10-4",{opacity:0,duration:0.1},220.85);
+tl.set("#cap-a10-4",{visibility:"hidden"},220.95);
+tl.fromTo("#cap-a10-5",{opacity:0},{opacity:1,duration:0.12},221.00);
+tl.to("#cap-a10-5",{opacity:0,duration:0.1},222.28);
+tl.set("#cap-a10-5",{visibility:"hidden"},222.38);
+tl.fromTo("#cap-a10-6",{opacity:0},{opacity:1,duration:0.12},222.38);
+tl.to("#cap-a10-6",{opacity:0,duration:0.1},224.14);
+tl.set("#cap-a10-6",{visibility:"hidden"},224.24);
+tl.fromTo("#cap-a10-7",{opacity:0},{opacity:1,duration:0.12},224.24);
+tl.to("#cap-a10-7",{opacity:0,duration:0.1},225.86);
+tl.set("#cap-a10-7",{visibility:"hidden"},225.96);
+tl.fromTo("#cap-a10-8",{opacity:0},{opacity:1,duration:0.12},225.96);
+tl.to("#cap-a10-8",{opacity:0,duration:0.1},227.68);
+tl.set("#cap-a10-8",{visibility:"hidden"},227.78);
+tl.fromTo("#cap-a10-9",{opacity:0},{opacity:1,duration:0.12},227.83);
+tl.to("#cap-a10-9",{opacity:0,duration:0.1},229.98);
+tl.set("#cap-a10-9",{visibility:"hidden"},230.08);
+tl.fromTo("#cap-a11-0",{opacity:0},{opacity:1,duration:0.12},231.23);
+tl.to("#cap-a11-0",{opacity:0,duration:0.1},233.38);
+tl.set("#cap-a11-0",{visibility:"hidden"},233.48);
+tl.fromTo("#cap-a11-1",{opacity:0},{opacity:1,duration:0.12},233.48);
+tl.to("#cap-a11-1",{opacity:0,duration:0.1},234.84);
+tl.set("#cap-a11-1",{visibility:"hidden"},234.94);
+tl.fromTo("#cap-a11-2",{opacity:0},{opacity:1,duration:0.12},234.94);
+tl.to("#cap-a11-2",{opacity:0,duration:0.1},236.72);
+tl.set("#cap-a11-2",{visibility:"hidden"},236.82);
+tl.fromTo("#cap-a11-3",{opacity:0},{opacity:1,duration:0.12},236.82);
+tl.to("#cap-a11-3",{opacity:0,duration:0.1},238.91);
+tl.set("#cap-a11-3",{visibility:"hidden"},239.01);
+tl.fromTo("#cap-a11-4",{opacity:0},{opacity:1,duration:0.12},239.16);
+tl.to("#cap-a11-4",{opacity:0,duration:0.1},241.31);
+tl.set("#cap-a11-4",{visibility:"hidden"},241.41);
+tl.fromTo("#cap-a12-0",{opacity:0},{opacity:1,duration:0.12},242.56);
+tl.to("#cap-a12-0",{opacity:0,duration:0.1},244.79);
+tl.set("#cap-a12-0",{visibility:"hidden"},244.89);
+tl.fromTo("#cap-a12-1",{opacity:0},{opacity:1,duration:0.12},244.89);
+tl.to("#cap-a12-1",{opacity:0,duration:0.1},246.46);
+tl.set("#cap-a12-1",{visibility:"hidden"},246.56);
+tl.fromTo("#cap-a12-2",{opacity:0},{opacity:1,duration:0.12},246.61);
+tl.to("#cap-a12-2",{opacity:0,duration:0.1},249.48);
+tl.set("#cap-a12-2",{visibility:"hidden"},249.58);
+tl.fromTo("#cap-a12-3",{opacity:0},{opacity:1,duration:0.12},249.58);
+tl.to("#cap-a12-3",{opacity:0,duration:0.1},252.27);
+tl.set("#cap-a12-3",{visibility:"hidden"},252.37);
+tl.fromTo("#cap-a12-4",{opacity:0},{opacity:1,duration:0.12},252.42);
+tl.to("#cap-a12-4",{opacity:0,duration:0.1},255.34);
+tl.set("#cap-a12-4",{visibility:"hidden"},255.44);
+tl.fromTo("#cap-a12-5",{opacity:0},{opacity:1,duration:0.12},255.49);
+tl.to("#cap-a12-5",{opacity:0,duration:0.1},257.30);
+tl.set("#cap-a12-5",{visibility:"hidden"},257.40);
+tl.fromTo("#cap-a12-6",{opacity:0},{opacity:1,duration:0.12},257.40);
+tl.to("#cap-a12-6",{opacity:0,duration:0.1},258.51);
+tl.set("#cap-a12-6",{visibility:"hidden"},258.61);
+tl.fromTo("#cap-a13-0",{opacity:0},{opacity:1,duration:0.12},259.76);
+tl.to("#cap-a13-0",{opacity:0,duration:0.1},261.61);
+tl.set("#cap-a13-0",{visibility:"hidden"},261.71);
+tl.fromTo("#cap-a13-1",{opacity:0},{opacity:1,duration:0.12},261.71);
+tl.to("#cap-a13-1",{opacity:0,duration:0.1},263.00);
+tl.set("#cap-a13-1",{visibility:"hidden"},263.10);
+tl.fromTo("#cap-a13-2",{opacity:0},{opacity:1,duration:0.12},263.40);
+tl.to("#cap-a13-2",{opacity:0,duration:0.1},265.99);
+tl.set("#cap-a13-2",{visibility:"hidden"},266.09);
+tl.fromTo("#cap-a13-3",{opacity:0},{opacity:1,duration:0.12},266.09);
+tl.to("#cap-a13-3",{opacity:0,duration:0.1},268.24);
+tl.set("#cap-a13-3",{visibility:"hidden"},268.34);
+tl.fromTo("#cap-a13-4",{opacity:0},{opacity:1,duration:0.12},268.34);
+tl.to("#cap-a13-4",{opacity:0,duration:0.1},271.44);
+tl.set("#cap-a13-4",{visibility:"hidden"},271.54);
+tl.fromTo("#cap-a13-5",{opacity:0},{opacity:1,duration:0.12},271.54);
+tl.to("#cap-a13-5",{opacity:0,duration:0.1},273.63);
+tl.set("#cap-a13-5",{visibility:"hidden"},273.73);
+tl.fromTo("#cap-a13-6",{opacity:0},{opacity:1,duration:0.12},273.73);
+tl.to("#cap-a13-6",{opacity:0,duration:0.1},275.38);
+tl.set("#cap-a13-6",{visibility:"hidden"},275.48);
+tl.fromTo("#cap-a13-7",{opacity:0},{opacity:1,duration:0.12},275.78);
+tl.to("#cap-a13-7",{opacity:0,duration:0.1},278.28);
+tl.set("#cap-a13-7",{visibility:"hidden"},278.38);
+tl.fromTo("#cap-a13-8",{opacity:0},{opacity:1,duration:0.12},278.68);
+tl.to("#cap-a13-8",{opacity:0,duration:0.1},280.17);
+tl.set("#cap-a13-8",{visibility:"hidden"},280.27);
+tl.fromTo("#cap-a14-0",{opacity:0},{opacity:1,duration:0.12},281.42);
+tl.to("#cap-a14-0",{opacity:0,duration:0.1},283.70);
+tl.set("#cap-a14-0",{visibility:"hidden"},283.80);
+tl.fromTo("#cap-a14-1",{opacity:0},{opacity:1,duration:0.12},284.22);
+tl.to("#cap-a14-1",{opacity:0,duration:0.1},286.35);
+tl.set("#cap-a14-1",{visibility:"hidden"},286.45);
+tl.fromTo("#cap-a14-2",{opacity:0},{opacity:1,duration:0.12},286.45);
+tl.to("#cap-a14-2",{opacity:0,duration:0.1},288.78);
+tl.set("#cap-a14-2",{visibility:"hidden"},288.88);
+tl.fromTo("#cap-a14-3",{opacity:0},{opacity:1,duration:0.12},288.88);
+tl.to("#cap-a14-3",{opacity:0,duration:0.1},291.09);
+tl.set("#cap-a14-3",{visibility:"hidden"},291.19);
+tl.fromTo("#cap-a14-4",{opacity:0},{opacity:1,duration:0.12},291.19);
+tl.to("#cap-a14-4",{opacity:0,duration:0.1},294.16);
+tl.set("#cap-a14-4",{visibility:"hidden"},294.26);
+tl.fromTo("#cap-a14-5",{opacity:0},{opacity:1,duration:0.12},294.26);
+tl.to("#cap-a14-5",{opacity:0,duration:0.1},296.13);
+tl.set("#cap-a14-5",{visibility:"hidden"},296.23);
+tl.fromTo("#cap-a14-6",{opacity:0},{opacity:1,duration:0.12},296.53);
+tl.to("#cap-a14-6",{opacity:0,duration:0.1},298.84);
+tl.set("#cap-a14-6",{visibility:"hidden"},298.94);
+tl.fromTo("#cap-a14-7",{opacity:0},{opacity:1,duration:0.12},298.94);
+tl.to("#cap-a14-7",{opacity:0,duration:0.1},300.21);
+tl.set("#cap-a14-7",{visibility:"hidden"},300.31);
+tl.fromTo("#cap-a15-0",{opacity:0},{opacity:1,duration:0.12},301.46);
+tl.to("#cap-a15-0",{opacity:0,duration:0.1},302.91);
+tl.set("#cap-a15-0",{visibility:"hidden"},303.01);
+tl.fromTo("#cap-a15-1",{opacity:0},{opacity:1,duration:0.12},303.01);
+tl.to("#cap-a15-1",{opacity:0,duration:0.1},305.87);
+tl.set("#cap-a15-1",{visibility:"hidden"},305.97);
+tl.fromTo("#cap-a15-2",{opacity:0},{opacity:1,duration:0.12},305.97);
+tl.to("#cap-a15-2",{opacity:0,duration:0.1},308.63);
+tl.set("#cap-a15-2",{visibility:"hidden"},308.73);
+tl.fromTo("#cap-a15-3",{opacity:0},{opacity:1,duration:0.12},309.03);
+tl.to("#cap-a15-3",{opacity:0,duration:0.1},311.75);
+tl.set("#cap-a15-3",{visibility:"hidden"},311.85);
+tl.fromTo("#cap-a15-4",{opacity:0},{opacity:1,duration:0.12},312.15);
+tl.to("#cap-a15-4",{opacity:0,duration:0.1},314.10);
+tl.set("#cap-a15-4",{visibility:"hidden"},314.20);
+tl.fromTo("#cap-a15-5",{opacity:0},{opacity:1,duration:0.12},314.50);
+tl.to("#cap-a15-5",{opacity:0,duration:0.1},317.29);
+tl.set("#cap-a15-5",{visibility:"hidden"},317.39);
+tl.fromTo("#cap-a15-6",{opacity:0},{opacity:1,duration:0.12},317.39);
+tl.to("#cap-a15-6",{opacity:0,duration:0.1},319.56);
+tl.set("#cap-a15-6",{visibility:"hidden"},319.66);
+tl.fromTo("#cap-a16-0",{opacity:0},{opacity:1,duration:0.12},320.81);
+tl.to("#cap-a16-0",{opacity:0,duration:0.1},322.63);
+tl.set("#cap-a16-0",{visibility:"hidden"},322.73);
+tl.fromTo("#cap-a16-1",{opacity:0},{opacity:1,duration:0.12},322.73);
+tl.to("#cap-a16-1",{opacity:0,duration:0.1},324.32);
+tl.set("#cap-a16-1",{visibility:"hidden"},324.42);
+tl.fromTo("#cap-a16-2",{opacity:0},{opacity:1,duration:0.12},324.87);
+tl.to("#cap-a16-2",{opacity:0,duration:0.1},327.04);
+tl.set("#cap-a16-2",{visibility:"hidden"},327.14);
+tl.fromTo("#cap-a16-3",{opacity:0},{opacity:1,duration:0.12},327.29);
+tl.to("#cap-a16-3",{opacity:0,duration:0.1},330.31);
+tl.set("#cap-a16-3",{visibility:"hidden"},330.41);
+tl.fromTo("#cap-a16-4",{opacity:0},{opacity:1,duration:0.12},330.41);
+tl.to("#cap-a16-4",{opacity:0,duration:0.1},332.59);
+tl.set("#cap-a16-4",{visibility:"hidden"},332.69);
+tl.fromTo("#cap-a16-5",{opacity:0},{opacity:1,duration:0.12},332.84);
+tl.to("#cap-a16-5",{opacity:0,duration:0.1},335.02);
+tl.set("#cap-a16-5",{visibility:"hidden"},335.12);
+tl.fromTo("#cap-a16-6",{opacity:0},{opacity:1,duration:0.12},335.27);
+tl.to("#cap-a16-6",{opacity:0,duration:0.1},337.33);
+tl.set("#cap-a16-6",{visibility:"hidden"},337.43);
+tl.fromTo("#cap-a16-7",{opacity:0},{opacity:1,duration:0.12},337.43);
+tl.to("#cap-a16-7",{opacity:0,duration:0.1},339.71);
+tl.set("#cap-a16-7",{visibility:"hidden"},339.81);
+tl.fromTo("#cap-a16-8",{opacity:0},{opacity:1,duration:0.12},339.81);
+tl.to("#cap-a16-8",{opacity:0,duration:0.1},341.76);
+tl.set("#cap-a16-8",{visibility:"hidden"},341.86);
+tl.fromTo("#cap-a16-9",{opacity:0},{opacity:1,duration:0.12},341.86);
+tl.to("#cap-a16-9",{opacity:0,duration:0.1},344.28);
+tl.set("#cap-a16-9",{visibility:"hidden"},344.38);
+tl.fromTo("#cap-a17-0",{opacity:0},{opacity:1,duration:0.12},345.53);
+tl.to("#cap-a17-0",{opacity:0,duration:0.1},348.32);
+tl.set("#cap-a17-0",{visibility:"hidden"},348.42);
+tl.fromTo("#cap-a17-1",{opacity:0},{opacity:1,duration:0.12},348.42);
+tl.to("#cap-a17-1",{opacity:0,duration:0.1},351.92);
+tl.set("#cap-a17-1",{visibility:"hidden"},352.02);
+tl.fromTo("#cap-a17-2",{opacity:0},{opacity:1,duration:0.12},352.17);
+tl.to("#cap-a17-2",{opacity:0,duration:0.1},353.70);
+tl.set("#cap-a17-2",{visibility:"hidden"},353.80);
+tl.fromTo("#cap-a17-3",{opacity:0},{opacity:1,duration:0.12},353.95);
+tl.to("#cap-a17-3",{opacity:0,duration:0.1},357.53);
+tl.set("#cap-a17-3",{visibility:"hidden"},357.63);
+tl.fromTo("#cap-a17-4",{opacity:0},{opacity:1,duration:0.12},357.63);
+tl.to("#cap-a17-4",{opacity:0,duration:0.1},360.30);
+tl.set("#cap-a17-4",{visibility:"hidden"},360.40);
+tl.fromTo("#cap-a17-5",{opacity:0},{opacity:1,duration:0.12},360.40);
+tl.to("#cap-a17-5",{opacity:0,duration:0.1},363.56);
+tl.set("#cap-a17-5",{visibility:"hidden"},363.66);
+tl.fromTo("#cap-a17-6",{opacity:0},{opacity:1,duration:0.12},363.81);
+tl.to("#cap-a17-6",{opacity:0,duration:0.1},364.85);
+tl.set("#cap-a17-6",{visibility:"hidden"},364.95);
+tl.fromTo("#cap-a17-7",{opacity:0},{opacity:1,duration:0.12},364.95);
+tl.to("#cap-a17-7",{opacity:0,duration:0.1},366.93);
+tl.set("#cap-a17-7",{visibility:"hidden"},367.03);
+tl.fromTo("#cap-a17-8",{opacity:0},{opacity:1,duration:0.12},367.03);
+tl.to("#cap-a17-8",{opacity:0,duration:0.1},369.07);
+tl.set("#cap-a17-8",{visibility:"hidden"},369.17);
+tl.fromTo("#cap-a17-9",{opacity:0},{opacity:1,duration:0.12},369.17);
+tl.to("#cap-a17-9",{opacity:0,duration:0.1},372.13);
+tl.set("#cap-a17-9",{visibility:"hidden"},372.23);
+tl.fromTo("#cap-a17-10",{opacity:0},{opacity:1,duration:0.12},372.38);
+tl.to("#cap-a17-10",{opacity:0,duration:0.1},374.09);
+tl.set("#cap-a17-10",{visibility:"hidden"},374.19);
+tl.fromTo("#cap-a18-0",{opacity:0},{opacity:1,duration:0.12},375.34);
+tl.to("#cap-a18-0",{opacity:0,duration:0.1},378.53);
+tl.set("#cap-a18-0",{visibility:"hidden"},378.63);
+tl.fromTo("#cap-a18-1",{opacity:0},{opacity:1,duration:0.12},378.63);
+tl.to("#cap-a18-1",{opacity:0,duration:0.1},379.88);
+tl.set("#cap-a18-1",{visibility:"hidden"},379.98);
+tl.fromTo("#cap-a18-2",{opacity:0},{opacity:1,duration:0.12},379.98);
+tl.to("#cap-a18-2",{opacity:0,duration:0.1},382.19);
+tl.set("#cap-a18-2",{visibility:"hidden"},382.29);
+tl.fromTo("#cap-a18-3",{opacity:0},{opacity:1,duration:0.12},382.59);
+tl.to("#cap-a18-3",{opacity:0,duration:0.1},385.60);
+tl.set("#cap-a18-3",{visibility:"hidden"},385.70);
+tl.fromTo("#cap-a18-4",{opacity:0},{opacity:1,duration:0.12},385.70);
+tl.to("#cap-a18-4",{opacity:0,duration:0.1},388.06);
+tl.set("#cap-a18-4",{visibility:"hidden"},388.16);
+tl.fromTo("#cap-a18-5",{opacity:0},{opacity:1,duration:0.12},388.46);
+tl.to("#cap-a18-5",{opacity:0,duration:0.1},390.22);
+tl.set("#cap-a18-5",{visibility:"hidden"},390.32);
+tl.fromTo("#cap-a18-6",{opacity:0},{opacity:1,duration:0.12},390.32);
+tl.to("#cap-a18-6",{opacity:0,duration:0.1},392.30);
+tl.set("#cap-a18-6",{visibility:"hidden"},392.40);
+tl.fromTo("#cap-a18-7",{opacity:0},{opacity:1,duration:0.12},392.40);
+tl.to("#cap-a18-7",{opacity:0,duration:0.1},393.81);
+tl.set("#cap-a18-7",{visibility:"hidden"},393.91);
+tl.fromTo("#cap-a18-8",{opacity:0},{opacity:1,duration:0.12},394.21);
+tl.to("#cap-a18-8",{opacity:0,duration:0.1},395.98);
+tl.set("#cap-a18-8",{visibility:"hidden"},396.08);
+tl.fromTo("#cap-a18-9",{opacity:0},{opacity:1,duration:0.12},396.50);
+tl.to("#cap-a18-9",{opacity:0,duration:0.1},397.87);
+tl.set("#cap-a18-9",{visibility:"hidden"},397.97);
+tl.fromTo("#cap-a19-0",{opacity:0},{opacity:1,duration:0.12},399.12);
+tl.to("#cap-a19-0",{opacity:0,duration:0.1},402.53);
+tl.set("#cap-a19-0",{visibility:"hidden"},402.63);
+tl.fromTo("#cap-a19-1",{opacity:0},{opacity:1,duration:0.12},402.63);
+tl.to("#cap-a19-1",{opacity:0,duration:0.1},404.15);
+tl.set("#cap-a19-1",{visibility:"hidden"},404.25);
+tl.fromTo("#cap-a19-2",{opacity:0},{opacity:1,duration:0.12},404.80);
+tl.to("#cap-a19-2",{opacity:0,duration:0.1},407.60);
+tl.set("#cap-a19-2",{visibility:"hidden"},407.70);
+tl.fromTo("#cap-a19-3",{opacity:0},{opacity:1,duration:0.12},408.25);
+tl.to("#cap-a19-3",{opacity:0,duration:0.1},411.21);
+tl.set("#cap-a19-3",{visibility:"hidden"},411.31);
+tl.fromTo("#cap-a19-4",{opacity:0},{opacity:1,duration:0.12},412.31);
+tl.to("#cap-a19-4",{opacity:0,duration:0.1},413.28);
+tl.set("#cap-a19-4",{visibility:"hidden"},413.38);
+tl.fromTo("#cap-a19-5",{opacity:0},{opacity:1,duration:0.12},414.38);
+tl.to("#cap-a19-5",{opacity:0,duration:0.1},416.39);
+tl.set("#cap-a19-5",{visibility:"hidden"},416.49);
+tl.fromTo("#cap-a19-6",{opacity:0},{opacity:1,duration:0.12},416.49);
+tl.to("#cap-a19-6",{opacity:0,duration:0.1},418.94);
+tl.set("#cap-a19-6",{visibility:"hidden"},419.04);
+tl.fromTo("#cap-a19-7",{opacity:0},{opacity:1,duration:0.12},419.59);
+tl.to("#cap-a19-7",{opacity:0,duration:0.1},422.28);
+tl.set("#cap-a19-7",{visibility:"hidden"},422.38);
+tl.fromTo("#cap-a19-8",{opacity:0},{opacity:1,duration:0.12},422.38);
+tl.to("#cap-a19-8",{opacity:0,duration:0.1},423.87);
+tl.set("#cap-a19-8",{visibility:"hidden"},423.97);
+tl.fromTo("#cap-a19-9",{opacity:0},{opacity:1,duration:0.12},423.97);
+tl.to("#cap-a19-9",{opacity:0,duration:0.1},426.02);
+tl.set("#cap-a19-9",{visibility:"hidden"},426.12);
+tl.fromTo("#cap-a20-0",{opacity:0},{opacity:1,duration:0.12},427.27);
+tl.to("#cap-a20-0",{opacity:0,duration:0.1},428.94);
+tl.set("#cap-a20-0",{visibility:"hidden"},429.04);
+tl.fromTo("#cap-a20-1",{opacity:0},{opacity:1,duration:0.12},430.04);
+tl.to("#cap-a20-1",{opacity:0,duration:0.1},431.30);
+tl.set("#cap-a20-1",{visibility:"hidden"},431.40);
+tl.fromTo("#cap-a20-2",{opacity:0},{opacity:1,duration:0.12},432.40);
+tl.to("#cap-a20-2",{opacity:0,duration:0.1},434.05);
+tl.set("#cap-a20-2",{visibility:"hidden"},434.15);
+tl.fromTo("#cap-a20-3",{opacity:0},{opacity:1,duration:0.12},434.15);
+tl.to("#cap-a20-3",{opacity:0,duration:0.1},436.28);
+tl.set("#cap-a20-3",{visibility:"hidden"},436.38);
+tl.fromTo("#cap-a20-4",{opacity:0},{opacity:1,duration:0.12},436.93);
+tl.to("#cap-a20-4",{opacity:0,duration:0.1},439.19);
+tl.set("#cap-a20-4",{visibility:"hidden"},439.29);
+tl.fromTo("#cap-a20-5",{opacity:0},{opacity:1,duration:0.12},439.29);
+tl.to("#cap-a20-5",{opacity:0,duration:0.1},440.84);
+tl.set("#cap-a20-5",{visibility:"hidden"},440.94);
+tl.fromTo("#cap-a20-6",{opacity:0},{opacity:1,duration:0.12},441.49);
+tl.to("#cap-a20-6",{opacity:0,duration:0.1},444.34);
+tl.set("#cap-a20-6",{visibility:"hidden"},444.44);
+tl.fromTo("#cap-a20-7",{opacity:0},{opacity:1,duration:0.12},444.44);
+tl.to("#cap-a20-7",{opacity:0,duration:0.1},446.49);
+tl.set("#cap-a20-7",{visibility:"hidden"},446.59);
+tl.fromTo("#cap-a20-8",{opacity:0},{opacity:1,duration:0.12},447.14);
+tl.to("#cap-a20-8",{opacity:0,duration:0.1},449.04);
+tl.set("#cap-a20-8",{visibility:"hidden"},449.14);
+tl.fromTo("#cap-a20-9",{opacity:0},{opacity:1,duration:0.12},449.14);
+tl.to("#cap-a20-9",{opacity:0,duration:0.1},452.27);
+tl.set("#cap-a20-9",{visibility:"hidden"},452.37);
+tl.fromTo("#cap-a20-10",{opacity:0},{opacity:1,duration:0.12},452.92);
+tl.to("#cap-a20-10",{opacity:0,duration:0.1},455.21);
+tl.set("#cap-a20-10",{visibility:"hidden"},455.31);
+tl.fromTo("#cap-a21-0",{opacity:0},{opacity:1,duration:0.12},456.46);
+tl.to("#cap-a21-0",{opacity:0,duration:0.1},459.28);
+tl.set("#cap-a21-0",{visibility:"hidden"},459.38);
+tl.fromTo("#cap-a21-1",{opacity:0},{opacity:1,duration:0.12},459.38);
+tl.to("#cap-a21-1",{opacity:0,duration:0.1},461.63);
+tl.set("#cap-a21-1",{visibility:"hidden"},461.73);
+tl.fromTo("#cap-a21-2",{opacity:0},{opacity:1,duration:0.12},461.78);
+tl.to("#cap-a21-2",{opacity:0,duration:0.1},463.53);
+tl.set("#cap-a21-2",{visibility:"hidden"},463.63);
+tl.fromTo("#cap-a21-3",{opacity:0},{opacity:1,duration:0.12},463.68);
+tl.to("#cap-a21-3",{opacity:0,duration:0.1},465.58);
+tl.set("#cap-a21-3",{visibility:"hidden"},465.68);
+tl.fromTo("#cap-a21-4",{opacity:0},{opacity:1,duration:0.12},466.03);
+tl.to("#cap-a21-4",{opacity:0,duration:0.1},467.56);
+tl.set("#cap-a21-4",{visibility:"hidden"},467.66);
+tl.fromTo("#cap-a21-5",{opacity:0},{opacity:1,duration:0.12},467.66);
+tl.to("#cap-a21-5",{opacity:0,duration:0.1},469.33);
+tl.set("#cap-a21-5",{visibility:"hidden"},469.43);
+tl.fromTo("#cap-a21-6",{opacity:0},{opacity:1,duration:0.12},469.43);
+tl.to("#cap-a21-6",{opacity:0,duration:0.1},470.71);
+tl.set("#cap-a21-6",{visibility:"hidden"},470.81);
+tl.fromTo("#cap-a21-7",{opacity:0},{opacity:1,duration:0.12},470.86);
+tl.to("#cap-a21-7",{opacity:0,duration:0.1},472.61);
+tl.set("#cap-a21-7",{visibility:"hidden"},472.71);
+const grao = document.getElementById("grao"), flick = document.getElementById("flick");
+const hash = (n) => { let x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+const proxy = { p: 0 };
+tl.to(proxy, { p: 1, duration: 483.05, ease: "none", onUpdate: () => {
+  const f = Math.floor(proxy.p * 483.05 * 12);
+  grao.style.transform = `translate(${(hash(f) - 0.5) * 120}px, ${(hash(f + 999) - 0.5) * 120}px)`;
+  flick.style.opacity = (hash(f * 7 + 3) * 0.07).toFixed(3);
+} }, 0);
+window.__timelines["legendas"] = tl;
+</script>
+</template>

@@ -1,2 +1,3 @@
 videos/*/renders/
 videos/*/assets/img/*.orig
+videos/*-hf/.hyperframes/
